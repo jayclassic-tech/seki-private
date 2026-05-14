@@ -1,0 +1,94 @@
+2026-05-14 17:39:34,303 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 17:39:34,333 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-14 17:39:34,333 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-14 17:39:34,334 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-14 17:39:34,334 [INFO    ] MainThread   | Profile loaded: [supportcallsonline] From=support@send.supportcallsonline.com | Subdomains=['reach', 'send']
+2026-05-14 17:39:34,335 [INFO    ] MainThread   | 📂 CSV loaded: 2 recipients from campaigns/example.csv
+2026-05-14 17:39:34,337 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 17:39:34,337 [INFO    ] MainThread   | SekiMailer ready | Profile=supportcallsonline | SMTP=127.0.0.1:25 | Workers=5 | DryRun=True | Campaign=supportcallsonline_20260514_153934
+2026-05-14 17:39:34,337 [INFO    ] MainThread   | 
+══════════════════════════════════════════════════
+  🚀 CAMPAIGN START
+  Recipients : 2
+  Workers    : 5
+  Rate limit : 0.1s/send
+  Dry-run    : True
+  Profile    : supportcallsonline
+══════════════════════════════════════════════════
+2026-05-14 17:39:34,343 [INFO    ] seki-worker_0 | [DRY-RUN] To=alice@example.com | From=Support Team <support@reach.supportcallsonline.com> | Envelope=bounces+alice=example.com+H9ihIyu9@send.supportcallsonline.com
+2026-05-14 17:39:34,347 [INFO    ] seki-worker_1 | [DRY-RUN] To=bob@example.com | From=Support Team <support@send.supportcallsonline.com> | Envelope=bounces+bob=example.com+JJPUno4M@send.supportcallsonline.com
+2026-05-14 17:39:34,459 [INFO    ] MainThread   | 
+──────────────────────────────────────────────────
+  📊 SEKI MAILER — CAMPAIGN SUMMARY
+──────────────────────────────────────────────────
+  ✅ Sent        : 0
+  ❌ Failed      : 0
+  ⏭  Skipped     : 0  (suppressed)
+  🔍 Dry-run     : 2
+  🔁 Retried     : 0
+  📬 Total       : 2
+──────────────────────────────────────────────────
+2026-05-14 17:39:34,526 [INFO    ] MainThread   | 📡 Sentinel: campaign 'supportcallsonline_20260514_153934' reported successfully (0 sent, 0 failed)
+2026-05-14 17:39:35,007 [WARNING ] MainThread   | 📱 Telegram: HTTP 400 — Bad Request (non-fatal)
+2026-05-14 17:39:35,047 [INFO    ] MainThread   | DB summary for campaign 'supportcallsonline_20260514_153934': {'dry_run': 2}
+2026-05-14 17:42:08,413 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 17:42:08,414 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-14 17:42:08,414 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-14 17:42:08,414 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-14 17:42:08,414 [INFO    ] MainThread   | Profile loaded: [supportcallsonline] From=support@send.supportcallsonline.com | Subdomains=['reach', 'send']
+2026-05-14 17:42:08,415 [INFO    ] MainThread   | 📂 CSV loaded: 2 recipients from campaigns/example.csv
+2026-05-14 17:42:08,415 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 17:42:08,415 [INFO    ] MainThread   | SekiMailer ready | Profile=supportcallsonline | SMTP=127.0.0.1:25 | Workers=5 | DryRun=True | Campaign=supportcallsonline_20260514_154208
+2026-05-14 17:42:08,415 [INFO    ] MainThread   | 
+══════════════════════════════════════════════════
+  🚀 CAMPAIGN START
+  Recipients : 2
+  Workers    : 5
+  Rate limit : 0.1s/send
+  Dry-run    : True
+  Profile    : supportcallsonline
+══════════════════════════════════════════════════
+2026-05-14 17:42:08,418 [INFO    ] seki-worker_0 | [DRY-RUN] To=alice@example.com | From=Support Team <support@reach.supportcallsonline.com> | Envelope=bounces+alice=example.com+H9ihIyu9@send.supportcallsonline.com
+2026-05-14 17:42:08,423 [INFO    ] seki-worker_1 | [DRY-RUN] To=bob@example.com | From=Support Team <support@send.supportcallsonline.com> | Envelope=bounces+bob=example.com+JJPUno4M@send.supportcallsonline.com
+2026-05-14 17:42:08,539 [INFO    ] MainThread   | 
+──────────────────────────────────────────────────
+  📊 SEKI MAILER — CAMPAIGN SUMMARY
+──────────────────────────────────────────────────
+  ✅ Sent        : 0
+  ❌ Failed      : 0
+  ⏭  Skipped     : 0  (suppressed)
+  🔍 Dry-run     : 2
+  🔁 Retried     : 0
+  📬 Total       : 2
+──────────────────────────────────────────────────
+2026-05-14 17:42:08,599 [INFO    ] MainThread   | 📡 Sentinel: campaign 'supportcallsonline_20260514_154208' reported successfully (0 sent, 0 failed)
+2026-05-14 17:42:09,124 [INFO    ] MainThread   | 📱 Telegram: campaign alert sent for 'supportcallsonline_20260514_154208'
+2026-05-14 17:42:09,125 [INFO    ] MainThread   | DB summary for campaign 'supportcallsonline_20260514_154208': {'dry_run': 2}
+2026-05-14 17:54:54,793 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 17:54:54,794 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-14 17:54:54,794 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-14 17:54:54,794 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-14 17:54:54,794 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-14 17:54:54,795 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 17:54:54,795 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-14 17:54:54,864 [ERROR   ] MainThread   | BounceParser: connection failed — [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)
+2026-05-14 17:54:54,865 [INFO    ] MainThread   | BounceParser: done. 0 new addresses suppressed.
+2026-05-14 17:54:54,865 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-14 17:56:50,754 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 17:56:50,755 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-14 17:56:50,756 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-14 17:56:50,756 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-14 17:56:50,756 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-14 17:56:50,756 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 17:56:50,756 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-14 17:56:51,004 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-14 17:56:51,009 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-14 18:00:02,216 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 18:00:02,217 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-14 18:00:02,217 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-14 18:00:02,217 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-14 18:00:02,217 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-14 18:00:02,217 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-14 18:00:02,217 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-14 18:00:02,255 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-14 18:00:02,256 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
