@@ -79,3 +79,219 @@
 2026-05-15 02:00:02,025 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
 2026-05-15 02:00:02,215 [INFO    ] MainThread   | BounceParser: no new bounce messages found
 2026-05-15 02:00:02,216 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 03:00:02,468 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 03:00:02,470 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 03:00:02,470 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 03:00:02,470 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 03:00:02,470 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 03:00:02,470 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 03:00:02,470 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 03:00:02,546 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 03:00:02,547 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 04:00:01,348 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 04:00:01,351 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 04:00:01,351 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 04:00:01,352 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 04:00:01,352 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 04:00:01,352 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 04:00:01,352 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 04:00:01,389 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 04:00:01,389 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 05:00:02,014 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 05:00:02,016 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 05:00:02,016 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 05:00:02,016 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 05:00:02,016 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 05:00:02,017 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 05:00:02,017 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 05:00:02,043 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 05:00:02,043 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 06:00:02,192 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 06:00:02,195 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 06:00:02,195 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 06:00:02,196 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 06:00:02,196 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 06:00:02,196 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 06:00:02,196 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 06:00:02,257 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 06:00:02,259 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 07:00:03,057 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 07:00:03,059 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 07:00:03,059 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 07:00:03,059 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 07:00:03,059 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 07:00:03,060 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 07:00:03,060 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 07:00:03,196 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 07:00:03,208 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 08:00:02,168 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 08:00:02,176 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 08:00:02,176 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 08:00:02,176 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 08:00:02,177 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 08:00:02,177 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 08:00:02,177 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 08:00:02,321 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 08:00:02,355 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 09:00:02,336 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 09:00:02,339 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 09:00:02,339 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 09:00:02,339 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 09:00:02,339 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 09:00:02,340 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 09:00:02,340 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 09:00:02,378 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 09:00:02,380 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 10:00:02,468 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 10:00:02,471 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 10:00:02,472 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 10:00:02,472 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 10:00:02,472 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 10:00:02,472 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 10:00:02,472 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 10:00:02,522 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 10:00:02,523 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 11:00:02,456 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 11:00:02,461 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 11:00:02,461 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 11:00:02,461 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 11:00:02,461 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 11:00:02,461 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 11:00:02,462 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 11:00:02,532 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 11:00:02,534 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 12:00:02,525 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 12:00:02,531 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 12:00:02,531 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 12:00:02,531 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 12:00:02,531 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 12:00:02,531 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 12:00:02,531 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 12:00:02,573 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 12:00:02,574 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 13:00:01,675 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 13:00:01,682 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 13:00:01,683 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 13:00:01,683 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 13:00:01,683 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 13:00:01,683 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 13:00:01,683 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 13:00:02,019 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 13:00:02,021 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 14:00:01,247 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 14:00:01,250 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 14:00:01,250 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 14:00:01,250 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 14:00:01,250 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 14:00:01,250 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 14:00:01,250 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 14:00:01,293 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 14:00:01,293 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 15:00:01,966 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 15:00:01,980 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 15:00:01,980 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 15:00:01,980 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 15:00:01,981 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 15:00:01,983 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 15:00:01,986 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 15:00:02,045 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 15:00:02,046 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 16:00:02,522 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 16:00:02,527 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 16:00:02,527 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 16:00:02,527 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 16:00:02,527 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 16:00:02,527 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 16:00:02,527 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 16:00:02,568 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 16:00:02,569 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 17:00:02,131 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 17:00:02,134 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 17:00:02,134 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 17:00:02,134 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 17:00:02,134 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 17:00:02,135 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 17:00:02,135 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 17:00:02,168 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 17:00:02,171 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 18:00:02,562 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 18:00:02,565 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 18:00:02,565 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 18:00:02,565 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 18:00:02,565 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 18:00:02,565 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 18:00:02,565 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 18:00:02,617 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 18:00:02,618 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 19:00:01,638 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 19:00:01,645 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 19:00:01,645 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 19:00:01,645 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 19:00:01,645 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 19:00:01,645 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 19:00:01,645 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 19:00:01,748 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 19:00:01,750 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 20:00:01,441 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 20:00:01,446 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 20:00:01,446 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 20:00:01,446 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 20:00:01,446 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 20:00:01,446 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 20:00:01,447 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 20:00:01,485 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 20:00:01,488 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 21:00:02,021 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 21:00:02,026 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 21:00:02,026 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 21:00:02,026 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 21:00:02,027 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 21:00:02,027 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 21:00:02,027 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 21:00:02,056 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 21:00:02,059 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 22:00:02,890 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 22:00:02,894 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 22:00:02,894 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 22:00:02,894 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 22:00:02,894 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 22:00:02,894 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 22:00:02,894 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 22:00:02,964 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 22:00:02,965 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-15 23:00:02,161 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 23:00:02,166 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-15 23:00:02,166 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-15 23:00:02,166 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-15 23:00:02,166 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-15 23:00:02,167 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-15 23:00:02,167 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-15 23:00:02,217 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-15 23:00:02,218 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-16 00:00:01,751 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-16 00:00:01,753 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-16 00:00:01,754 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-16 00:00:01,754 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-16 00:00:01,754 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-16 00:00:01,754 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-16 00:00:01,754 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-16 00:00:01,796 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-16 00:00:01,798 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-16 01:00:01,739 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-16 01:00:01,742 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-16 01:00:01,743 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-16 01:00:01,743 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-16 01:00:01,743 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-16 01:00:01,743 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-16 01:00:01,743 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-16 01:00:01,788 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-16 01:00:01,789 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
+2026-05-16 02:00:02,161 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-16 02:00:02,166 [INFO    ] MainThread   | SendLog: database ready → seki_sends.db
+2026-05-16 02:00:02,166 [INFO    ] MainThread   | Sentinel integration: enabled → http://localhost:5055/seki/campaign
+2026-05-16 02:00:02,166 [INFO    ] MainThread   | Telegram alerts: enabled
+2026-05-16 02:00:02,166 [INFO    ] MainThread   | Running in bounce-processing mode...
+2026-05-16 02:00:02,166 [INFO    ] MainThread   | Suppression list: suppressed.txt not found — starting fresh
+2026-05-16 02:00:02,166 [INFO    ] MainThread   | BounceParser: connecting to localhost:143 as bounces@send.supportcallsonline.com
+2026-05-16 02:00:02,226 [INFO    ] MainThread   | BounceParser: no new bounce messages found
+2026-05-16 02:00:02,231 [INFO    ] MainThread   | Bounce processing complete. 0 addresses suppressed.
