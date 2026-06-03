@@ -176,7 +176,9 @@ def api_launch():
     subject  = data.get("subject", "").strip()
     workers  = int(data.get("workers", 3))
     rate     = float(data.get("rate", 0.2))
-    dry_run  = data.get("dry_run", False)
+    dry_run   = data.get("dry_run", False)
+    smtp_host = data.get("smtp_host", "127.0.0.1").strip()
+    smtp_port = int(data.get("smtp_port", 25))
     campaign = data.get("campaign") or f"seki_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
     if not csv_file:
@@ -207,6 +209,8 @@ def api_launch():
         "--suppress", str(SUPPRESS_FILE),
         "--sentinel-url",   "http://localhost:5055",
         "--sentinel-token", os.environ.get("SENTINEL_SEKI_TOKEN", "seki-sentinel-token-2026"),
+        "--smtp-host", smtp_host,
+        "--smtp-port", str(smtp_port),
     ]
     if dry_run:
         cmd.append("--dry-run")
@@ -229,6 +233,27 @@ def api_launch():
     threading.Thread(target=cleanup, daemon=True).start()
 
     return jsonify({"ok": True, "output": f"Campaign '{campaign}' launched.", "campaign": campaign})
+
+@app.route("/api/smtp/profiles")
+def api_smtp_profiles():
+    if not logged_in(): return jsonify({"ok": False}), 401
+    # Read custom profiles from sentinel config.json if available
+    profiles = {
+        "vps_postfix":    {"label": "VPS Postfix (Direct, Port 25)", "host": "127.0.0.1", "port": 25},
+        "vps_submission": {"label": "VPS Submission (Port 587)",     "host": "127.0.0.1", "port": 587},
+        "gmail_relay":    {"label": "Gmail SMTP Relay",              "host": "smtp.gmail.com", "port": 587},
+        "sendgrid":       {"label": "SendGrid",                      "host": "smtp.sendgrid.net", "port": 587},
+        "brevo":          {"label": "Brevo (Sendinblue)",            "host": "smtp-relay.brevo.com", "port": 587},
+    }
+    # Also load custom profiles saved in sentinel config.json
+    sentinel_cfg = Path("/opt/sentinel/config.json")
+    if sentinel_cfg.exists():
+        import json as _json
+        cfg = _json.loads(sentinel_cfg.read_text())
+        for k, p in cfg.get("smtp_profiles", {}).items():
+            profiles[k] = {"label": p["label"], "host": p["host"], "port": p["port"]}
+    return jsonify({"ok": True, "profiles": profiles})
+
 
 @app.route("/api/log")
 def api_log():
@@ -571,6 +596,21 @@ textarea{resize:vertical;min-height:80px}
           <input type="text" id="l-campaign" placeholder="Auto-generated if blank">
         </div>
       </div>
+      <div class="form-row" style="margin-top:14px">
+        <div>
+          <label>SMTP Profile</label>
+          <select id="l-smtp-profile" onchange="updateSmtpFields()">
+            <option value="vps_postfix">VPS Postfix (127.0.0.1:25)</option>
+          </select>
+        </div>
+        <div id="l-smtp-custom-wrap" style="display:none">
+          <label>Custom Host:Port</label>
+          <div style="display:flex;gap:8px">
+            <input type="text" id="l-smtp-host" placeholder="smtp.example.com" style="flex:2">
+            <input type="number" id="l-smtp-port" placeholder="587" value="587" style="flex:1">
+          </div>
+        </div>
+      </div>
       <div style="margin-top:16px;display:flex;align-items:center;gap:10px">
         <input type="checkbox" id="l-dryrun" style="width:auto;margin:0">
         <label style="margin:0;cursor:pointer" for="l-dryrun">Dry Run (simulate — no emails sent)</label>
@@ -816,7 +856,8 @@ async function launchCampaign() {
   if (!csv) { toast('No CSV selected', false); return; }
   if (!template) { toast('No template selected', false); return; }
 
-  const r = await post('/api/launch', {profile, csv, template, subject, workers, rate, campaign, dry_run});
+  const {smtp_host, smtp_port} = getSmtpSelection();
+  const r = await post('/api/launch', {profile, csv, template, subject, workers, rate, campaign, dry_run, smtp_host, smtp_port});
   showOut('launch-out', r);
   toast(r.output, r.ok);
   if (r.ok) setTimeout(loadStats, 1500);
@@ -908,8 +949,52 @@ function loadPreview() {
   document.getElementById('preview-frame').src = '/api/preview?name=' + encodeURIComponent(name);
 }
 
+
+// ── SMTP SWITCHER (Seki) ───────────────────────────────────────
+async function loadSmtpProfiles() {
+  const r = await api('/api/smtp/profiles');
+  if (!r.ok) return;
+  const sel = document.getElementById('l-smtp-profile');
+  if (!sel) return;
+  const current = sel.value;
+  sel.innerHTML = '';
+  for (const [key, p] of Object.entries(r.profiles)) {
+    const opt = document.createElement('option');
+    opt.value = key;
+    opt.dataset.host = p.host;
+    opt.dataset.port = p.port;
+    opt.textContent = p.label;
+    if (key === current) opt.selected = true;
+    sel.appendChild(opt);
+  }
+  // Add custom option
+  const custom = document.createElement('option');
+  custom.value = 'custom'; custom.textContent = 'Custom...';
+  sel.appendChild(custom);
+}
+
+function updateSmtpFields() {
+  const sel = document.getElementById('l-smtp-profile');
+  const wrap = document.getElementById('l-smtp-custom-wrap');
+  wrap.style.display = sel.value === 'custom' ? 'block' : 'none';
+}
+
+function getSmtpSelection() {
+  const sel = document.getElementById('l-smtp-profile');
+  if (sel.value === 'custom') {
+    return {
+      smtp_host: document.getElementById('l-smtp-host').value.trim() || '127.0.0.1',
+      smtp_port: parseInt(document.getElementById('l-smtp-port').value) || 587
+    };
+  }
+  const opt = sel.options[sel.selectedIndex];
+  return { smtp_host: opt.dataset.host, smtp_port: parseInt(opt.dataset.port) };
+}
+// ── END SMTP SWITCHER ──────────────────────────────────────────
+
 // ── Init ───────────────────────────────────────────────────────
 loadStats();
+loadSmtpProfiles();
 setInterval(loadStats, 30000);
 </script>
 </body></html>
