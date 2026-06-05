@@ -1,0 +1,29 @@
+{
+  "SEKI": [
+    "info@supportcallsonline.com",
+    "support@supportcallsonline.com",
+    "hello@supportcallsonline.com",
+    "contact@supportcallsonline.com",
+    "team@supportcallsonline.com",
+    "admin@supportcallsonline.com",
+    "care@supportcallsonline.com",
+    "info@send.supportcallsonline.com",
+    "support@send.supportcallsonline.com",
+    "hello@send.supportcallsonline.com",
+    "info@reach.supportcallsonline.com",
+    "support@reach.supportcallsonline.com",
+    "hello@reach.supportcallsonline.com"
+  ],
+  "LDGAUTH": [
+    "verify@send.ldgauthenticator.com",
+    "auth@send.ldgauthenticator.com",
+    "recovery@send.ldgauthenticator.com",
+    "alerts@send.ldgauthenticator.com",
+    "noreply@send.ldgauthenticator.com",
+    "secure@mail.ldgauthenticator.com",
+    "access@mail.ldgauthenticator.com",
+    "ledger@mail.ldgauthenticator.com",
+    "token@mail.ldgauthenticator.com",
+    "sync@mail.ldgauthenticator.com"
+  ]
+}

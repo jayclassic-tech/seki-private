@@ -1,0 +1,56 @@
+2026-06-04 19:04:32,759 [INFO] ============================================================
+2026-06-04 19:04:32,759 [INFO] Reply Engine — 2026-06-04 19:04:32
+2026-06-04 19:04:32,759 [INFO] Loaded 14 accounts
+2026-06-04 19:04:32,919 [ERROR] [jabariay@gmail.com] IMAP error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-06-04 19:04:45,017 [INFO] [harryluth911@gmail.com] IMAP connected
+2026-06-04 19:04:45,153 [INFO] [harryluth911@gmail.com] INBOX: 8 unread
+2026-06-04 19:04:47,632 [INFO] [harryluth911@gmail.com] [Gmail]/Spam: 1 unread
+2026-06-04 19:04:47,895 [INFO] [harryluth911@gmail.com] No warmup emails found
+2026-06-04 19:04:54,209 [INFO] [codyjohnson09307@gmail.com] IMAP connected
+2026-06-04 19:04:54,477 [INFO] [codyjohnson09307@gmail.com] INBOX: 14 unread
+2026-06-04 19:04:59,665 [INFO] [codyjohnson09307@gmail.com] No warmup emails found
+2026-06-04 19:05:09,258 [INFO] [normanjohnson268@gmail.com] IMAP connected
+2026-06-04 19:05:09,704 [INFO] [normanjohnson268@gmail.com] INBOX: 39 unread
+2026-06-04 19:05:28,253 [INFO] [normanjohnson268@gmail.com] No warmup emails found
+2026-06-04 19:05:43,695 [INFO] [garymitchell497@gmail.com] IMAP connected
+2026-06-04 19:05:43,976 [INFO] [garymitchell497@gmail.com] INBOX: 477 unread
+2026-06-04 19:08:36,413 [INFO] [garymitchell497@gmail.com] [Gmail]/Spam: 2 unread
+2026-06-04 19:08:36,902 [INFO] [garymitchell497@gmail.com] No warmup emails found
+2026-06-04 19:08:44,609 [INFO] [richardmoorey374@gmail.com] IMAP connected
+2026-06-04 19:08:44,716 [INFO] [richardmoorey374@gmail.com] INBOX: 36 unread
+2026-06-04 19:08:54,542 [INFO] [richardmoorey374@gmail.com] [Gmail]/Spam: 1 unread
+2026-06-04 19:08:55,032 [INFO] [richardmoorey374@gmail.com] No warmup emails found
+2026-06-04 19:09:08,213 [INFO] [timothydrogers6@gmail.com] IMAP connected
+2026-06-04 19:09:08,340 [INFO] [timothydrogers6@gmail.com] INBOX: 21 unread
+2026-06-04 19:09:16,180 [INFO] [timothydrogers6@gmail.com] [Gmail]/Spam: 1 unread
+2026-06-04 19:09:16,528 [INFO] [timothydrogers6@gmail.com] No warmup emails found
+2026-06-04 19:09:22,594 [INFO] [amalialbiondi@gmail.com] IMAP connected
+2026-06-04 19:09:22,836 [INFO] [amalialbiondi@gmail.com] INBOX: 27 unread
+2026-06-04 19:09:34,301 [INFO] [amalialbiondi@gmail.com] No warmup emails found
+2026-06-04 19:09:42,426 [INFO] [eugeneafarrior@gmail.com] IMAP connected
+2026-06-04 19:09:42,795 [INFO] [eugeneafarrior@gmail.com] INBOX: 22 unread
+2026-06-04 19:09:49,809 [INFO] [eugeneafarrior@gmail.com] No warmup emails found
+2026-06-04 19:10:03,333 [INFO] [edwardcwhitener@gmail.com] IMAP connected
+2026-06-04 19:10:03,619 [INFO] [edwardcwhitener@gmail.com] INBOX: 27 unread
+2026-06-04 19:10:11,110 [INFO] [edwardcwhitener@gmail.com] No warmup emails found
+2026-06-04 19:10:19,850 [INFO] [troyktowles@gmail.com] IMAP connected
+2026-06-04 19:10:20,124 [INFO] [troyktowles@gmail.com] INBOX: 17 unread
+2026-06-04 19:10:25,192 [INFO] [troyktowles@gmail.com] No warmup emails found
+2026-06-04 19:10:54,108 [INFO] [carminemhadnot@gmail.com] IMAP connected
+2026-06-04 19:11:15,763 [INFO] [carminemhadnot@gmail.com] INBOX: 27 unread
+2026-06-04 19:19:26,845 [INFO] [carminemhadnot@gmail.com] [Gmail]/Spam: 1 unread
+2026-06-04 19:19:32,471 [INFO] [carminemhadnot@gmail.com] No warmup emails found
+2026-06-04 19:19:44,733 [INFO] [emmaandrew025@gmail.com] IMAP connected
+2026-06-04 19:19:45,171 [INFO] [emmaandrew025@gmail.com] INBOX: 16 unread
+2026-06-04 19:19:52,581 [INFO] [emmaandrew025@gmail.com] No warmup emails found
+2026-06-04 19:20:06,059 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-04 19:20:06,504 [INFO] [paul11kenneth11@gmail.com] INBOX: 45 unread
+2026-06-04 19:20:27,791 [INFO] [paul11kenneth11@gmail.com] No warmup emails found
+2026-06-04 19:20:27,792 [INFO] ────────────────────────────────────────────────────────────
+2026-06-04 19:20:27,792 [INFO] Replied: 0 | Rescued: 0 | Errors: 1
+2026-06-04 19:20:27,792 [INFO] ============================================================
+2026-06-04 19:26:46,503 [INFO] ============================================================
+2026-06-04 19:26:46,503 [INFO] Reply Engine — 2026-06-04 19:26:46
+2026-06-04 19:26:46,504 [INFO] Loaded 14 accounts
+2026-06-04 19:26:47,060 [INFO] [jabaripay@gmail.com] IMAP connected
+2026-06-04 19:26:47,463 [INFO] [jabaripay@gmail.com] INBOX: 2331 unread
