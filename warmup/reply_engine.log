@@ -54,3 +54,776 @@
 2026-06-04 19:26:46,504 [INFO] Loaded 14 accounts
 2026-06-04 19:26:47,060 [INFO] [jabaripay@gmail.com] IMAP connected
 2026-06-04 19:26:47,463 [INFO] [jabaripay@gmail.com] INBOX: 2331 unread
+2026-06-05 10:00:02,078 [INFO] ============================================================
+2026-06-05 10:00:02,078 [INFO] ============================================================
+2026-06-05 10:00:02,080 [INFO] Reply Engine — 2026-06-05 10:00:02
+2026-06-05 10:00:02,080 [INFO] Reply Engine — 2026-06-05 10:00:02
+2026-06-05 10:00:02,082 [INFO] Loaded 14 accounts
+2026-06-05 10:00:02,082 [INFO] Loaded 14 accounts
+2026-06-05 10:00:02,966 [INFO] [jabaripay@gmail.com] IMAP connected
+2026-06-05 10:00:02,966 [INFO] [jabaripay@gmail.com] IMAP connected
+2026-06-05 10:00:03,705 [INFO] [jabaripay@gmail.com] INBOX: 1191 unread
+2026-06-05 10:00:03,705 [INFO] [jabaripay@gmail.com] INBOX: 1191 unread
+2026-06-05 10:11:21,118 [INFO] [jabaripay@gmail.com] Found: '[SENTINEL] Blacklist detected' from Support Calls Online Co. <info@supportcallsonline.com>
+2026-06-05 10:11:21,118 [INFO] [jabaripay@gmail.com] Found: '[SENTINEL] Blacklist detected' from Support Calls Online Co. <info@supportcallsonline.com>
+2026-06-05 10:11:46,754 [INFO] [jabaripay@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 10:11:46,754 [INFO] [jabaripay@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 10:11:58,299 [INFO] [jabaripay@gmail.com] ✅ Replied to Support Calls Online Co. <info@supportcallsonline.com>
+2026-06-05 10:11:58,299 [INFO] [jabaripay@gmail.com] ✅ Replied to Support Calls Online Co. <info@supportcallsonline.com>
+2026-06-05 10:12:08,791 [INFO] [harryluth911@gmail.com] IMAP connected
+2026-06-05 10:12:08,791 [INFO] [harryluth911@gmail.com] IMAP connected
+2026-06-05 10:12:08,934 [INFO] [harryluth911@gmail.com] INBOX: 7 unread
+2026-06-05 10:12:08,934 [INFO] [harryluth911@gmail.com] INBOX: 7 unread
+2026-06-05 10:12:09,330 [INFO] [harryluth911@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 10:12:09,330 [INFO] [harryluth911@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 10:12:09,746 [INFO] [harryluth911@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:12:09,746 [INFO] [harryluth911@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:12:10,136 [INFO] [harryluth911@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:12:10,136 [INFO] [harryluth911@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:12:10,524 [INFO] [harryluth911@gmail.com] Found: 'We wanted to connect' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:12:10,524 [INFO] [harryluth911@gmail.com] Found: 'We wanted to connect' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:12:10,948 [INFO] [harryluth911@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 10:12:10,948 [INFO] [harryluth911@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 10:12:11,349 [INFO] [harryluth911@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:12:11,349 [INFO] [harryluth911@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:12:11,942 [INFO] [harryluth911@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 10:12:11,942 [INFO] [harryluth911@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 10:12:12,354 [INFO] [harryluth911@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 10:12:12,354 [INFO] [harryluth911@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 10:12:21,939 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 10:12:21,939 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 10:12:26,006 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:12:26,006 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:12:31,797 [INFO] [harryluth911@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:12:31,797 [INFO] [harryluth911@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:12:36,134 [INFO] [harryluth911@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:12:36,134 [INFO] [harryluth911@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:12:39,888 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 10:12:39,888 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 10:12:45,364 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:12:45,364 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:12:50,242 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 10:12:50,242 [INFO] [harryluth911@gmail.com] ✅ Replied to Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 10:13:05,380 [INFO] [codyjohnson09307@gmail.com] IMAP connected
+2026-06-05 10:13:05,380 [INFO] [codyjohnson09307@gmail.com] IMAP connected
+2026-06-05 10:13:05,534 [INFO] [codyjohnson09307@gmail.com] INBOX: 9 unread
+2026-06-05 10:13:05,534 [INFO] [codyjohnson09307@gmail.com] INBOX: 9 unread
+2026-06-05 10:13:05,823 [INFO] [codyjohnson09307@gmail.com] Found: 'A message for you' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:13:05,823 [INFO] [codyjohnson09307@gmail.com] Found: 'A message for you' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:13:06,405 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:13:06,405 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:13:06,788 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:13:06,788 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:13:07,202 [INFO] [codyjohnson09307@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 10:13:07,202 [INFO] [codyjohnson09307@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 10:13:07,713 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:13:07,713 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:13:08,151 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:13:08,151 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:13:08,561 [INFO] [codyjohnson09307@gmail.com] Found: 'Quick note for you' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:13:08,561 [INFO] [codyjohnson09307@gmail.com] Found: 'Quick note for you' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:13:08,950 [INFO] [codyjohnson09307@gmail.com] Found: 'We wanted to connect' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:13:08,950 [INFO] [codyjohnson09307@gmail.com] Found: 'We wanted to connect' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:13:09,351 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:13:09,351 [INFO] [codyjohnson09307@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:13:09,705 [INFO] [codyjohnson09307@gmail.com] [Gmail]/Spam: 1 unread
+2026-06-05 10:13:09,705 [INFO] [codyjohnson09307@gmail.com] [Gmail]/Spam: 1 unread
+2026-06-05 10:13:15,466 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:13:15,466 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:13:19,175 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:13:19,175 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:13:24,959 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:13:24,959 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:13:29,858 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 10:13:29,858 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 10:13:35,312 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:13:35,312 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:13:40,770 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:13:40,770 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:13:49,095 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:13:49,095 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:13:53,697 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:13:53,697 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:13:58,204 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:13:58,204 [INFO] [codyjohnson09307@gmail.com] ✅ Replied to Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:14:12,120 [INFO] [normanjohnson268@gmail.com] IMAP connected
+2026-06-05 10:14:12,120 [INFO] [normanjohnson268@gmail.com] IMAP connected
+2026-06-05 10:14:12,614 [INFO] [normanjohnson268@gmail.com] INBOX: 5 unread
+2026-06-05 10:14:12,614 [INFO] [normanjohnson268@gmail.com] INBOX: 5 unread
+2026-06-05 10:14:13,096 [INFO] [normanjohnson268@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:14:13,096 [INFO] [normanjohnson268@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:14:13,874 [INFO] [normanjohnson268@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:14:13,874 [INFO] [normanjohnson268@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:14:14,633 [INFO] [normanjohnson268@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:14:14,633 [INFO] [normanjohnson268@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:14:15,488 [INFO] [normanjohnson268@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:14:15,488 [INFO] [normanjohnson268@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:14:16,318 [INFO] [normanjohnson268@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 10:14:16,318 [INFO] [normanjohnson268@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 10:14:17,114 [INFO] [normanjohnson268@gmail.com] [Gmail]/Spam: 7 unread
+2026-06-05 10:14:17,114 [INFO] [normanjohnson268@gmail.com] [Gmail]/Spam: 7 unread
+2026-06-05 10:14:17,952 [INFO] [normanjohnson268@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:14:17,952 [INFO] [normanjohnson268@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:14:19,708 [INFO] [normanjohnson268@gmail.com] Rescued from spam → inbox
+2026-06-05 10:14:19,708 [INFO] [normanjohnson268@gmail.com] Rescued from spam → inbox
+2026-06-05 10:14:20,502 [INFO] [normanjohnson268@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:14:20,502 [INFO] [normanjohnson268@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:14:21,862 [INFO] [normanjohnson268@gmail.com] Rescued from spam → inbox
+2026-06-05 10:14:21,862 [INFO] [normanjohnson268@gmail.com] Rescued from spam → inbox
+2026-06-05 10:14:22,484 [ERROR] [normanjohnson268@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:14:22,484 [ERROR] [normanjohnson268@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:14:31,784 [INFO] [garymitchell497@gmail.com] IMAP connected
+2026-06-05 10:14:31,784 [INFO] [garymitchell497@gmail.com] IMAP connected
+2026-06-05 10:14:32,735 [INFO] [garymitchell497@gmail.com] INBOX: 6 unread
+2026-06-05 10:14:32,735 [INFO] [garymitchell497@gmail.com] INBOX: 6 unread
+2026-06-05 10:14:33,536 [INFO] [garymitchell497@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:14:33,536 [INFO] [garymitchell497@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:14:34,429 [INFO] [garymitchell497@gmail.com] Found: 'Quick note for you' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:14:34,429 [INFO] [garymitchell497@gmail.com] Found: 'Quick note for you' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:14:35,025 [INFO] [garymitchell497@gmail.com] Found: 'We wanted to connect' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:14:35,025 [INFO] [garymitchell497@gmail.com] Found: 'We wanted to connect' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:14:35,704 [INFO] [garymitchell497@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:14:35,704 [INFO] [garymitchell497@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:14:36,520 [INFO] [garymitchell497@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:14:36,520 [INFO] [garymitchell497@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:14:37,120 [INFO] [garymitchell497@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 10:14:37,120 [INFO] [garymitchell497@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 10:14:37,715 [INFO] [garymitchell497@gmail.com] [Gmail]/Spam: 1 unread
+2026-06-05 10:14:37,715 [INFO] [garymitchell497@gmail.com] [Gmail]/Spam: 1 unread
+2026-06-05 10:14:46,346 [INFO] [garymitchell497@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:14:46,346 [INFO] [garymitchell497@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:14:50,357 [INFO] [garymitchell497@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:14:50,357 [INFO] [garymitchell497@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:14:54,338 [INFO] [garymitchell497@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:14:54,338 [INFO] [garymitchell497@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:15:01,456 [INFO] [garymitchell497@gmail.com] ✅ Replied to Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:15:01,456 [INFO] [garymitchell497@gmail.com] ✅ Replied to Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:15:07,790 [INFO] [garymitchell497@gmail.com] ✅ Replied to Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:15:07,790 [INFO] [garymitchell497@gmail.com] ✅ Replied to Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:15:15,940 [INFO] [garymitchell497@gmail.com] ✅ Replied to Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 10:15:15,940 [INFO] [garymitchell497@gmail.com] ✅ Replied to Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 10:15:31,053 [INFO] [richardmoorey374@gmail.com] IMAP connected
+2026-06-05 10:15:31,053 [INFO] [richardmoorey374@gmail.com] IMAP connected
+2026-06-05 10:15:31,224 [INFO] [richardmoorey374@gmail.com] INBOX: 6 unread
+2026-06-05 10:15:31,224 [INFO] [richardmoorey374@gmail.com] INBOX: 6 unread
+2026-06-05 10:15:31,715 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:15:31,715 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:15:32,528 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:15:32,528 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:15:33,933 [INFO] [richardmoorey374@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 10:15:33,933 [INFO] [richardmoorey374@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 10:15:34,752 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:15:34,752 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:15:35,446 [INFO] [richardmoorey374@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:15:35,446 [INFO] [richardmoorey374@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:15:36,124 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:15:36,124 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:15:36,973 [INFO] [richardmoorey374@gmail.com] [Gmail]/Spam: 9 unread
+2026-06-05 10:15:36,973 [INFO] [richardmoorey374@gmail.com] [Gmail]/Spam: 9 unread
+2026-06-05 10:15:38,827 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:15:38,827 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:15:40,227 [INFO] [richardmoorey374@gmail.com] Rescued from spam → inbox
+2026-06-05 10:15:40,227 [INFO] [richardmoorey374@gmail.com] Rescued from spam → inbox
+2026-06-05 10:15:41,040 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 10:15:41,040 [INFO] [richardmoorey374@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 10:15:42,318 [INFO] [richardmoorey374@gmail.com] Rescued from spam → inbox
+2026-06-05 10:15:42,318 [INFO] [richardmoorey374@gmail.com] Rescued from spam → inbox
+2026-06-05 10:15:42,745 [ERROR] [richardmoorey374@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:15:42,745 [ERROR] [richardmoorey374@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:15:50,302 [INFO] [timothydrogers6@gmail.com] IMAP connected
+2026-06-05 10:15:50,302 [INFO] [timothydrogers6@gmail.com] IMAP connected
+2026-06-05 10:15:50,421 [INFO] [timothydrogers6@gmail.com] INBOX: 4 unread
+2026-06-05 10:15:50,421 [INFO] [timothydrogers6@gmail.com] INBOX: 4 unread
+2026-06-05 10:15:50,865 [INFO] [timothydrogers6@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:15:50,865 [INFO] [timothydrogers6@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:15:51,610 [INFO] [timothydrogers6@gmail.com] Found: 'Checking in' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:15:51,610 [INFO] [timothydrogers6@gmail.com] Found: 'Checking in' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:15:52,449 [INFO] [timothydrogers6@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:15:52,449 [INFO] [timothydrogers6@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:15:53,311 [INFO] [timothydrogers6@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:15:53,311 [INFO] [timothydrogers6@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:15:53,960 [INFO] [timothydrogers6@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 10:15:53,960 [INFO] [timothydrogers6@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 10:16:01,844 [INFO] [timothydrogers6@gmail.com] ✅ Replied to Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:16:01,844 [INFO] [timothydrogers6@gmail.com] ✅ Replied to Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:16:08,127 [INFO] [timothydrogers6@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:16:08,127 [INFO] [timothydrogers6@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:16:16,189 [INFO] [timothydrogers6@gmail.com] ✅ Replied to Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:16:16,189 [INFO] [timothydrogers6@gmail.com] ✅ Replied to Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:16:24,747 [INFO] [timothydrogers6@gmail.com] ✅ Replied to Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:16:24,747 [INFO] [timothydrogers6@gmail.com] ✅ Replied to Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:16:37,787 [INFO] [amalialbiondi@gmail.com] IMAP connected
+2026-06-05 10:16:37,787 [INFO] [amalialbiondi@gmail.com] IMAP connected
+2026-06-05 10:16:38,011 [INFO] [amalialbiondi@gmail.com] INBOX: 6 unread
+2026-06-05 10:16:38,011 [INFO] [amalialbiondi@gmail.com] INBOX: 6 unread
+2026-06-05 10:16:38,718 [INFO] [amalialbiondi@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:16:38,718 [INFO] [amalialbiondi@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:16:39,504 [INFO] [amalialbiondi@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:16:39,504 [INFO] [amalialbiondi@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:16:40,090 [INFO] [amalialbiondi@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:16:40,090 [INFO] [amalialbiondi@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:16:40,951 [INFO] [amalialbiondi@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:16:40,951 [INFO] [amalialbiondi@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 10:16:41,899 [INFO] [amalialbiondi@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 10:16:41,899 [INFO] [amalialbiondi@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 10:16:42,456 [INFO] [amalialbiondi@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 10:16:42,456 [INFO] [amalialbiondi@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 10:16:42,949 [INFO] [amalialbiondi@gmail.com] [Gmail]/Spam: 6 unread
+2026-06-05 10:16:42,949 [INFO] [amalialbiondi@gmail.com] [Gmail]/Spam: 6 unread
+2026-06-05 10:16:43,246 [INFO] [amalialbiondi@gmail.com] Found: 'Checking in' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:16:43,246 [INFO] [amalialbiondi@gmail.com] Found: 'Checking in' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:16:44,672 [INFO] [amalialbiondi@gmail.com] Rescued from spam → inbox
+2026-06-05 10:16:44,672 [INFO] [amalialbiondi@gmail.com] Rescued from spam → inbox
+2026-06-05 10:16:45,237 [INFO] [amalialbiondi@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:16:45,237 [INFO] [amalialbiondi@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:16:46,273 [INFO] [amalialbiondi@gmail.com] Rescued from spam → inbox
+2026-06-05 10:16:46,273 [INFO] [amalialbiondi@gmail.com] Rescued from spam → inbox
+2026-06-05 10:16:46,578 [ERROR] [amalialbiondi@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:16:46,578 [ERROR] [amalialbiondi@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:17:02,561 [INFO] [eugeneafarrior@gmail.com] IMAP connected
+2026-06-05 10:17:02,561 [INFO] [eugeneafarrior@gmail.com] IMAP connected
+2026-06-05 10:17:03,782 [INFO] [eugeneafarrior@gmail.com] INBOX: 14 unread
+2026-06-05 10:17:03,782 [INFO] [eugeneafarrior@gmail.com] INBOX: 14 unread
+2026-06-05 10:17:04,585 [INFO] [eugeneafarrior@gmail.com] Found: 'Quick note for you' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:17:04,585 [INFO] [eugeneafarrior@gmail.com] Found: 'Quick note for you' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:17:05,839 [INFO] [eugeneafarrior@gmail.com] Found: 'We wanted to connect' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:17:05,839 [INFO] [eugeneafarrior@gmail.com] Found: 'We wanted to connect' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:17:08,698 [INFO] [eugeneafarrior@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:17:08,698 [INFO] [eugeneafarrior@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:17:12,596 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:17:12,596 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:17:15,954 [INFO] [eugeneafarrior@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:17:15,954 [INFO] [eugeneafarrior@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:17:17,675 [INFO] [eugeneafarrior@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:17:17,675 [INFO] [eugeneafarrior@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:17:19,497 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:17:19,497 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:17:21,260 [INFO] [eugeneafarrior@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:17:21,260 [INFO] [eugeneafarrior@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:17:23,139 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 10:17:23,139 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 10:17:24,579 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:17:24,579 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:17:25,807 [INFO] [eugeneafarrior@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:17:25,807 [INFO] [eugeneafarrior@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:17:26,937 [INFO] [eugeneafarrior@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:17:26,937 [INFO] [eugeneafarrior@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:17:28,633 [INFO] [eugeneafarrior@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 10:17:28,633 [INFO] [eugeneafarrior@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 10:17:29,855 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:17:29,855 [INFO] [eugeneafarrior@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:17:36,942 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:17:36,942 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:17:44,977 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:17:44,977 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:17:51,412 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:17:51,412 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:17:59,284 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:17:59,284 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:18:03,272 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:18:03,272 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:18:10,780 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:18:10,780 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:18:18,417 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:18:18,417 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:18:26,349 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:18:26,349 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 10:18:33,162 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 10:18:33,162 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 10:18:40,149 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:18:40,149 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:18:47,364 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:18:47,364 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 10:18:54,122 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:18:54,122 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:18:59,697 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 10:18:59,697 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 10:19:03,772 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:19:03,772 [INFO] [eugeneafarrior@gmail.com] ✅ Replied to Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:19:14,425 [INFO] [edwardcwhitener@gmail.com] IMAP connected
+2026-06-05 10:19:14,425 [INFO] [edwardcwhitener@gmail.com] IMAP connected
+2026-06-05 10:19:14,938 [INFO] [edwardcwhitener@gmail.com] INBOX: 4 unread
+2026-06-05 10:19:14,938 [INFO] [edwardcwhitener@gmail.com] INBOX: 4 unread
+2026-06-05 10:19:15,535 [INFO] [edwardcwhitener@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:19:15,535 [INFO] [edwardcwhitener@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:19:16,360 [INFO] [edwardcwhitener@gmail.com] Found: 'A message for you' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:19:16,360 [INFO] [edwardcwhitener@gmail.com] Found: 'A message for you' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:19:17,364 [INFO] [edwardcwhitener@gmail.com] Found: 'We wanted to connect' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:19:17,364 [INFO] [edwardcwhitener@gmail.com] Found: 'We wanted to connect' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:19:18,398 [INFO] [edwardcwhitener@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:19:18,398 [INFO] [edwardcwhitener@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:19:19,243 [INFO] [edwardcwhitener@gmail.com] [Gmail]/Spam: 8 unread
+2026-06-05 10:19:19,243 [INFO] [edwardcwhitener@gmail.com] [Gmail]/Spam: 8 unread
+2026-06-05 10:19:21,098 [INFO] [edwardcwhitener@gmail.com] Found: 'Checking in' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:19:21,098 [INFO] [edwardcwhitener@gmail.com] Found: 'Checking in' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:19:23,155 [INFO] [edwardcwhitener@gmail.com] Rescued from spam → inbox
+2026-06-05 10:19:23,155 [INFO] [edwardcwhitener@gmail.com] Rescued from spam → inbox
+2026-06-05 10:19:24,086 [INFO] [edwardcwhitener@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 10:19:24,086 [INFO] [edwardcwhitener@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 10:19:25,928 [INFO] [edwardcwhitener@gmail.com] Rescued from spam → inbox
+2026-06-05 10:19:25,928 [INFO] [edwardcwhitener@gmail.com] Rescued from spam → inbox
+2026-06-05 10:19:26,410 [ERROR] [edwardcwhitener@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:19:26,410 [ERROR] [edwardcwhitener@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:19:34,571 [INFO] [troyktowles@gmail.com] IMAP connected
+2026-06-05 10:19:34,571 [INFO] [troyktowles@gmail.com] IMAP connected
+2026-06-05 10:19:34,785 [INFO] [troyktowles@gmail.com] INBOX: 11 unread
+2026-06-05 10:19:34,785 [INFO] [troyktowles@gmail.com] INBOX: 11 unread
+2026-06-05 10:19:35,065 [INFO] [troyktowles@gmail.com] Found: 'A message for you' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:19:35,065 [INFO] [troyktowles@gmail.com] Found: 'A message for you' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:19:35,506 [INFO] [troyktowles@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:19:35,506 [INFO] [troyktowles@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:19:36,043 [INFO] [troyktowles@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:19:36,043 [INFO] [troyktowles@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:19:36,519 [INFO] [troyktowles@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:19:36,519 [INFO] [troyktowles@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:19:36,988 [INFO] [troyktowles@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:19:36,988 [INFO] [troyktowles@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:19:37,444 [INFO] [troyktowles@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:19:37,444 [INFO] [troyktowles@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:19:38,056 [INFO] [troyktowles@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:19:38,056 [INFO] [troyktowles@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:19:38,613 [INFO] [troyktowles@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:19:38,613 [INFO] [troyktowles@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:19:39,048 [INFO] [troyktowles@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:19:39,048 [INFO] [troyktowles@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:19:39,496 [INFO] [troyktowles@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 10:19:39,496 [INFO] [troyktowles@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 10:19:39,934 [INFO] [troyktowles@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:19:39,934 [INFO] [troyktowles@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:19:40,392 [INFO] [troyktowles@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 10:19:40,392 [INFO] [troyktowles@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 10:19:41,342 [INFO] [troyktowles@gmail.com] Found: 'Checking in' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:19:41,342 [INFO] [troyktowles@gmail.com] Found: 'Checking in' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:19:41,978 [INFO] [troyktowles@gmail.com] Rescued from spam → inbox
+2026-06-05 10:19:41,978 [INFO] [troyktowles@gmail.com] Rescued from spam → inbox
+2026-06-05 10:19:46,728 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:19:46,728 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:19:54,968 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:19:54,968 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:20:03,431 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:20:03,431 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <info@reach.supportcallsonline.com>
+2026-06-05 10:20:07,354 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:20:07,354 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 10:20:11,265 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:20:11,265 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:20:15,936 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:20:15,936 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:20:20,985 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:20:20,985 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:20:25,007 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:20:25,007 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:20:30,029 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:20:30,029 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:20:38,515 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 10:20:38,515 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 10:20:45,014 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:20:45,014 [INFO] [troyktowles@gmail.com] ✅ Replied to Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 10:20:51,497 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:20:51,497 [INFO] [troyktowles@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:20:59,421 [INFO] [carminemhadnot@gmail.com] IMAP connected
+2026-06-05 10:20:59,421 [INFO] [carminemhadnot@gmail.com] IMAP connected
+2026-06-05 10:20:59,715 [INFO] [carminemhadnot@gmail.com] INBOX: 5 unread
+2026-06-05 10:20:59,715 [INFO] [carminemhadnot@gmail.com] INBOX: 5 unread
+2026-06-05 10:21:00,067 [INFO] [carminemhadnot@gmail.com] Found: 'Checking in' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:21:00,067 [INFO] [carminemhadnot@gmail.com] Found: 'Checking in' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:21:00,641 [INFO] [carminemhadnot@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:21:00,641 [INFO] [carminemhadnot@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:21:01,244 [INFO] [carminemhadnot@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:21:01,244 [INFO] [carminemhadnot@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:21:01,840 [INFO] [carminemhadnot@gmail.com] Found: 'Quick update for you' from Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 10:21:01,840 [INFO] [carminemhadnot@gmail.com] Found: 'Quick update for you' from Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 10:21:02,543 [INFO] [carminemhadnot@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:21:02,543 [INFO] [carminemhadnot@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:21:03,038 [INFO] [carminemhadnot@gmail.com] [Gmail]/Spam: 2 unread
+2026-06-05 10:21:03,038 [INFO] [carminemhadnot@gmail.com] [Gmail]/Spam: 2 unread
+2026-06-05 10:21:09,023 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:21:09,023 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:21:15,019 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:21:15,019 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 10:21:23,439 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:21:23,439 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 10:21:31,589 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 10:21:31,589 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 10:21:35,999 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:21:35,999 [INFO] [carminemhadnot@gmail.com] ✅ Replied to Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:21:50,819 [INFO] [emmaandrew025@gmail.com] IMAP connected
+2026-06-05 10:21:50,819 [INFO] [emmaandrew025@gmail.com] IMAP connected
+2026-06-05 10:21:51,222 [INFO] [emmaandrew025@gmail.com] INBOX: 3 unread
+2026-06-05 10:21:51,222 [INFO] [emmaandrew025@gmail.com] INBOX: 3 unread
+2026-06-05 10:21:51,643 [INFO] [emmaandrew025@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:21:51,643 [INFO] [emmaandrew025@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 10:21:52,463 [INFO] [emmaandrew025@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 10:21:52,463 [INFO] [emmaandrew025@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 10:21:53,247 [INFO] [emmaandrew025@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:21:53,247 [INFO] [emmaandrew025@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:21:54,139 [INFO] [emmaandrew025@gmail.com] [Gmail]/Spam: 7 unread
+2026-06-05 10:21:54,139 [INFO] [emmaandrew025@gmail.com] [Gmail]/Spam: 7 unread
+2026-06-05 10:21:55,743 [INFO] [emmaandrew025@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:21:55,743 [INFO] [emmaandrew025@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 10:21:57,273 [INFO] [emmaandrew025@gmail.com] Rescued from spam → inbox
+2026-06-05 10:21:57,273 [INFO] [emmaandrew025@gmail.com] Rescued from spam → inbox
+2026-06-05 10:21:58,143 [INFO] [emmaandrew025@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:21:58,143 [INFO] [emmaandrew025@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@mail.ldgauthenticator.com>
+2026-06-05 10:21:59,041 [INFO] [emmaandrew025@gmail.com] Rescued from spam → inbox
+2026-06-05 10:21:59,041 [INFO] [emmaandrew025@gmail.com] Rescued from spam → inbox
+2026-06-05 10:21:59,376 [ERROR] [emmaandrew025@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:21:59,376 [ERROR] [emmaandrew025@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 10:22:13,099 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-05 10:22:13,099 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-05 10:22:13,566 [INFO] [paul11kenneth11@gmail.com] INBOX: 9 unread
+2026-06-05 10:22:13,566 [INFO] [paul11kenneth11@gmail.com] INBOX: 9 unread
+2026-06-05 10:22:14,087 [INFO] [paul11kenneth11@gmail.com] Found: 'Quick note for you' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:22:14,087 [INFO] [paul11kenneth11@gmail.com] Found: 'Quick note for you' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:22:14,980 [INFO] [paul11kenneth11@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:22:14,980 [INFO] [paul11kenneth11@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:22:16,008 [INFO] [paul11kenneth11@gmail.com] Found: 'Checking in' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:22:16,008 [INFO] [paul11kenneth11@gmail.com] Found: 'Checking in' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:22:17,256 [INFO] [paul11kenneth11@gmail.com] Found: 'Quick note for you' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:22:17,256 [INFO] [paul11kenneth11@gmail.com] Found: 'Quick note for you' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:22:18,273 [INFO] [paul11kenneth11@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:22:18,273 [INFO] [paul11kenneth11@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:22:19,538 [INFO] [paul11kenneth11@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 10:22:19,538 [INFO] [paul11kenneth11@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 10:22:20,819 [INFO] [paul11kenneth11@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:22:20,819 [INFO] [paul11kenneth11@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:22:21,938 [INFO] [paul11kenneth11@gmail.com] Found: 'Quick update for you' from Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:22:21,938 [INFO] [paul11kenneth11@gmail.com] Found: 'Quick update for you' from Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:22:22,914 [INFO] [paul11kenneth11@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:22:22,914 [INFO] [paul11kenneth11@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:22:29,908 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:22:29,908 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 10:22:36,577 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:22:36,577 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:22:44,282 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:22:44,282 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 10:22:50,393 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:22:50,393 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 10:22:56,012 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:22:56,012 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 10:23:02,053 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 10:23:02,053 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 10:23:09,283 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:23:09,283 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 10:23:15,414 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:23:15,414 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 10:23:21,581 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:23:21,581 [INFO] [paul11kenneth11@gmail.com] ✅ Replied to Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 10:23:21,604 [INFO] ────────────────────────────────────────────────────────────
+2026-06-05 10:23:21,604 [INFO] ────────────────────────────────────────────────────────────
+2026-06-05 10:23:21,604 [INFO] Replied: 67 | Rescued: 11 | Errors: 5
+2026-06-05 10:23:21,604 [INFO] Replied: 67 | Rescued: 11 | Errors: 5
+2026-06-05 10:23:21,604 [INFO] ============================================================
+2026-06-05 10:23:21,604 [INFO] ============================================================
+2026-06-05 18:27:05,725 [INFO] ============================================================
+2026-06-05 18:27:05,728 [INFO] Reply Engine — 2026-06-05 18:27:05
+2026-06-05 18:27:05,728 [INFO] Loaded 28 accounts
+2026-06-05 18:27:06,228 [INFO] [jabaripay@gmail.com] IMAP connected
+2026-06-05 18:27:06,599 [INFO] [jabaripay@gmail.com] INBOX: 30 unread
+2026-06-05 18:27:21,041 [INFO] [jabaripay@gmail.com] No warmup emails found
+2026-06-05 18:27:32,928 [INFO] [harryluth911@gmail.com] IMAP connected
+2026-06-05 18:27:33,276 [INFO] [harryluth911@gmail.com] No warmup emails found
+2026-06-05 18:27:46,799 [INFO] [codyjohnson09307@gmail.com] IMAP connected
+2026-06-05 18:27:47,182 [INFO] [codyjohnson09307@gmail.com] No warmup emails found
+2026-06-05 18:27:54,927 [INFO] [normanjohnson268@gmail.com] IMAP connected
+2026-06-05 18:27:55,783 [INFO] [normanjohnson268@gmail.com] No warmup emails found
+2026-06-05 18:28:06,646 [INFO] [garymitchell497@gmail.com] IMAP connected
+2026-06-05 18:28:06,935 [INFO] [garymitchell497@gmail.com] INBOX: 2 unread
+2026-06-05 18:28:08,076 [INFO] [garymitchell497@gmail.com] No warmup emails found
+2026-06-05 18:28:18,383 [INFO] [richardmoorey374@gmail.com] IMAP connected
+2026-06-05 18:28:18,662 [INFO] [richardmoorey374@gmail.com] No warmup emails found
+2026-06-05 18:28:27,284 [INFO] [timothydrogers6@gmail.com] IMAP connected
+2026-06-05 18:28:27,576 [INFO] [timothydrogers6@gmail.com] No warmup emails found
+2026-06-05 18:28:34,510 [INFO] [amalialbiondi@gmail.com] IMAP connected
+2026-06-05 18:28:34,948 [INFO] [amalialbiondi@gmail.com] No warmup emails found
+2026-06-05 18:28:44,094 [INFO] [eugeneafarrior@gmail.com] IMAP connected
+2026-06-05 18:28:44,740 [INFO] [eugeneafarrior@gmail.com] No warmup emails found
+2026-06-05 18:28:59,159 [INFO] [edwardcwhitener@gmail.com] IMAP connected
+2026-06-05 18:28:59,756 [INFO] [edwardcwhitener@gmail.com] No warmup emails found
+2026-06-05 18:29:06,641 [INFO] [troyktowles@gmail.com] IMAP connected
+2026-06-05 18:29:07,366 [INFO] [troyktowles@gmail.com] No warmup emails found
+2026-06-05 18:29:20,760 [INFO] [carminemhadnot@gmail.com] IMAP connected
+2026-06-05 18:29:22,007 [INFO] [carminemhadnot@gmail.com] No warmup emails found
+2026-06-05 18:29:28,675 [INFO] [emmaandrew025@gmail.com] IMAP connected
+2026-06-05 18:29:29,662 [INFO] [emmaandrew025@gmail.com] No warmup emails found
+2026-06-05 18:29:41,239 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-05 18:29:41,664 [INFO] [paul11kenneth11@gmail.com] INBOX: 1 unread
+2026-06-05 18:29:42,812 [INFO] [paul11kenneth11@gmail.com] No warmup emails found
+2026-06-05 18:29:55,393 [ERROR] [miaope8@gmail.com] IMAP error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-06-05 18:30:08,239 [INFO] [sabi33lee33@gmail.com] IMAP connected
+2026-06-05 18:30:08,453 [INFO] [sabi33lee33@gmail.com] INBOX: 26 unread
+2026-06-05 18:30:14,689 [INFO] [sabi33lee33@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 18:30:15,270 [INFO] [sabi33lee33@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <recovery@send.ldgauthenticator.com>
+2026-06-05 18:30:15,786 [INFO] [sabi33lee33@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 18:30:16,233 [INFO] [sabi33lee33@gmail.com] Found: 'Checking in' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 18:30:16,886 [INFO] [sabi33lee33@gmail.com] Found: 'We wanted to connect' from Support Team <hello@send.supportcallsonline.com>
+2026-06-05 18:30:17,416 [INFO] [sabi33lee33@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 18:30:18,038 [INFO] [sabi33lee33@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 18:30:19,131 [INFO] [sabi33lee33@gmail.com] [Gmail]/Spam: 3 unread
+2026-06-05 18:30:25,508 [INFO] [sabi33lee33@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 18:30:30,481 [INFO] [sabi33lee33@gmail.com] ✅ Replied to Ledger Authenticator <recovery@send.ldgauthenticator.com>
+2026-06-05 18:30:37,969 [INFO] [sabi33lee33@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 18:30:43,664 [INFO] [sabi33lee33@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 18:30:51,990 [INFO] [sabi33lee33@gmail.com] ✅ Replied to Support Team <hello@send.supportcallsonline.com>
+2026-06-05 18:30:56,378 [INFO] [sabi33lee33@gmail.com] ✅ Replied to Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 18:31:00,413 [INFO] [sabi33lee33@gmail.com] ✅ Replied to Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 18:31:07,859 [ERROR] [phill33white33@gmail.com] IMAP error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-06-05 18:31:13,773 [INFO] [mara33clara33@gmail.com] IMAP connected
+2026-06-05 18:31:13,997 [INFO] [mara33clara33@gmail.com] INBOX: 256 unread
+2026-06-05 18:32:06,806 [INFO] [mara33clara33@gmail.com] Found: 'Quick note for you' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 18:32:07,203 [INFO] [mara33clara33@gmail.com] Found: 'We wanted to connect' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 18:32:07,641 [INFO] [mara33clara33@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 18:32:08,097 [INFO] [mara33clara33@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 18:32:08,517 [INFO] [mara33clara33@gmail.com] Found: 'Your account update' from Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 18:32:09,139 [INFO] [mara33clara33@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@send.ldgauthenticator.com>
+2026-06-05 18:32:09,560 [INFO] [mara33clara33@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 18:32:10,628 [INFO] [mara33clara33@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 18:32:10,825 [INFO] [mara33clara33@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <auth@send.ldgauthenticator.com>
+2026-06-05 18:32:11,617 [INFO] [mara33clara33@gmail.com] Rescued from spam → inbox
+2026-06-05 18:32:12,011 [INFO] [mara33clara33@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@send.ldgauthenticator.com>
+2026-06-05 18:32:12,499 [INFO] [mara33clara33@gmail.com] Rescued from spam → inbox
+2026-06-05 18:32:12,651 [ERROR] [mara33clara33@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 18:32:19,965 [ERROR] [manpop852@gmail.com] IMAP error: b'[AUTHENTICATIONFAILED] Invalid credentials (Failure)'
+2026-06-05 18:32:33,405 [INFO] [yankeerealest@gmail.com] IMAP connected
+2026-06-05 18:32:33,570 [INFO] [yankeerealest@gmail.com] INBOX: 32 unread
+2026-06-05 18:32:38,974 [INFO] [yankeerealest@gmail.com] Found: 'We wanted to connect' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 18:32:39,425 [INFO] [yankeerealest@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <verify@mail.ldgauthenticator.com>
+2026-06-05 18:32:39,925 [INFO] [yankeerealest@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 18:32:40,421 [INFO] [yankeerealest@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 18:32:40,924 [INFO] [yankeerealest@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 18:32:42,439 [INFO] [yankeerealest@gmail.com] [Gmail]/Spam: 3 unread
+2026-06-05 18:32:42,622 [INFO] [yankeerealest@gmail.com] Found: 'Quick note for you' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 18:32:43,590 [INFO] [yankeerealest@gmail.com] Rescued from spam → inbox
+2026-06-05 18:32:43,836 [ERROR] [yankeerealest@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 18:32:55,295 [INFO] [centrallee56@gmail.com] IMAP connected
+2026-06-05 18:32:55,703 [INFO] [centrallee56@gmail.com] INBOX: 29 unread
+2026-06-05 18:33:03,814 [INFO] [centrallee56@gmail.com] Found: 'An update from LDG' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 18:33:04,775 [INFO] [centrallee56@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 18:33:05,624 [INFO] [centrallee56@gmail.com] Found: 'Your account update' from Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 18:33:06,608 [INFO] [centrallee56@gmail.com] Found: 'A note from our team' from Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 18:33:07,929 [INFO] [centrallee56@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 18:33:08,812 [INFO] [centrallee56@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 18:33:09,664 [INFO] [centrallee56@gmail.com] Found: 'Quick note for you' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 18:33:10,585 [INFO] [centrallee56@gmail.com] Found: 'Hello from our team' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 18:33:11,374 [INFO] [centrallee56@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@send.ldgauthenticator.com>
+2026-06-05 18:33:13,519 [INFO] [centrallee56@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 18:33:21,568 [INFO] [centrallee56@gmail.com] ✅ Replied to Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 18:33:26,230 [INFO] [centrallee56@gmail.com] ✅ Replied to Ledger Authenticator <secure@send.ldgauthenticator.com>
+2026-06-05 18:33:33,932 [INFO] [centrallee56@gmail.com] ✅ Replied to Ledger Authenticator <ledger@send.ldgauthenticator.com>
+2026-06-05 18:33:40,116 [INFO] [centrallee56@gmail.com] ✅ Replied to Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 18:33:46,663 [INFO] [centrallee56@gmail.com] ✅ Replied to Ledger Authenticator <sync@send.ldgauthenticator.com>
+2026-06-05 18:33:50,598 [INFO] [centrallee56@gmail.com] ✅ Replied to Support Team <info@reach.supportcallsonline.com>
+2026-06-05 18:33:59,320 [INFO] [centrallee56@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 18:34:05,769 [INFO] [centrallee56@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 18:34:10,152 [INFO] [centrallee56@gmail.com] ✅ Replied to Ledger Authenticator <recovery@send.ldgauthenticator.com>
+2026-06-05 18:34:22,173 [INFO] [central33mia33@gmail.com] IMAP connected
+2026-06-05 18:34:22,426 [INFO] [central33mia33@gmail.com] INBOX: 57 unread
+2026-06-05 18:34:35,207 [INFO] [central33mia33@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 18:34:35,728 [INFO] [central33mia33@gmail.com] Found: 'Your account update' from Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 18:34:36,219 [INFO] [central33mia33@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 18:34:36,646 [INFO] [central33mia33@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 18:34:37,113 [INFO] [central33mia33@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 18:34:37,668 [INFO] [central33mia33@gmail.com] [Gmail]/Spam: 3 unread
+2026-06-05 18:34:38,444 [INFO] [central33mia33@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 18:34:39,047 [INFO] [central33mia33@gmail.com] Rescued from spam → inbox
+2026-06-05 18:34:47,725 [INFO] [central33mia33@gmail.com] ✅ Replied to Ledger Authenticator <access@mail.ldgauthenticator.com>
+2026-06-05 18:34:51,669 [INFO] [central33mia33@gmail.com] ✅ Replied to Ledger Authenticator <ledger@mail.ldgauthenticator.com>
+2026-06-05 18:34:58,225 [INFO] [central33mia33@gmail.com] ✅ Replied to Support Team <info@send.supportcallsonline.com>
+2026-06-05 18:35:03,968 [INFO] [central33mia33@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 18:35:10,138 [INFO] [central33mia33@gmail.com] ✅ Replied to Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 18:35:14,285 [INFO] [central33mia33@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 18:35:21,461 [INFO] [p33pan33@gmail.com] IMAP connected
+2026-06-05 18:35:21,779 [INFO] [p33pan33@gmail.com] INBOX: 75 unread
+2026-06-05 18:35:33,682 [INFO] [p33pan33@gmail.com] Found: 'Hello from our team' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 18:35:34,265 [INFO] [p33pan33@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 18:35:34,602 [INFO] [p33pan33@gmail.com] Found: 'Checking in' from Support Team <support@send.supportcallsonline.com>
+2026-06-05 18:35:34,922 [INFO] [p33pan33@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 18:35:35,239 [INFO] [p33pan33@gmail.com] Found: 'Hello from our team' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 18:35:35,600 [INFO] [p33pan33@gmail.com] Found: 'We wanted to connect' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 18:35:35,932 [INFO] [p33pan33@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 18:35:36,265 [INFO] [p33pan33@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 18:35:36,595 [INFO] [p33pan33@gmail.com] Found: 'A note from our team' from Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 18:35:36,927 [INFO] [p33pan33@gmail.com] Found: 'Your account update' from Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 18:35:37,223 [INFO] [p33pan33@gmail.com] Found: 'Quick update for you' from Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 18:35:38,097 [INFO] [p33pan33@gmail.com] [Gmail]/Spam: 4 unread
+2026-06-05 18:35:45,220 [INFO] [p33pan33@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 18:35:52,320 [INFO] [p33pan33@gmail.com] ✅ Replied to Ledger Authenticator <auth@mail.ldgauthenticator.com>
+2026-06-05 18:35:58,896 [INFO] [p33pan33@gmail.com] ✅ Replied to Support Team <support@send.supportcallsonline.com>
+2026-06-05 18:36:02,654 [INFO] [p33pan33@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 18:36:07,954 [INFO] [p33pan33@gmail.com] ✅ Replied to Support Team <support@reach.supportcallsonline.com>
+2026-06-05 18:36:13,667 [INFO] [p33pan33@gmail.com] ✅ Replied to Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 18:36:18,364 [INFO] [p33pan33@gmail.com] ✅ Replied to Ledger Authenticator <verify@send.ldgauthenticator.com>
+2026-06-05 18:36:28,083 [INFO] [p33pan33@gmail.com] ✅ Replied to Ledger Authenticator <recovery@mail.ldgauthenticator.com>
+2026-06-05 18:36:31,972 [INFO] [p33pan33@gmail.com] ✅ Replied to Ledger Authenticator <noreply@mail.ldgauthenticator.com>
+2026-06-05 18:36:40,641 [INFO] [p33pan33@gmail.com] ✅ Replied to Ledger Authenticator <secure@mail.ldgauthenticator.com>
+2026-06-05 18:36:48,885 [INFO] [p33pan33@gmail.com] ✅ Replied to Ledger Authenticator <token@mail.ldgauthenticator.com>
+2026-06-05 18:36:56,282 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-05 18:36:57,426 [INFO] [paul11kenneth11@gmail.com] No warmup emails found
+2026-06-05 18:37:10,182 [INFO] [mary33mas33@gmail.com] IMAP connected
+2026-06-05 18:37:10,437 [INFO] [mary33mas33@gmail.com] INBOX: 26 unread
+2026-06-05 18:37:17,477 [INFO] [mary33mas33@gmail.com] No warmup emails found
+2026-06-05 18:37:28,681 [INFO] [shawn33mary33@gmail.com] IMAP connected
+2026-06-05 18:37:28,866 [INFO] [shawn33mary33@gmail.com] INBOX: 32 unread
+2026-06-05 18:37:41,671 [INFO] [shawn33mary33@gmail.com] No warmup emails found
+2026-06-05 18:37:52,456 [INFO] [mikkyroyce@gmail.com] IMAP connected
+2026-06-05 18:37:52,933 [INFO] [mikkyroyce@gmail.com] INBOX: 137 unread
+2026-06-05 18:38:30,146 [INFO] [mikkyroyce@gmail.com] No warmup emails found
+2026-06-05 18:38:41,216 [INFO] [chris33debra33@gmail.com] IMAP connected
+2026-06-05 18:38:41,602 [INFO] [chris33debra33@gmail.com] INBOX: 56 unread
+2026-06-05 18:39:02,967 [INFO] [chris33debra33@gmail.com] No warmup emails found
+2026-06-05 18:39:02,967 [INFO] ────────────────────────────────────────────────────────────
+2026-06-05 18:39:02,967 [INFO] Replied: 33 | Rescued: 4 | Errors: 5
+2026-06-05 18:39:02,969 [INFO] ============================================================
+2026-06-05 18:57:38,886 [INFO] ============================================================
+2026-06-05 18:57:38,886 [INFO] Reply Engine — 2026-06-05 18:57:38
+2026-06-05 18:57:38,886 [INFO] Loaded 28 accounts
+2026-06-05 18:57:39,524 [INFO] [jabaripay@gmail.com] IMAP connected
+2026-06-05 18:57:39,883 [INFO] [jabaripay@gmail.com] INBOX: 4 unread
+2026-06-05 18:57:42,593 [INFO] [jabaripay@gmail.com] No warmup emails found
+2026-06-05 18:57:51,089 [INFO] [harryluth911@gmail.com] IMAP connected
+2026-06-05 18:57:51,375 [INFO] [harryluth911@gmail.com] No warmup emails found
+2026-06-05 18:58:02,322 [INFO] [codyjohnson09307@gmail.com] IMAP connected
+2026-06-05 18:58:02,682 [INFO] [codyjohnson09307@gmail.com] No warmup emails found
+2026-06-05 18:58:12,969 [INFO] [normanjohnson268@gmail.com] IMAP connected
+2026-06-05 18:58:13,897 [INFO] [normanjohnson268@gmail.com] No warmup emails found
+2026-06-05 18:58:26,108 [INFO] [garymitchell497@gmail.com] IMAP connected
+2026-06-05 18:58:26,278 [INFO] [garymitchell497@gmail.com] INBOX: 1 unread
+2026-06-05 18:58:26,820 [INFO] [garymitchell497@gmail.com] No warmup emails found
+2026-06-05 18:58:35,335 [INFO] [richardmoorey374@gmail.com] IMAP connected
+2026-06-05 18:58:35,878 [INFO] [richardmoorey374@gmail.com] No warmup emails found
+2026-06-05 18:58:46,270 [INFO] [timothydrogers6@gmail.com] IMAP connected
+2026-06-05 18:58:48,395 [INFO] [timothydrogers6@gmail.com] No warmup emails found
+2026-06-05 18:58:55,914 [INFO] [amalialbiondi@gmail.com] IMAP connected
+2026-06-05 18:58:56,219 [INFO] [amalialbiondi@gmail.com] No warmup emails found
+2026-06-05 18:59:04,316 [INFO] [eugeneafarrior@gmail.com] IMAP connected
+2026-06-05 18:59:05,106 [INFO] [eugeneafarrior@gmail.com] No warmup emails found
+2026-06-05 18:59:16,363 [INFO] [edwardcwhitener@gmail.com] IMAP connected
+2026-06-05 18:59:17,012 [INFO] [edwardcwhitener@gmail.com] No warmup emails found
+2026-06-05 18:59:31,148 [INFO] [troyktowles@gmail.com] IMAP connected
+2026-06-05 18:59:31,617 [INFO] [troyktowles@gmail.com] No warmup emails found
+2026-06-05 18:59:41,398 [INFO] [carminemhadnot@gmail.com] IMAP connected
+2026-06-05 18:59:42,308 [INFO] [carminemhadnot@gmail.com] No warmup emails found
+2026-06-05 18:59:52,761 [INFO] [emmaandrew025@gmail.com] IMAP connected
+2026-06-05 18:59:53,656 [INFO] [emmaandrew025@gmail.com] No warmup emails found
+2026-06-05 19:00:05,418 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-05 19:00:05,846 [INFO] [paul11kenneth11@gmail.com] INBOX: 1 unread
+2026-06-05 19:00:06,973 [INFO] [paul11kenneth11@gmail.com] No warmup emails found
+2026-06-05 19:00:18,026 [INFO] [miaope8@gmail.com] IMAP connected
+2026-06-05 19:00:18,418 [INFO] [miaope8@gmail.com] INBOX: 39 unread
+2026-06-05 19:00:32,351 [INFO] [miaope8@gmail.com] No warmup emails found
+2026-06-05 19:00:47,652 [INFO] [sabi33lee33@gmail.com] IMAP connected
+2026-06-05 19:00:47,863 [INFO] [sabi33lee33@gmail.com] INBOX: 1 unread
+2026-06-05 19:00:48,410 [INFO] [sabi33lee33@gmail.com] No warmup emails found
+2026-06-05 19:00:55,260 [INFO] [phill33white33@gmail.com] IMAP connected
+2026-06-05 19:00:55,498 [INFO] [phill33white33@gmail.com] INBOX: 35 unread
+2026-06-05 19:01:00,749 [INFO] [phill33white33@gmail.com] Found: 'Checking in' from Support Team <info@reach.supportcallsonline.com>
+2026-06-05 19:01:01,100 [INFO] [phill33white33@gmail.com] Found: 'Checking in' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 19:01:01,429 [INFO] [phill33white33@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <alerts@send.ldgauthenticator.com>
+2026-06-05 19:01:01,849 [INFO] [phill33white33@gmail.com] Found: 'Checking in with you' from Ledger Authenticator <sync@mail.ldgauthenticator.com>
+2026-06-05 19:01:03,302 [INFO] [phill33white33@gmail.com] [Gmail]/Spam: 11 unread
+2026-06-05 19:01:04,496 [INFO] [phill33white33@gmail.com] Found: 'Checking in' from Support Team <info@send.supportcallsonline.com>
+2026-06-05 19:01:05,169 [INFO] [phill33white33@gmail.com] Rescued from spam → inbox
+2026-06-05 19:01:05,486 [INFO] [phill33white33@gmail.com] Found: 'Your account update' from Ledger Authenticator <access@send.ldgauthenticator.com>
+2026-06-05 19:01:06,097 [INFO] [phill33white33@gmail.com] Rescued from spam → inbox
+2026-06-05 19:01:06,263 [ERROR] [phill33white33@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 19:01:18,478 [INFO] [mara33clara33@gmail.com] IMAP connected
+2026-06-05 19:01:19,377 [INFO] [mara33clara33@gmail.com] INBOX: 1 unread
+2026-06-05 19:01:20,015 [INFO] [mara33clara33@gmail.com] No warmup emails found
+2026-06-05 19:01:32,776 [INFO] [manpop852@gmail.com] IMAP connected
+2026-06-05 19:01:33,274 [INFO] [manpop852@gmail.com] INBOX: 23 unread
+2026-06-05 19:01:38,804 [INFO] [manpop852@gmail.com] Found: 'A message for you' from Support Team <hello@reach.supportcallsonline.com>
+2026-06-05 19:01:39,440 [INFO] [manpop852@gmail.com] Found: 'Account activity summary' from Ledger Authenticator <recovery@send.ldgauthenticator.com>
+2026-06-05 19:01:41,652 [INFO] [manpop852@gmail.com] [Gmail]/Spam: 10 unread
+2026-06-05 19:01:42,557 [INFO] [manpop852@gmail.com] Found: 'Checking in' from Support Team <support@reach.supportcallsonline.com>
+2026-06-05 19:01:43,554 [INFO] [manpop852@gmail.com] Rescued from spam → inbox
+2026-06-05 19:01:44,228 [INFO] [manpop852@gmail.com] Found: 'We wanted to reach out' from Ledger Authenticator <recovery@send.ldgauthenticator.com>
+2026-06-05 19:01:45,327 [INFO] [manpop852@gmail.com] Rescued from spam → inbox
+2026-06-05 19:01:45,934 [INFO] [manpop852@gmail.com] Found: 'Quick update for you' from Ledger Authenticator <token@send.ldgauthenticator.com>
+2026-06-05 19:01:46,737 [INFO] [manpop852@gmail.com] Rescued from spam → inbox
+2026-06-05 19:01:46,958 [ERROR] [manpop852@gmail.com] Error: 'NoneType' object is not subscriptable
+2026-06-05 19:01:54,752 [INFO] [yankeerealest@gmail.com] IMAP connected
+2026-06-05 19:01:54,859 [INFO] [yankeerealest@gmail.com] INBOX: 1 unread
+2026-06-05 19:01:55,304 [INFO] [yankeerealest@gmail.com] No warmup emails found
+2026-06-05 19:02:08,128 [INFO] [centrallee56@gmail.com] IMAP connected
+2026-06-05 19:02:08,517 [INFO] [centrallee56@gmail.com] INBOX: 1 unread
+2026-06-05 19:02:09,854 [INFO] [centrallee56@gmail.com] No warmup emails found
+2026-06-05 19:03:36,117 [INFO] [central33mia33@gmail.com] IMAP connected
+2026-06-05 19:05:41,067 [INFO] [central33mia33@gmail.com] No warmup emails found
+2026-06-05 19:05:47,059 [INFO] [p33pan33@gmail.com] IMAP connected
+2026-06-05 19:05:47,278 [INFO] [p33pan33@gmail.com] INBOX: 1 unread
+2026-06-05 19:05:47,869 [INFO] [p33pan33@gmail.com] No warmup emails found
+2026-06-05 19:05:54,248 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-05 19:05:55,275 [INFO] [paul11kenneth11@gmail.com] No warmup emails found
+2026-06-05 19:06:07,753 [INFO] [mary33mas33@gmail.com] IMAP connected
+2026-06-05 19:06:08,400 [INFO] [mary33mas33@gmail.com] No warmup emails found
+2026-06-05 19:06:18,032 [INFO] [shawn33mary33@gmail.com] IMAP connected
+2026-06-05 19:06:18,741 [INFO] [shawn33mary33@gmail.com] No warmup emails found
+2026-06-05 19:06:33,352 [INFO] [mikkyroyce@gmail.com] IMAP connected
+2026-06-05 19:06:33,811 [INFO] [mikkyroyce@gmail.com] No warmup emails found
+2026-06-05 19:06:39,443 [INFO] [chris33debra33@gmail.com] IMAP connected
+2026-06-05 19:06:40,380 [INFO] [chris33debra33@gmail.com] No warmup emails found
+2026-06-05 19:06:40,380 [INFO] ────────────────────────────────────────────────────────────
+2026-06-05 19:06:40,380 [INFO] Replied: 0 | Rescued: 5 | Errors: 2
+2026-06-05 19:06:40,380 [INFO] ============================================================
+2026-06-05 19:12:14,633 [INFO] ============================================================
+2026-06-05 19:12:14,634 [INFO] Reply Engine — 2026-06-05 19:12:14
+2026-06-05 19:12:14,634 [INFO] Loaded 28 accounts
+2026-06-05 19:12:15,179 [INFO] [jabaripay@gmail.com] IMAP connected
+2026-06-05 19:12:16,219 [INFO] [jabaripay@gmail.com] No warmup emails found
+2026-06-05 19:12:21,645 [INFO] [harryluth911@gmail.com] IMAP connected
+2026-06-05 19:12:21,790 [INFO] [harryluth911@gmail.com] INBOX: 1 unread
+2026-06-05 19:12:22,323 [INFO] [harryluth911@gmail.com] No warmup emails found
+2026-06-05 19:12:32,904 [INFO] [codyjohnson09307@gmail.com] IMAP connected
+2026-06-05 19:12:33,317 [INFO] [codyjohnson09307@gmail.com] No warmup emails found
+2026-06-05 19:12:48,382 [INFO] [normanjohnson268@gmail.com] IMAP connected
+2026-06-05 19:12:49,530 [INFO] [normanjohnson268@gmail.com] No warmup emails found
+2026-06-05 19:13:04,156 [INFO] [garymitchell497@gmail.com] IMAP connected
+2026-06-05 19:13:04,562 [INFO] [garymitchell497@gmail.com] No warmup emails found
+2026-06-05 19:13:12,842 [INFO] [richardmoorey374@gmail.com] IMAP connected
+2026-06-05 19:13:13,139 [INFO] [richardmoorey374@gmail.com] No warmup emails found
+2026-06-05 19:13:28,339 [INFO] [timothydrogers6@gmail.com] IMAP connected
+2026-06-05 19:13:28,727 [INFO] [timothydrogers6@gmail.com] No warmup emails found
+2026-06-05 19:13:36,923 [INFO] [amalialbiondi@gmail.com] IMAP connected
+2026-06-05 19:13:37,294 [INFO] [amalialbiondi@gmail.com] No warmup emails found
+2026-06-05 19:13:46,955 [INFO] [eugeneafarrior@gmail.com] IMAP connected
+2026-06-05 19:13:47,507 [INFO] [eugeneafarrior@gmail.com] No warmup emails found
+2026-06-05 19:14:00,967 [INFO] [edwardcwhitener@gmail.com] IMAP connected
+2026-06-05 19:14:01,626 [INFO] [edwardcwhitener@gmail.com] No warmup emails found
+2026-06-05 19:14:07,418 [INFO] [troyktowles@gmail.com] IMAP connected
+2026-06-05 19:14:07,932 [INFO] [troyktowles@gmail.com] No warmup emails found
+2026-06-05 19:14:19,803 [INFO] [carminemhadnot@gmail.com] IMAP connected
+2026-06-05 19:14:20,388 [INFO] [carminemhadnot@gmail.com] No warmup emails found
+2026-06-05 19:14:27,551 [INFO] [emmaandrew025@gmail.com] IMAP connected
+2026-06-05 19:14:28,629 [INFO] [emmaandrew025@gmail.com] No warmup emails found
+2026-06-05 19:14:41,831 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-05 19:14:42,900 [INFO] [paul11kenneth11@gmail.com] No warmup emails found
+2026-06-05 19:14:57,301 [INFO] [miaope8@gmail.com] IMAP connected
+2026-06-05 19:14:57,880 [INFO] [miaope8@gmail.com] No warmup emails found
+2026-06-05 19:15:12,395 [INFO] [sabi33lee33@gmail.com] IMAP connected
+2026-06-05 19:15:12,895 [INFO] [sabi33lee33@gmail.com] No warmup emails found
+2026-06-05 19:15:25,359 [INFO] [phill33white33@gmail.com] IMAP connected
+2026-06-05 19:15:27,899 [INFO] [phill33white33@gmail.com] No warmup emails found
+2026-06-05 19:15:39,980 [INFO] [mara33clara33@gmail.com] IMAP connected
+2026-06-05 19:15:40,446 [INFO] [mara33clara33@gmail.com] No warmup emails found
+2026-06-05 19:15:51,307 [INFO] [manpop852@gmail.com] IMAP connected
+2026-06-05 19:15:51,896 [INFO] [manpop852@gmail.com] No warmup emails found
+2026-06-05 19:15:59,951 [INFO] [yankeerealest@gmail.com] IMAP connected
+2026-06-05 19:16:00,139 [INFO] [yankeerealest@gmail.com] No warmup emails found
+2026-06-05 19:16:12,468 [INFO] [centrallee56@gmail.com] IMAP connected
+2026-06-05 19:16:13,397 [INFO] [centrallee56@gmail.com] No warmup emails found
+2026-06-05 19:16:21,617 [INFO] [central33mia33@gmail.com] IMAP connected
+2026-06-05 19:16:22,024 [INFO] [central33mia33@gmail.com] No warmup emails found
+2026-06-05 19:16:29,473 [INFO] [p33pan33@gmail.com] IMAP connected
+2026-06-05 19:16:30,007 [INFO] [p33pan33@gmail.com] No warmup emails found
+2026-06-05 19:16:45,215 [INFO] [paul11kenneth11@gmail.com] IMAP connected
+2026-06-05 19:16:46,311 [INFO] [paul11kenneth11@gmail.com] No warmup emails found
+2026-06-05 19:16:58,861 [INFO] [mary33mas33@gmail.com] IMAP connected
+2026-06-05 19:16:59,955 [INFO] [mary33mas33@gmail.com] No warmup emails found
+2026-06-05 19:17:05,860 [INFO] [shawn33mary33@gmail.com] IMAP connected
+2026-06-05 19:17:06,131 [INFO] [shawn33mary33@gmail.com] No warmup emails found
+2026-06-05 19:17:17,203 [INFO] [mikkyroyce@gmail.com] IMAP connected
+2026-06-05 19:17:17,686 [INFO] [mikkyroyce@gmail.com] No warmup emails found
+2026-06-05 19:17:28,315 [INFO] [chris33debra33@gmail.com] IMAP connected
+2026-06-05 19:17:29,166 [INFO] [chris33debra33@gmail.com] No warmup emails found
+2026-06-05 19:17:29,166 [INFO] ────────────────────────────────────────────────────────────
+2026-06-05 19:17:29,166 [INFO] Replied: 0 | Rescued: 0 | Errors: 0
+2026-06-05 19:17:29,166 [INFO] ============================================================

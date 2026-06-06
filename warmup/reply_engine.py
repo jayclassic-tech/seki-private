@@ -90,10 +90,16 @@ def process_account(cred):
             log.info(f"[{addr}] {folder}: {len(uids)} unread")
 
             for uid in uids:
-                _, msg_data = imap.fetch(uid, "(RFC822)")
-                msg       = email.message_from_bytes(msg_data[0][1])
-                from_addr = decode_str(msg.get("From", ""))
-                subject   = decode_str(msg.get("Subject", ""))
+                try:
+                    _, msg_data = imap.fetch(uid, "(RFC822)")
+                    if not msg_data or not msg_data[0] or not msg_data[0][1]:
+                        continue
+                    msg       = email.message_from_bytes(msg_data[0][1])
+                    from_addr = decode_str(msg.get("From", ""))
+                    subject   = decode_str(msg.get("Subject", ""))
+                except Exception as fetch_err:
+                    log.warning(f"[{addr}] Skipping unreadable email: {fetch_err}")
+                    continue
 
                 if not is_warmup_email(from_addr):
                     continue
@@ -101,19 +107,26 @@ def process_account(cred):
                 log.info(f"[{addr}] Found: '{subject}' from {from_addr}")
 
                 if is_spam:
-                    imap.copy(uid, "INBOX")
-                    imap.store(uid, "+FLAGS", "\\Deleted")
-                    imap.expunge()
-                    stats["rescued_from_spam"] += 1
-                    log.info(f"[{addr}] Rescued from spam → inbox")
+                    try:
+                        imap.copy(uid, "INBOX")
+                        imap.store(uid, "+FLAGS", "\\Deleted")
+                        imap.expunge()
+                        stats["rescued_from_spam"] += 1
+                        log.info(f"[{addr}] Rescued from spam → inbox")
+                    except Exception as rescue_err:
+                        log.warning(f"[{addr}] Rescue failed: {rescue_err}")
+                        continue
 
                 imap.store(uid, "+FLAGS", "\\Seen \\Flagged")
+                msg_id = msg.get("Message-ID")
+                if not msg_id:
+                    log.warning(f"[{addr}] Skipping email with no Message-ID")
+                    continue
                 messages_to_reply.append({
                     "to":      from_addr,
                     "subject": subject,
-                    "msg_id":  msg.get("Message-ID", ""),
+                    "msg_id":  msg_id,
                 })
-
         imap.logout()
 
         if not messages_to_reply:
