@@ -152,3 +152,93 @@
 2026-06-05 08:38:28,660 [INFO] [LDGAUTH] Done | Today: 100 | Total: 150
 2026-06-05 08:38:28,661 [INFO] Warmup Engine complete
 2026-06-05 08:38:28,661 [INFO] ============================================================
+2026-06-06 08:00:01,415 [INFO] ============================================================
+2026-06-06 08:00:01,416 [INFO] Warmup Engine — 2026-06-06 08:00:01
+2026-06-06 08:00:01,422 [INFO] Loaded 26 seed addresses
+2026-06-06 08:00:01,422 [INFO] [SEKI] Day 3 | 13 mailboxes | 20 emails each
+2026-06-06 08:00:01,425 [INFO]   → FROM: info@supportcallsonline.com | 20 emails | Rate: 4.8s | Template: template_1.html
+2026-06-06 08:00:52,796 [INFO]   ✅ info@supportcallsonline.com complete
+2026-06-06 08:00:52,796 [INFO]   Waiting 59s before next mailbox...
+2026-06-06 08:01:51,798 [INFO]   → FROM: support@supportcallsonline.com | 20 emails | Rate: 5.2s | Template: template_4.html
+2026-06-06 08:02:45,448 [INFO]   ✅ support@supportcallsonline.com complete
+2026-06-06 08:02:45,448 [INFO]   Waiting 85s before next mailbox...
+2026-06-06 08:04:10,450 [INFO]   → FROM: hello@supportcallsonline.com | 20 emails | Rate: 3.8s | Template: template_2.html
+2026-06-06 08:04:49,984 [INFO]   ✅ hello@supportcallsonline.com complete
+2026-06-06 08:04:49,985 [INFO]   Waiting 52s before next mailbox...
+2026-06-06 08:05:41,990 [INFO]   → FROM: contact@supportcallsonline.com | 20 emails | Rate: 5.7s | Template: template_5.html
+2026-06-06 08:06:40,803 [INFO]   ✅ contact@supportcallsonline.com complete
+2026-06-06 08:06:40,803 [INFO]   Waiting 60s before next mailbox...
+2026-06-06 08:07:40,804 [INFO]   → FROM: team@supportcallsonline.com | 20 emails | Rate: 5.5s | Template: template_6.html
+2026-06-06 08:08:37,490 [INFO]   ✅ team@supportcallsonline.com complete
+2026-06-06 08:08:37,490 [INFO]   Waiting 46s before next mailbox...
+2026-06-06 08:09:23,491 [INFO]   → FROM: admin@supportcallsonline.com | 20 emails | Rate: 3.4s | Template: template_2.html
+2026-06-06 08:09:58,864 [INFO]   ✅ admin@supportcallsonline.com complete
+2026-06-06 08:09:58,864 [INFO]   Waiting 33s before next mailbox...
+2026-06-06 08:10:31,865 [INFO]   → FROM: care@supportcallsonline.com | 20 emails | Rate: 5.3s | Template: template_5.html
+2026-06-06 08:11:26,421 [INFO]   ✅ care@supportcallsonline.com complete
+2026-06-06 08:11:26,422 [INFO]   Waiting 54s before next mailbox...
+2026-06-06 08:12:20,423 [INFO]   → FROM: info@send.supportcallsonline.com | 20 emails | Rate: 3.4s | Template: template_4.html
+2026-06-06 08:12:56,416 [INFO]   ✅ info@send.supportcallsonline.com complete
+2026-06-06 08:12:56,416 [INFO]   Waiting 35s before next mailbox...
+2026-06-06 08:13:31,418 [INFO]   → FROM: support@send.supportcallsonline.com | 20 emails | Rate: 4.6s | Template: template_3.html
+2026-06-06 08:14:19,930 [INFO]   ✅ support@send.supportcallsonline.com complete
+2026-06-06 08:14:19,930 [INFO]   Waiting 60s before next mailbox...
+2026-06-06 08:15:19,931 [INFO]   → FROM: hello@send.supportcallsonline.com | 20 emails | Rate: 4.6s | Template: template_2.html
+2026-06-06 08:16:07,958 [INFO]   ✅ hello@send.supportcallsonline.com complete
+2026-06-06 08:16:07,959 [INFO]   Waiting 43s before next mailbox...
+2026-06-06 08:16:50,968 [INFO]   → FROM: info@reach.supportcallsonline.com | 20 emails | Rate: 5.8s | Template: template_3.html
+2026-06-06 08:17:51,268 [INFO]   ✅ info@reach.supportcallsonline.com complete
+2026-06-06 08:17:51,270 [INFO]   Waiting 82s before next mailbox...
+2026-06-06 08:19:13,279 [INFO]   → FROM: support@reach.supportcallsonline.com | 20 emails | Rate: 5.4s | Template: template_3.html
+2026-06-06 08:20:09,393 [INFO]   ✅ support@reach.supportcallsonline.com complete
+2026-06-06 08:20:09,394 [INFO]   Waiting 76s before next mailbox...
+2026-06-06 08:21:25,395 [INFO]   → FROM: hello@reach.supportcallsonline.com | 20 emails | Rate: 5.1s | Template: template_3.html
+2026-06-06 08:22:18,422 [INFO]   ✅ hello@reach.supportcallsonline.com complete
+2026-06-06 08:22:18,422 [INFO] [SEKI] Done | Today: 260 | Total: 455
+2026-06-06 08:22:18,422 [INFO] [LDGAUTH] Day 3 | 10 mailboxes | 20 emails each
+2026-06-06 08:22:18,422 [INFO] [LDGAUTH] Waiting 128s before this profile...
+2026-06-06 08:24:26,424 [INFO]   → FROM: verify@send.ldgauthenticator.com | 20 emails | Rate: 4.4s | Template: template_2.html
+2026-06-06 08:25:12,536 [INFO]   ✅ verify@send.ldgauthenticator.com complete
+2026-06-06 08:25:12,536 [INFO]   Waiting 53s before next mailbox...
+2026-06-06 08:26:05,540 [INFO]   → FROM: auth@send.ldgauthenticator.com | 20 emails | Rate: 5.7s | Template: template_4.html
+2026-06-06 08:27:04,772 [INFO]   ✅ auth@send.ldgauthenticator.com complete
+2026-06-06 08:27:04,772 [INFO]   Waiting 30s before next mailbox...
+2026-06-06 08:27:34,773 [INFO]   → FROM: recovery@send.ldgauthenticator.com | 20 emails | Rate: 3.5s | Template: template_3.html
+2026-06-06 08:28:11,563 [INFO]   ✅ recovery@send.ldgauthenticator.com complete
+2026-06-06 08:28:11,564 [INFO]   Waiting 32s before next mailbox...
+2026-06-06 08:28:43,565 [INFO]   → FROM: alerts@send.ldgauthenticator.com | 20 emails | Rate: 4.0s | Template: template_4.html
+2026-06-06 08:29:26,174 [INFO]   ✅ alerts@send.ldgauthenticator.com complete
+2026-06-06 08:29:26,174 [INFO]   Waiting 37s before next mailbox...
+2026-06-06 08:30:03,176 [INFO]   → FROM: noreply@send.ldgauthenticator.com | 20 emails | Rate: 3.3s | Template: template_3.html
+2026-06-06 08:30:38,250 [INFO]   ✅ noreply@send.ldgauthenticator.com complete
+2026-06-06 08:30:38,251 [INFO]   Waiting 39s before next mailbox...
+2026-06-06 08:31:17,252 [INFO]   → FROM: secure@mail.ldgauthenticator.com | 20 emails | Rate: 4.1s | Template: template_6.html
+2026-06-06 08:31:59,945 [INFO]   ✅ secure@mail.ldgauthenticator.com complete
+2026-06-06 08:31:59,945 [INFO]   Waiting 80s before next mailbox...
+2026-06-06 08:33:19,946 [INFO]   → FROM: access@mail.ldgauthenticator.com | 20 emails | Rate: 4.7s | Template: template_4.html
+2026-06-06 08:34:08,798 [INFO]   ✅ access@mail.ldgauthenticator.com complete
+2026-06-06 08:34:08,799 [INFO]   Waiting 79s before next mailbox...
+2026-06-06 08:35:27,800 [INFO]   → FROM: ledger@mail.ldgauthenticator.com | 20 emails | Rate: 5.7s | Template: template_6.html
+2026-06-06 08:36:26,822 [INFO]   ✅ ledger@mail.ldgauthenticator.com complete
+2026-06-06 08:36:26,822 [INFO]   Waiting 39s before next mailbox...
+2026-06-06 08:37:05,826 [INFO]   → FROM: token@mail.ldgauthenticator.com | 20 emails | Rate: 5.9s | Template: template_1.html
+2026-06-06 08:38:06,849 [INFO]   ✅ token@mail.ldgauthenticator.com complete
+2026-06-06 08:38:06,849 [INFO]   Waiting 79s before next mailbox...
+2026-06-06 08:39:25,851 [INFO]   → FROM: sync@mail.ldgauthenticator.com | 20 emails | Rate: 3.5s | Template: template_2.html
+2026-06-06 08:40:02,769 [INFO]   ✅ sync@mail.ldgauthenticator.com complete
+2026-06-06 08:40:02,769 [INFO] [LDGAUTH] Done | Today: 200 | Total: 350
+2026-06-06 08:40:02,769 [INFO] Warmup Engine complete
+2026-06-06 08:40:02,769 [INFO] ============================================================
+2026-06-06 20:55:30,389 [INFO] ============================================================
+2026-06-06 20:55:30,390 [INFO] Warmup Engine — 2026-06-06 20:55:30
+2026-06-06 20:55:30,391 [INFO] Loaded 38 seed addresses
+2026-06-06 20:55:30,391 [INFO] [SEKI] Day 3 | 13 mailboxes | 20 emails each
+2026-06-06 20:55:30,393 [INFO]   → FROM: info@supportcallsonline.com | 20 emails | Rate: 4.9s | Template: template_6.html
+2026-06-06 20:56:31,020 [INFO]   ✅ info@supportcallsonline.com complete
+2026-06-06 20:56:31,021 [INFO]   Waiting 37s before next mailbox...
+2026-06-06 20:57:08,022 [INFO]   → FROM: support@supportcallsonline.com | 20 emails | Rate: 4.6s | Template: template_2.html
+2026-06-06 20:58:05,371 [INFO]   ✅ support@supportcallsonline.com complete
+2026-06-06 20:58:05,380 [INFO]   Waiting 42s before next mailbox...
+2026-06-06 20:58:47,384 [INFO]   → FROM: hello@supportcallsonline.com | 20 emails | Rate: 3.2s | Template: template_3.html
+2026-06-06 20:59:20,595 [INFO]   ✅ hello@supportcallsonline.com complete
+2026-06-06 20:59:20,595 [INFO]   Waiting 78s before next mailbox...

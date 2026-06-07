@@ -25,5 +25,17 @@
     "ledger@mail.ldgauthenticator.com",
     "token@mail.ldgauthenticator.com",
     "sync@mail.ldgauthenticator.com"
+  ],
+  "BINANCE": [
+    "agent@mail.binancehelps.net",
+    "assist@mail.binancehelps.net",
+    "support@mail.binancehelps.net",
+    "desk@mail.binancehelps.net",
+    "help@mail.binancehelps.net",
+    "notify@send.binancehelps.net",
+    "update@send.binancehelps.net",
+    "confirm@send.binancehelps.net",
+    "status@send.binancehelps.net",
+    "info@send.binancehelps.net"
   ]
 }

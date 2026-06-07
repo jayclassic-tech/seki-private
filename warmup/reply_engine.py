@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
-Reply Engine — Warmup Auto-Responder
-Logs into each Gmail seed via IMAP, finds warmup emails,
-marks as important, rescues from spam, sends reply.
+Reply Engine — Warmup Auto-Responder v2
+Fixes: duplicate logging, NoneType on rescued emails, reply-after-rescue
 """
 
 import csv, imaplib, smtplib, email, logging, random, time
@@ -16,19 +15,25 @@ BASE_DIR  = Path("/opt/seki/warmup")
 CREDS_CSV = BASE_DIR / "gmail_seeds.csv"
 LOG_FILE  = BASE_DIR / "reply_engine.log"
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[logging.FileHandler(LOG_FILE), logging.StreamHandler()]
-)
-log = logging.getLogger("reply_engine")
+# --- Fix duplicate logging: clear handlers before adding ---
+logger = logging.getLogger("reply_engine")
+if not logger.handlers:
+    logger.setLevel(logging.INFO)
+    fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+    fh = logging.FileHandler(LOG_FILE)
+    fh.setFormatter(fmt)
+    sh = logging.StreamHandler()
+    sh.setFormatter(fmt)
+    logger.addHandler(fh)
+    logger.addHandler(sh)
+log = logger
 
 IMAP_HOST = "imap.gmail.com"
 IMAP_PORT = 993
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 
-WARMUP_DOMAINS = ["supportcallsonline.com", "ldgauthenticator.com"]
+WARMUP_DOMAINS = ["supportcallsonline.com", "ldgauthenticator.com", "binancehelps.net"]
 
 REPLY_VARIANTS = [
     "Thanks for reaching out! Got your message — appreciate the update.",
@@ -41,6 +46,8 @@ REPLY_VARIANTS = [
     "Appreciate it, thanks for reaching out!",
     "Thanks — received and noted.",
     "Thank you! Good to hear from you.",
+    "Received! Thanks for the heads up.",
+    "Appreciated — thanks for the message.",
 ]
 
 def decode_str(s):
@@ -52,6 +59,8 @@ def decode_str(s):
     return decoded
 
 def is_warmup_email(from_addr):
+    if any(x in from_addr.lower() for x in ["mailer-daemon", "postmaster", "noreply@accounts.google"]):
+        return False
     return any(domain in from_addr.lower() for domain in WARMUP_DOMAINS)
 
 def load_credentials():
@@ -63,6 +72,76 @@ def load_credentials():
                 "password": row["app_password"].strip().replace(" ", ""),
             })
     return creds
+
+def fetch_warmup_emails(imap, addr, folder, is_spam):
+    """
+    Search a folder for unseen warmup emails.
+    If spam, rescue to INBOX first, then return metadata for reply.
+    Returns list of dicts: {to, subject, msg_id}
+    """
+    results = []
+    try:
+        status, _ = imap.select(folder)
+        if status != "OK":
+            return results
+    except Exception:
+        return results
+
+    _, data = imap.search(None, "UNSEEN")
+    uids = data[0].split() if data[0] else []
+    if not uids:
+        return results
+
+    log.info(f"[{addr}] {folder}: {len(uids)} unread")
+
+    for uid in uids:
+        try:
+            _, msg_data = imap.fetch(uid, "(RFC822)")
+            if not msg_data or not isinstance(msg_data[0], tuple):
+                continue
+            raw = msg_data[0][1]
+            if not raw:
+                continue
+            msg       = email.message_from_bytes(raw)
+            from_addr = decode_str(msg.get("From", ""))
+            subject   = decode_str(msg.get("Subject", ""))
+            msg_id    = msg.get("Message-ID", "").strip()
+        except Exception as e:
+            log.warning(f"[{addr}] Skipping unreadable email: {e}")
+            continue
+
+        if not is_warmup_email(from_addr):
+            continue
+        if not msg_id:
+            log.warning(f"[{addr}] Skipping email with no Message-ID from {from_addr}")
+            continue
+
+        log.info(f"[{addr}] Found: '{subject}' from {from_addr}")
+
+        if is_spam:
+            # Rescue: copy to INBOX, delete from spam
+            try:
+                imap.copy(uid, "INBOX")
+                imap.store(uid, "+FLAGS", "\\Deleted")
+                imap.expunge()
+                log.info(f"[{addr}] Rescued from spam → inbox")
+            except Exception as e:
+                log.warning(f"[{addr}] Rescue failed: {e}")
+                continue
+        else:
+            # Mark as seen + starred in INBOX
+            try:
+                imap.store(uid, "+FLAGS", "\\Seen \\Flagged")
+            except Exception:
+                pass
+
+        results.append({
+            "to":      from_addr,
+            "subject": subject,
+            "msg_id":  msg_id,
+        })
+
+    return results
 
 def process_account(cred):
     addr     = cred["email"]
@@ -76,63 +155,22 @@ def process_account(cred):
 
         messages_to_reply = []
 
-        for folder, is_spam in [("INBOX", False), ("[Gmail]/Spam", True)]:
-            try:
-                imap.select(folder)
-            except Exception:
-                continue
+        # Check INBOX first
+        inbox_msgs = fetch_warmup_emails(imap, addr, "INBOX", is_spam=False)
+        messages_to_reply.extend(inbox_msgs)
 
-            _, data = imap.search(None, "UNSEEN")
-            uids = data[0].split()
-            if not uids:
-                continue
+        # Check Spam — rescue + collect for reply
+        spam_msgs = fetch_warmup_emails(imap, addr, "[Gmail]/Spam", is_spam=True)
+        stats["rescued_from_spam"] += len(spam_msgs)
+        messages_to_reply.extend(spam_msgs)
 
-            log.info(f"[{addr}] {folder}: {len(uids)} unread")
-
-            for uid in uids:
-                try:
-                    _, msg_data = imap.fetch(uid, "(RFC822)")
-                    if not msg_data or not msg_data[0] or not msg_data[0][1]:
-                        continue
-                    msg       = email.message_from_bytes(msg_data[0][1])
-                    from_addr = decode_str(msg.get("From", ""))
-                    subject   = decode_str(msg.get("Subject", ""))
-                except Exception as fetch_err:
-                    log.warning(f"[{addr}] Skipping unreadable email: {fetch_err}")
-                    continue
-
-                if not is_warmup_email(from_addr):
-                    continue
-
-                log.info(f"[{addr}] Found: '{subject}' from {from_addr}")
-
-                if is_spam:
-                    try:
-                        imap.copy(uid, "INBOX")
-                        imap.store(uid, "+FLAGS", "\\Deleted")
-                        imap.expunge()
-                        stats["rescued_from_spam"] += 1
-                        log.info(f"[{addr}] Rescued from spam → inbox")
-                    except Exception as rescue_err:
-                        log.warning(f"[{addr}] Rescue failed: {rescue_err}")
-                        continue
-
-                imap.store(uid, "+FLAGS", "\\Seen \\Flagged")
-                msg_id = msg.get("Message-ID")
-                if not msg_id:
-                    log.warning(f"[{addr}] Skipping email with no Message-ID")
-                    continue
-                messages_to_reply.append({
-                    "to":      from_addr,
-                    "subject": subject,
-                    "msg_id":  msg_id,
-                })
         imap.logout()
 
         if not messages_to_reply:
             log.info(f"[{addr}] No warmup emails found")
             return stats
 
+        # Send replies via SMTP
         smtp = smtplib.SMTP(SMTP_HOST, SMTP_PORT)
         smtp.ehlo()
         smtp.starttls()
@@ -147,9 +185,13 @@ def process_account(cred):
             reply["In-Reply-To"] = item["msg_id"]
             reply["References"]  = item["msg_id"]
             reply.attach(MIMEText(random.choice(REPLY_VARIANTS), "plain"))
-            smtp.sendmail(addr, [item["to"]], reply.as_string())
-            stats["replied"] += 1
-            log.info(f"[{addr}] ✅ Replied to {item['to']}")
+            try:
+                smtp.sendmail(addr, [item["to"]], reply.as_string())
+                stats["replied"] += 1
+                log.info(f"[{addr}] ✅ Replied to {item['to']}")
+            except Exception as e:
+                log.warning(f"[{addr}] Reply failed to {item['to']}: {e}")
+                stats["errors"] += 1
 
         smtp.quit()
 
@@ -167,7 +209,7 @@ def process_account(cred):
 
 def main():
     log.info("=" * 60)
-    log.info(f"Reply Engine — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    log.info(f"Reply Engine v2 — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     creds = load_credentials()
     log.info(f"Loaded {len(creds)} accounts")
 

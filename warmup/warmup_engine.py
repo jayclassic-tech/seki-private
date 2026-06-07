@@ -73,6 +73,20 @@ PROFILES = [
             {"body_line1":"A brief hello from the LDG Authenticator team. We appreciate you being with us.","body_line2":"Do not hesitate to get in touch if there is anything we can assist you with.","closing":"Kind regards,","sender_name":"Amara Osei","sender_title":"Account Relations, LDG Authenticator"},
         ]
     }
+    ,{
+        "name": "BINANCE",
+        "subjects": [
+            "Your wallet update","A note from our team","Account activity summary",
+            "Quick update for you","Checking in with you","An update from Binance Help",
+            "We wanted to reach out","Your account is active",
+        ],
+        "bodies": [
+            {"body_line1":"We wanted to send you a brief update regarding your wallet and our latest security improvements.","body_line2":"Please feel free to contact our support team if you have any questions or concerns.","closing":"Stay secure,","sender_name":"James Thornton","sender_title":"Wallet Security, Binance Help"},
+            {"body_line1":"This is a routine message from the Binance Help team regarding your account.","body_line2":"Our team is available to assist you with any wallet or account-related queries at any time.","closing":"Best regards,","sender_name":"Priya Nair","sender_title":"Support Team, Binance Help"},
+            {"body_line1":"We are committed to keeping your wallet experience smooth and wanted to share a quick note.","body_line2":"If you have any feedback or questions, our crypto support team is ready to help.","closing":"Thank you for your trust,","sender_name":"Marcus Evans","sender_title":"Client Services, Binance Help"},
+            {"body_line1":"A brief hello from the Binance Help team. We appreciate you being with us.","body_line2":"Do not hesitate to get in touch if there is anything we can assist you with regarding your account.","closing":"Kind regards,","sender_name":"Amara Osei","sender_title":"Account Relations, Binance Help"},
+        ]
+    }
 ]
 
 def load_state():
