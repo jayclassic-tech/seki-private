@@ -4,7 +4,7 @@ Reply Engine — Warmup Auto-Responder v2
 Fixes: duplicate logging, NoneType on rescued emails, reply-after-rescue
 """
 
-import csv, imaplib, smtplib, email, logging, random, time
+import csv, imaplib, smtplib, email, logging, random, time, json
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import decode_header
@@ -33,7 +33,13 @@ IMAP_PORT = 993
 SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 
-WARMUP_DOMAINS = ["supportcallsonline.com", "ldgauthenticator.com", "binancehelps.net"]
+WARMUP_DOMAINS_FILE = BASE_DIR / "warmup_domains.json"
+
+def load_warmup_domains():
+    if WARMUP_DOMAINS_FILE.exists():
+        with open(WARMUP_DOMAINS_FILE) as f:
+            return json.load(f)
+    return []
 
 REPLY_VARIANTS = [
     "Thanks for reaching out! Got your message — appreciate the update.",
@@ -58,10 +64,10 @@ def decode_str(s):
         return decoded.decode(enc or "utf-8", errors="replace")
     return decoded
 
-def is_warmup_email(from_addr):
+def is_warmup_email(from_addr, warmup_domains):
     if any(x in from_addr.lower() for x in ["mailer-daemon", "postmaster", "noreply@accounts.google"]):
         return False
-    return any(domain in from_addr.lower() for domain in WARMUP_DOMAINS)
+    return any(domain in from_addr.lower() for domain in warmup_domains)
 
 def load_credentials():
     creds = []
@@ -73,7 +79,7 @@ def load_credentials():
             })
     return creds
 
-def fetch_warmup_emails(imap, addr, folder, is_spam):
+def fetch_warmup_emails(imap, addr, folder, is_spam, warmup_domains):
     """
     Search a folder for unseen warmup emails.
     If spam, rescue to INBOX first, then return metadata for reply.
@@ -87,7 +93,7 @@ def fetch_warmup_emails(imap, addr, folder, is_spam):
     except Exception:
         return results
 
-    _, data = imap.search(None, "UNSEEN")
+    _, data = imap.uid("SEARCH", None, "ALL")
     uids = data[0].split() if data[0] else []
     if not uids:
         return results
@@ -96,7 +102,7 @@ def fetch_warmup_emails(imap, addr, folder, is_spam):
 
     for uid in uids:
         try:
-            _, msg_data = imap.fetch(uid, "(RFC822)")
+            _, msg_data = imap.uid("FETCH", uid, "(RFC822)")
             if not msg_data or not isinstance(msg_data[0], tuple):
                 continue
             raw = msg_data[0][1]
@@ -110,7 +116,7 @@ def fetch_warmup_emails(imap, addr, folder, is_spam):
             log.warning(f"[{addr}] Skipping unreadable email: {e}")
             continue
 
-        if not is_warmup_email(from_addr):
+        if not is_warmup_email(from_addr, warmup_domains):
             continue
         if not msg_id:
             log.warning(f"[{addr}] Skipping email with no Message-ID from {from_addr}")
@@ -121,8 +127,9 @@ def fetch_warmup_emails(imap, addr, folder, is_spam):
         if is_spam:
             # Rescue: copy to INBOX, delete from spam
             try:
-                imap.copy(uid, "INBOX")
-                imap.store(uid, "+FLAGS", "\\Deleted")
+                imap.uid("STORE", uid, "-X-GM-LABELS", "\\Spam")
+                imap.uid("COPY", uid, "INBOX")
+                imap.uid("STORE", uid, "+FLAGS", "\\Deleted")
                 imap.expunge()
                 log.info(f"[{addr}] Rescued from spam → inbox")
             except Exception as e:
@@ -131,7 +138,7 @@ def fetch_warmup_emails(imap, addr, folder, is_spam):
         else:
             # Mark as seen + starred in INBOX
             try:
-                imap.store(uid, "+FLAGS", "\\Seen \\Flagged")
+                imap.uid("STORE", uid, "+FLAGS", "\\Seen \\Flagged")
             except Exception:
                 pass
 
@@ -143,7 +150,7 @@ def fetch_warmup_emails(imap, addr, folder, is_spam):
 
     return results
 
-def process_account(cred):
+def process_account(cred, warmup_domains):
     addr     = cred["email"]
     password = cred["password"]
     stats    = {"replied": 0, "rescued_from_spam": 0, "errors": 0}
@@ -156,11 +163,11 @@ def process_account(cred):
         messages_to_reply = []
 
         # Check INBOX first
-        inbox_msgs = fetch_warmup_emails(imap, addr, "INBOX", is_spam=False)
+        inbox_msgs = fetch_warmup_emails(imap, addr, "INBOX", is_spam=False, warmup_domains=warmup_domains)
         messages_to_reply.extend(inbox_msgs)
 
         # Check Spam — rescue + collect for reply
-        spam_msgs = fetch_warmup_emails(imap, addr, "[Gmail]/Spam", is_spam=True)
+        spam_msgs = fetch_warmup_emails(imap, addr, "[Gmail]/Spam", is_spam=True, warmup_domains=warmup_domains)
         stats["rescued_from_spam"] += len(spam_msgs)
         messages_to_reply.extend(spam_msgs)
 
@@ -210,15 +217,17 @@ def process_account(cred):
 def main():
     log.info("=" * 60)
     log.info(f"Reply Engine v2 — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    creds = load_credentials()
+    creds          = load_credentials()
+    warmup_domains = load_warmup_domains()
     log.info(f"Loaded {len(creds)} accounts")
+    log.info(f"Watching {len(warmup_domains)} domains: {', '.join(warmup_domains)}")
 
     total_replied = total_rescued = total_errors = 0
 
     for i, cred in enumerate(creds):
         if i > 0:
             time.sleep(random.uniform(5, 15))
-        stats = process_account(cred)
+        stats = process_account(cred, warmup_domains)
         total_replied += stats["replied"]
         total_rescued += stats["rescued_from_spam"]
         total_errors  += stats["errors"]

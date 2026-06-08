@@ -242,3 +242,439 @@
 2026-06-06 20:58:47,384 [INFO]   → FROM: hello@supportcallsonline.com | 20 emails | Rate: 3.2s | Template: template_3.html
 2026-06-06 20:59:20,595 [INFO]   ✅ hello@supportcallsonline.com complete
 2026-06-06 20:59:20,595 [INFO]   Waiting 78s before next mailbox...
+2026-06-07 08:00:01,126 [INFO] ============================================================
+2026-06-07 08:00:01,126 [INFO] ============================================================
+2026-06-07 08:00:01,129 [INFO] Warmup Engine — 2026-06-07 08:00:01
+2026-06-07 08:00:01,129 [INFO] Warmup Engine — 2026-06-07 08:00:01
+2026-06-07 08:00:01,132 [INFO] Loaded 38 seed addresses
+2026-06-07 08:00:01,132 [INFO] Loaded 38 seed addresses
+2026-06-07 08:00:01,133 [INFO] [SEKI] Day 4 | 13 mailboxes | 35 emails each
+2026-06-07 08:00:01,133 [INFO] [SEKI] Day 4 | 13 mailboxes | 35 emails each
+2026-06-07 08:00:01,136 [INFO]   → FROM: info@supportcallsonline.com | 35 emails | Rate: 2.5s | Template: template_3.html
+2026-06-07 08:00:01,136 [INFO]   → FROM: info@supportcallsonline.com | 35 emails | Rate: 2.5s | Template: template_3.html
+2026-06-07 08:00:47,974 [INFO]   ✅ info@supportcallsonline.com complete
+2026-06-07 08:00:47,974 [INFO]   ✅ info@supportcallsonline.com complete
+2026-06-07 08:00:47,974 [INFO]   Waiting 41s before next mailbox...
+2026-06-07 08:00:47,974 [INFO]   Waiting 41s before next mailbox...
+2026-06-07 08:01:28,979 [INFO]   → FROM: support@supportcallsonline.com | 35 emails | Rate: 2.8s | Template: template_6.html
+2026-06-07 08:01:28,979 [INFO]   → FROM: support@supportcallsonline.com | 35 emails | Rate: 2.8s | Template: template_6.html
+2026-06-07 08:02:20,811 [INFO]   ✅ support@supportcallsonline.com complete
+2026-06-07 08:02:20,811 [INFO]   ✅ support@supportcallsonline.com complete
+2026-06-07 08:02:20,811 [INFO]   Waiting 17s before next mailbox...
+2026-06-07 08:02:20,811 [INFO]   Waiting 17s before next mailbox...
+2026-06-07 08:02:37,813 [INFO]   → FROM: hello@supportcallsonline.com | 35 emails | Rate: 2.1s | Template: template_1.html
+2026-06-07 08:02:37,813 [INFO]   → FROM: hello@supportcallsonline.com | 35 emails | Rate: 2.1s | Template: template_1.html
+2026-06-07 08:03:17,081 [INFO]   ✅ hello@supportcallsonline.com complete
+2026-06-07 08:03:17,081 [INFO]   ✅ hello@supportcallsonline.com complete
+2026-06-07 08:03:17,082 [INFO]   Waiting 44s before next mailbox...
+2026-06-07 08:03:17,082 [INFO]   Waiting 44s before next mailbox...
+2026-06-07 08:04:01,085 [INFO]   → FROM: contact@supportcallsonline.com | 35 emails | Rate: 4.0s | Template: template_1.html
+2026-06-07 08:04:01,085 [INFO]   → FROM: contact@supportcallsonline.com | 35 emails | Rate: 4.0s | Template: template_1.html
+2026-06-07 08:05:14,677 [INFO]   ✅ contact@supportcallsonline.com complete
+2026-06-07 08:05:14,677 [INFO]   ✅ contact@supportcallsonline.com complete
+2026-06-07 08:05:14,677 [INFO]   Waiting 21s before next mailbox...
+2026-06-07 08:05:14,677 [INFO]   Waiting 21s before next mailbox...
+2026-06-07 08:05:35,678 [INFO]   → FROM: team@supportcallsonline.com | 35 emails | Rate: 3.8s | Template: template_4.html
+2026-06-07 08:05:35,678 [INFO]   → FROM: team@supportcallsonline.com | 35 emails | Rate: 3.8s | Template: template_4.html
+2026-06-07 08:06:45,640 [INFO]   ✅ team@supportcallsonline.com complete
+2026-06-07 08:06:45,640 [INFO]   ✅ team@supportcallsonline.com complete
+2026-06-07 08:06:45,640 [INFO]   Waiting 20s before next mailbox...
+2026-06-07 08:06:45,640 [INFO]   Waiting 20s before next mailbox...
+2026-06-07 08:07:05,642 [INFO]   → FROM: admin@supportcallsonline.com | 35 emails | Rate: 3.9s | Template: template_2.html
+2026-06-07 08:07:05,642 [INFO]   → FROM: admin@supportcallsonline.com | 35 emails | Rate: 3.9s | Template: template_2.html
+2026-06-07 08:08:17,318 [INFO]   ✅ admin@supportcallsonline.com complete
+2026-06-07 08:08:17,318 [INFO]   ✅ admin@supportcallsonline.com complete
+2026-06-07 08:08:17,318 [INFO]   Waiting 37s before next mailbox...
+2026-06-07 08:08:17,318 [INFO]   Waiting 37s before next mailbox...
+2026-06-07 08:08:54,320 [INFO]   → FROM: care@supportcallsonline.com | 35 emails | Rate: 3.9s | Template: template_5.html
+2026-06-07 08:08:54,320 [INFO]   → FROM: care@supportcallsonline.com | 35 emails | Rate: 3.9s | Template: template_5.html
+2026-06-07 08:10:06,133 [INFO]   ✅ care@supportcallsonline.com complete
+2026-06-07 08:10:06,133 [INFO]   ✅ care@supportcallsonline.com complete
+2026-06-07 08:10:06,133 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 08:10:06,133 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 08:10:34,134 [INFO]   → FROM: info@send.supportcallsonline.com | 35 emails | Rate: 2.3s | Template: template_6.html
+2026-06-07 08:10:34,134 [INFO]   → FROM: info@send.supportcallsonline.com | 35 emails | Rate: 2.3s | Template: template_6.html
+2026-06-07 08:11:18,058 [INFO]   ✅ info@send.supportcallsonline.com complete
+2026-06-07 08:11:18,058 [INFO]   ✅ info@send.supportcallsonline.com complete
+2026-06-07 08:11:18,058 [INFO]   Waiting 24s before next mailbox...
+2026-06-07 08:11:18,058 [INFO]   Waiting 24s before next mailbox...
+2026-06-07 08:11:42,069 [INFO]   → FROM: support@send.supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_2.html
+2026-06-07 08:11:42,069 [INFO]   → FROM: support@send.supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_2.html
+2026-06-07 08:12:36,596 [INFO]   ✅ support@send.supportcallsonline.com complete
+2026-06-07 08:12:36,596 [INFO]   ✅ support@send.supportcallsonline.com complete
+2026-06-07 08:12:36,597 [INFO]   Waiting 42s before next mailbox...
+2026-06-07 08:12:36,597 [INFO]   Waiting 42s before next mailbox...
+2026-06-07 08:13:18,598 [INFO]   → FROM: hello@send.supportcallsonline.com | 35 emails | Rate: 3.0s | Template: template_2.html
+2026-06-07 08:13:18,598 [INFO]   → FROM: hello@send.supportcallsonline.com | 35 emails | Rate: 3.0s | Template: template_2.html
+2026-06-07 08:14:14,880 [INFO]   ✅ hello@send.supportcallsonline.com complete
+2026-06-07 08:14:14,880 [INFO]   ✅ hello@send.supportcallsonline.com complete
+2026-06-07 08:14:14,880 [INFO]   Waiting 39s before next mailbox...
+2026-06-07 08:14:14,880 [INFO]   Waiting 39s before next mailbox...
+2026-06-07 08:14:53,882 [INFO]   → FROM: info@reach.supportcallsonline.com | 35 emails | Rate: 2.8s | Template: template_1.html
+2026-06-07 08:14:53,882 [INFO]   → FROM: info@reach.supportcallsonline.com | 35 emails | Rate: 2.8s | Template: template_1.html
+2026-06-07 08:15:46,702 [INFO]   ✅ info@reach.supportcallsonline.com complete
+2026-06-07 08:15:46,702 [INFO]   ✅ info@reach.supportcallsonline.com complete
+2026-06-07 08:15:46,702 [INFO]   Waiting 16s before next mailbox...
+2026-06-07 08:15:46,702 [INFO]   Waiting 16s before next mailbox...
+2026-06-07 08:16:02,704 [INFO]   → FROM: support@reach.supportcallsonline.com | 35 emails | Rate: 3.5s | Template: template_5.html
+2026-06-07 08:16:02,704 [INFO]   → FROM: support@reach.supportcallsonline.com | 35 emails | Rate: 3.5s | Template: template_5.html
+2026-06-07 08:17:08,543 [INFO]   ✅ support@reach.supportcallsonline.com complete
+2026-06-07 08:17:08,543 [INFO]   ✅ support@reach.supportcallsonline.com complete
+2026-06-07 08:17:08,544 [INFO]   Waiting 39s before next mailbox...
+2026-06-07 08:17:08,544 [INFO]   Waiting 39s before next mailbox...
+2026-06-07 08:17:47,548 [INFO]   → FROM: hello@reach.supportcallsonline.com | 35 emails | Rate: 3.3s | Template: template_4.html
+2026-06-07 08:17:47,548 [INFO]   → FROM: hello@reach.supportcallsonline.com | 35 emails | Rate: 3.3s | Template: template_4.html
+2026-06-07 08:18:49,564 [INFO]   ✅ hello@reach.supportcallsonline.com complete
+2026-06-07 08:18:49,564 [INFO]   ✅ hello@reach.supportcallsonline.com complete
+2026-06-07 08:18:49,565 [INFO] [SEKI] Done | Today: 455 | Total: 910
+2026-06-07 08:18:49,565 [INFO] [SEKI] Done | Today: 455 | Total: 910
+2026-06-07 08:18:49,565 [INFO] [LDGAUTH] Day 4 | 10 mailboxes | 35 emails each
+2026-06-07 08:18:49,565 [INFO] [LDGAUTH] Day 4 | 10 mailboxes | 35 emails each
+2026-06-07 08:18:49,565 [INFO] [LDGAUTH] Waiting 85s before this profile...
+2026-06-07 08:18:49,565 [INFO] [LDGAUTH] Waiting 85s before this profile...
+2026-06-07 08:20:14,567 [INFO]   → FROM: verify@send.ldgauthenticator.com | 35 emails | Rate: 3.1s | Template: template_2.html
+2026-06-07 08:20:14,567 [INFO]   → FROM: verify@send.ldgauthenticator.com | 35 emails | Rate: 3.1s | Template: template_2.html
+2026-06-07 08:21:23,146 [INFO]   ✅ verify@send.ldgauthenticator.com complete
+2026-06-07 08:21:23,146 [INFO]   ✅ verify@send.ldgauthenticator.com complete
+2026-06-07 08:21:23,146 [INFO]   Waiting 37s before next mailbox...
+2026-06-07 08:21:23,146 [INFO]   Waiting 37s before next mailbox...
+2026-06-07 08:22:00,148 [INFO]   → FROM: auth@send.ldgauthenticator.com | 35 emails | Rate: 2.4s | Template: template_4.html
+2026-06-07 08:22:00,148 [INFO]   → FROM: auth@send.ldgauthenticator.com | 35 emails | Rate: 2.4s | Template: template_4.html
+2026-06-07 08:22:45,568 [INFO]   ✅ auth@send.ldgauthenticator.com complete
+2026-06-07 08:22:45,568 [INFO]   ✅ auth@send.ldgauthenticator.com complete
+2026-06-07 08:22:45,568 [INFO]   Waiting 45s before next mailbox...
+2026-06-07 08:22:45,568 [INFO]   Waiting 45s before next mailbox...
+2026-06-07 08:23:30,569 [INFO]   → FROM: recovery@send.ldgauthenticator.com | 35 emails | Rate: 2.9s | Template: template_4.html
+2026-06-07 08:23:30,569 [INFO]   → FROM: recovery@send.ldgauthenticator.com | 35 emails | Rate: 2.9s | Template: template_4.html
+2026-06-07 08:24:25,311 [INFO]   ✅ recovery@send.ldgauthenticator.com complete
+2026-06-07 08:24:25,311 [INFO]   ✅ recovery@send.ldgauthenticator.com complete
+2026-06-07 08:24:25,311 [INFO]   Waiting 15s before next mailbox...
+2026-06-07 08:24:25,311 [INFO]   Waiting 15s before next mailbox...
+2026-06-07 08:24:40,315 [INFO]   → FROM: alerts@send.ldgauthenticator.com | 35 emails | Rate: 2.2s | Template: template_4.html
+2026-06-07 08:24:40,315 [INFO]   → FROM: alerts@send.ldgauthenticator.com | 35 emails | Rate: 2.2s | Template: template_4.html
+2026-06-07 08:25:22,281 [INFO]   ✅ alerts@send.ldgauthenticator.com complete
+2026-06-07 08:25:22,281 [INFO]   ✅ alerts@send.ldgauthenticator.com complete
+2026-06-07 08:25:22,281 [INFO]   Waiting 24s before next mailbox...
+2026-06-07 08:25:22,281 [INFO]   Waiting 24s before next mailbox...
+2026-06-07 08:25:46,285 [INFO]   → FROM: noreply@send.ldgauthenticator.com | 35 emails | Rate: 4.0s | Template: template_3.html
+2026-06-07 08:25:46,285 [INFO]   → FROM: noreply@send.ldgauthenticator.com | 35 emails | Rate: 4.0s | Template: template_3.html
+2026-06-07 08:27:00,746 [INFO]   ✅ noreply@send.ldgauthenticator.com complete
+2026-06-07 08:27:00,746 [INFO]   ✅ noreply@send.ldgauthenticator.com complete
+2026-06-07 08:27:00,746 [INFO]   Waiting 19s before next mailbox...
+2026-06-07 08:27:00,746 [INFO]   Waiting 19s before next mailbox...
+2026-06-07 08:27:19,748 [INFO]   → FROM: secure@mail.ldgauthenticator.com | 35 emails | Rate: 3.5s | Template: template_4.html
+2026-06-07 08:27:19,748 [INFO]   → FROM: secure@mail.ldgauthenticator.com | 35 emails | Rate: 3.5s | Template: template_4.html
+2026-06-07 08:28:25,160 [INFO]   ✅ secure@mail.ldgauthenticator.com complete
+2026-06-07 08:28:25,160 [INFO]   ✅ secure@mail.ldgauthenticator.com complete
+2026-06-07 08:28:25,161 [INFO]   Waiting 31s before next mailbox...
+2026-06-07 08:28:25,161 [INFO]   Waiting 31s before next mailbox...
+2026-06-07 08:28:56,162 [INFO]   → FROM: access@mail.ldgauthenticator.com | 35 emails | Rate: 4.0s | Template: template_3.html
+2026-06-07 08:28:56,162 [INFO]   → FROM: access@mail.ldgauthenticator.com | 35 emails | Rate: 4.0s | Template: template_3.html
+2026-06-07 08:30:10,355 [INFO]   ✅ access@mail.ldgauthenticator.com complete
+2026-06-07 08:30:10,355 [INFO]   ✅ access@mail.ldgauthenticator.com complete
+2026-06-07 08:30:10,355 [INFO]   Waiting 34s before next mailbox...
+2026-06-07 08:30:10,355 [INFO]   Waiting 34s before next mailbox...
+2026-06-07 08:30:44,356 [INFO]   → FROM: ledger@mail.ldgauthenticator.com | 35 emails | Rate: 3.1s | Template: template_6.html
+2026-06-07 08:30:44,356 [INFO]   → FROM: ledger@mail.ldgauthenticator.com | 35 emails | Rate: 3.1s | Template: template_6.html
+2026-06-07 08:31:42,506 [INFO]   ✅ ledger@mail.ldgauthenticator.com complete
+2026-06-07 08:31:42,506 [INFO]   ✅ ledger@mail.ldgauthenticator.com complete
+2026-06-07 08:31:42,507 [INFO]   Waiting 18s before next mailbox...
+2026-06-07 08:31:42,507 [INFO]   Waiting 18s before next mailbox...
+2026-06-07 08:32:00,508 [INFO]   → FROM: token@mail.ldgauthenticator.com | 35 emails | Rate: 4.0s | Template: template_6.html
+2026-06-07 08:32:00,508 [INFO]   → FROM: token@mail.ldgauthenticator.com | 35 emails | Rate: 4.0s | Template: template_6.html
+2026-06-07 08:33:15,003 [INFO]   ✅ token@mail.ldgauthenticator.com complete
+2026-06-07 08:33:15,003 [INFO]   ✅ token@mail.ldgauthenticator.com complete
+2026-06-07 08:33:15,004 [INFO]   Waiting 45s before next mailbox...
+2026-06-07 08:33:15,004 [INFO]   Waiting 45s before next mailbox...
+2026-06-07 08:34:00,007 [INFO]   → FROM: sync@mail.ldgauthenticator.com | 35 emails | Rate: 3.9s | Template: template_5.html
+2026-06-07 08:34:00,007 [INFO]   → FROM: sync@mail.ldgauthenticator.com | 35 emails | Rate: 3.9s | Template: template_5.html
+2026-06-07 08:35:12,689 [INFO]   ✅ sync@mail.ldgauthenticator.com complete
+2026-06-07 08:35:12,689 [INFO]   ✅ sync@mail.ldgauthenticator.com complete
+2026-06-07 08:35:12,689 [INFO] [LDGAUTH] Done | Today: 350 | Total: 700
+2026-06-07 08:35:12,689 [INFO] [LDGAUTH] Done | Today: 350 | Total: 700
+2026-06-07 08:35:12,689 [INFO] [BINANCE] Day 2 | 10 mailboxes | 10 emails each
+2026-06-07 08:35:12,689 [INFO] [BINANCE] Day 2 | 10 mailboxes | 10 emails each
+2026-06-07 08:35:12,689 [INFO] [BINANCE] Waiting 170s before this profile...
+2026-06-07 08:35:12,689 [INFO] [BINANCE] Waiting 170s before this profile...
+2026-06-07 08:38:02,690 [INFO]   → FROM: agent@mail.binancehelps.net | 10 emails | Rate: 7.3s | Template: template_5.html
+2026-06-07 08:38:02,690 [INFO]   → FROM: agent@mail.binancehelps.net | 10 emails | Rate: 7.3s | Template: template_5.html
+2026-06-07 08:38:40,552 [INFO]   ✅ agent@mail.binancehelps.net complete
+2026-06-07 08:38:40,552 [INFO]   ✅ agent@mail.binancehelps.net complete
+2026-06-07 08:38:40,552 [INFO]   Waiting 78s before next mailbox...
+2026-06-07 08:38:40,552 [INFO]   Waiting 78s before next mailbox...
+2026-06-07 08:39:58,553 [INFO]   → FROM: assist@mail.binancehelps.net | 10 emails | Rate: 5.2s | Template: template_6.html
+2026-06-07 08:39:58,553 [INFO]   → FROM: assist@mail.binancehelps.net | 10 emails | Rate: 5.2s | Template: template_6.html
+2026-06-07 08:40:25,747 [INFO]   ✅ assist@mail.binancehelps.net complete
+2026-06-07 08:40:25,747 [INFO]   ✅ assist@mail.binancehelps.net complete
+2026-06-07 08:40:25,747 [INFO]   Waiting 41s before next mailbox...
+2026-06-07 08:40:25,747 [INFO]   Waiting 41s before next mailbox...
+2026-06-07 08:41:06,748 [INFO]   → FROM: support@mail.binancehelps.net | 10 emails | Rate: 5.1s | Template: template_5.html
+2026-06-07 08:41:06,748 [INFO]   → FROM: support@mail.binancehelps.net | 10 emails | Rate: 5.1s | Template: template_5.html
+2026-06-07 08:41:33,472 [INFO]   ✅ support@mail.binancehelps.net complete
+2026-06-07 08:41:33,472 [INFO]   ✅ support@mail.binancehelps.net complete
+2026-06-07 08:41:33,472 [INFO]   Waiting 73s before next mailbox...
+2026-06-07 08:41:33,472 [INFO]   Waiting 73s before next mailbox...
+2026-06-07 08:42:46,473 [INFO]   → FROM: desk@mail.binancehelps.net | 10 emails | Rate: 6.4s | Template: template_6.html
+2026-06-07 08:42:46,473 [INFO]   → FROM: desk@mail.binancehelps.net | 10 emails | Rate: 6.4s | Template: template_6.html
+2026-06-07 08:43:19,811 [INFO]   ✅ desk@mail.binancehelps.net complete
+2026-06-07 08:43:19,811 [INFO]   ✅ desk@mail.binancehelps.net complete
+2026-06-07 08:43:19,811 [INFO]   Waiting 35s before next mailbox...
+2026-06-07 08:43:19,811 [INFO]   Waiting 35s before next mailbox...
+2026-06-07 08:43:54,812 [INFO]   → FROM: help@mail.binancehelps.net | 10 emails | Rate: 7.4s | Template: template_1.html
+2026-06-07 08:43:54,812 [INFO]   → FROM: help@mail.binancehelps.net | 10 emails | Rate: 7.4s | Template: template_1.html
+2026-06-07 08:44:33,179 [INFO]   ✅ help@mail.binancehelps.net complete
+2026-06-07 08:44:33,179 [INFO]   ✅ help@mail.binancehelps.net complete
+2026-06-07 08:44:33,179 [INFO]   Waiting 67s before next mailbox...
+2026-06-07 08:44:33,179 [INFO]   Waiting 67s before next mailbox...
+2026-06-07 08:45:40,180 [INFO]   → FROM: notify@send.binancehelps.net | 10 emails | Rate: 5.7s | Template: template_2.html
+2026-06-07 08:45:40,180 [INFO]   → FROM: notify@send.binancehelps.net | 10 emails | Rate: 5.7s | Template: template_2.html
+2026-06-07 08:46:12,242 [INFO]   ✅ notify@send.binancehelps.net complete
+2026-06-07 08:46:12,242 [INFO]   ✅ notify@send.binancehelps.net complete
+2026-06-07 08:46:12,242 [INFO]   Waiting 67s before next mailbox...
+2026-06-07 08:46:12,242 [INFO]   Waiting 67s before next mailbox...
+2026-06-07 08:47:19,243 [INFO]   → FROM: update@send.binancehelps.net | 10 emails | Rate: 5.2s | Template: template_1.html
+2026-06-07 08:47:19,243 [INFO]   → FROM: update@send.binancehelps.net | 10 emails | Rate: 5.2s | Template: template_1.html
+2026-06-07 08:47:46,490 [INFO]   ✅ update@send.binancehelps.net complete
+2026-06-07 08:47:46,490 [INFO]   ✅ update@send.binancehelps.net complete
+2026-06-07 08:47:46,490 [INFO]   Waiting 71s before next mailbox...
+2026-06-07 08:47:46,490 [INFO]   Waiting 71s before next mailbox...
+2026-06-07 08:48:57,491 [INFO]   → FROM: confirm@send.binancehelps.net | 10 emails | Rate: 7.1s | Template: template_1.html
+2026-06-07 08:48:57,491 [INFO]   → FROM: confirm@send.binancehelps.net | 10 emails | Rate: 7.1s | Template: template_1.html
+2026-06-07 08:49:34,198 [INFO]   ✅ confirm@send.binancehelps.net complete
+2026-06-07 08:49:34,198 [INFO]   ✅ confirm@send.binancehelps.net complete
+2026-06-07 08:49:34,198 [INFO]   Waiting 75s before next mailbox...
+2026-06-07 08:49:34,198 [INFO]   Waiting 75s before next mailbox...
+2026-06-07 08:50:49,199 [INFO]   → FROM: status@send.binancehelps.net | 10 emails | Rate: 7.8s | Template: template_1.html
+2026-06-07 08:50:49,199 [INFO]   → FROM: status@send.binancehelps.net | 10 emails | Rate: 7.8s | Template: template_1.html
+2026-06-07 08:51:29,361 [INFO]   ✅ status@send.binancehelps.net complete
+2026-06-07 08:51:29,361 [INFO]   ✅ status@send.binancehelps.net complete
+2026-06-07 08:51:29,362 [INFO]   Waiting 89s before next mailbox...
+2026-06-07 08:51:29,362 [INFO]   Waiting 89s before next mailbox...
+2026-06-07 08:52:58,363 [INFO]   → FROM: info@send.binancehelps.net | 10 emails | Rate: 8.0s | Template: template_2.html
+2026-06-07 08:52:58,363 [INFO]   → FROM: info@send.binancehelps.net | 10 emails | Rate: 8.0s | Template: template_2.html
+2026-06-07 08:53:39,595 [INFO]   ✅ info@send.binancehelps.net complete
+2026-06-07 08:53:39,595 [INFO]   ✅ info@send.binancehelps.net complete
+2026-06-07 08:53:39,595 [INFO] [BINANCE] Done | Today: 100 | Total: 100
+2026-06-07 08:53:39,595 [INFO] [BINANCE] Done | Today: 100 | Total: 100
+2026-06-07 08:53:39,598 [INFO] Warmup Engine complete
+2026-06-07 08:53:39,598 [INFO] Warmup Engine complete
+2026-06-07 08:53:39,599 [INFO] ============================================================
+2026-06-07 08:53:39,599 [INFO] ============================================================
+2026-06-07 14:00:01,473 [INFO] ============================================================
+2026-06-07 14:00:01,473 [INFO] ============================================================
+2026-06-07 14:00:01,492 [INFO] Warmup Engine — 2026-06-07 14:00:01
+2026-06-07 14:00:01,492 [INFO] Warmup Engine — 2026-06-07 14:00:01
+2026-06-07 14:00:01,498 [INFO] Loaded 38 seed addresses
+2026-06-07 14:00:01,498 [INFO] Loaded 38 seed addresses
+2026-06-07 14:00:01,498 [INFO] [SEKI] Day 4 | 13 mailboxes | 35 emails each
+2026-06-07 14:00:01,498 [INFO] [SEKI] Day 4 | 13 mailboxes | 35 emails each
+2026-06-07 14:00:01,502 [INFO]   → FROM: info@supportcallsonline.com | 35 emails | Rate: 2.1s | Template: template_3.html
+2026-06-07 14:00:01,502 [INFO]   → FROM: info@supportcallsonline.com | 35 emails | Rate: 2.1s | Template: template_3.html
+2026-06-07 14:00:50,996 [INFO]   ✅ info@supportcallsonline.com complete
+2026-06-07 14:00:50,996 [INFO]   ✅ info@supportcallsonline.com complete
+2026-06-07 14:00:50,996 [INFO]   Waiting 39s before next mailbox...
+2026-06-07 14:00:50,996 [INFO]   Waiting 39s before next mailbox...
+2026-06-07 14:01:29,998 [INFO]   → FROM: support@supportcallsonline.com | 35 emails | Rate: 3.7s | Template: template_6.html
+2026-06-07 14:01:29,998 [INFO]   → FROM: support@supportcallsonline.com | 35 emails | Rate: 3.7s | Template: template_6.html
+2026-06-07 14:02:38,269 [INFO]   ✅ support@supportcallsonline.com complete
+2026-06-07 14:02:38,269 [INFO]   ✅ support@supportcallsonline.com complete
+2026-06-07 14:02:38,269 [INFO]   Waiting 45s before next mailbox...
+2026-06-07 14:02:38,269 [INFO]   Waiting 45s before next mailbox...
+2026-06-07 14:03:23,271 [INFO]   → FROM: hello@supportcallsonline.com | 35 emails | Rate: 3.9s | Template: template_2.html
+2026-06-07 14:03:23,271 [INFO]   → FROM: hello@supportcallsonline.com | 35 emails | Rate: 3.9s | Template: template_2.html
+2026-06-07 14:04:35,073 [INFO]   ✅ hello@supportcallsonline.com complete
+2026-06-07 14:04:35,073 [INFO]   ✅ hello@supportcallsonline.com complete
+2026-06-07 14:04:35,073 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 14:04:35,073 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 14:05:03,074 [INFO]   → FROM: contact@supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_1.html
+2026-06-07 14:05:03,074 [INFO]   → FROM: contact@supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_1.html
+2026-06-07 14:05:56,950 [INFO]   ✅ contact@supportcallsonline.com complete
+2026-06-07 14:05:56,950 [INFO]   ✅ contact@supportcallsonline.com complete
+2026-06-07 14:05:56,950 [INFO]   Waiting 25s before next mailbox...
+2026-06-07 14:05:56,950 [INFO]   Waiting 25s before next mailbox...
+2026-06-07 14:06:21,952 [INFO]   → FROM: team@supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_3.html
+2026-06-07 14:06:21,952 [INFO]   → FROM: team@supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_3.html
+2026-06-07 14:07:15,685 [INFO]   ✅ team@supportcallsonline.com complete
+2026-06-07 14:07:15,685 [INFO]   ✅ team@supportcallsonline.com complete
+2026-06-07 14:07:15,686 [INFO]   Waiting 44s before next mailbox...
+2026-06-07 14:07:15,686 [INFO]   Waiting 44s before next mailbox...
+2026-06-07 14:07:59,688 [INFO]   → FROM: admin@supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_3.html
+2026-06-07 14:07:59,688 [INFO]   → FROM: admin@supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_3.html
+2026-06-07 14:08:53,386 [INFO]   ✅ admin@supportcallsonline.com complete
+2026-06-07 14:08:53,386 [INFO]   ✅ admin@supportcallsonline.com complete
+2026-06-07 14:08:53,386 [INFO]   Waiting 39s before next mailbox...
+2026-06-07 14:08:53,386 [INFO]   Waiting 39s before next mailbox...
+2026-06-07 14:09:32,388 [INFO]   → FROM: care@supportcallsonline.com | 35 emails | Rate: 3.8s | Template: template_1.html
+2026-06-07 14:09:32,388 [INFO]   → FROM: care@supportcallsonline.com | 35 emails | Rate: 3.8s | Template: template_1.html
+2026-06-07 14:10:42,654 [INFO]   ✅ care@supportcallsonline.com complete
+2026-06-07 14:10:42,654 [INFO]   ✅ care@supportcallsonline.com complete
+2026-06-07 14:10:42,654 [INFO]   Waiting 34s before next mailbox...
+2026-06-07 14:10:42,654 [INFO]   Waiting 34s before next mailbox...
+2026-06-07 14:11:16,655 [INFO]   → FROM: info@send.supportcallsonline.com | 35 emails | Rate: 2.8s | Template: template_3.html
+2026-06-07 14:11:16,655 [INFO]   → FROM: info@send.supportcallsonline.com | 35 emails | Rate: 2.8s | Template: template_3.html
+2026-06-07 14:12:09,691 [INFO]   ✅ info@send.supportcallsonline.com complete
+2026-06-07 14:12:09,691 [INFO]   ✅ info@send.supportcallsonline.com complete
+2026-06-07 14:12:09,691 [INFO]   Waiting 19s before next mailbox...
+2026-06-07 14:12:09,691 [INFO]   Waiting 19s before next mailbox...
+2026-06-07 14:12:28,692 [INFO]   → FROM: support@send.supportcallsonline.com | 35 emails | Rate: 2.8s | Template: template_5.html
+2026-06-07 14:12:28,692 [INFO]   → FROM: support@send.supportcallsonline.com | 35 emails | Rate: 2.8s | Template: template_5.html
+2026-06-07 14:13:21,242 [INFO]   ✅ support@send.supportcallsonline.com complete
+2026-06-07 14:13:21,242 [INFO]   ✅ support@send.supportcallsonline.com complete
+2026-06-07 14:13:21,243 [INFO]   Waiting 23s before next mailbox...
+2026-06-07 14:13:21,243 [INFO]   Waiting 23s before next mailbox...
+2026-06-07 14:13:44,245 [INFO]   → FROM: hello@send.supportcallsonline.com | 35 emails | Rate: 3.8s | Template: template_4.html
+2026-06-07 14:13:44,245 [INFO]   → FROM: hello@send.supportcallsonline.com | 35 emails | Rate: 3.8s | Template: template_4.html
+2026-06-07 14:14:54,919 [INFO]   ✅ hello@send.supportcallsonline.com complete
+2026-06-07 14:14:54,919 [INFO]   ✅ hello@send.supportcallsonline.com complete
+2026-06-07 14:14:54,919 [INFO]   Waiting 38s before next mailbox...
+2026-06-07 14:14:54,919 [INFO]   Waiting 38s before next mailbox...
+2026-06-07 14:15:32,921 [INFO]   → FROM: info@reach.supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_6.html
+2026-06-07 14:15:32,921 [INFO]   → FROM: info@reach.supportcallsonline.com | 35 emails | Rate: 2.9s | Template: template_6.html
+2026-06-07 14:16:27,724 [INFO]   ✅ info@reach.supportcallsonline.com complete
+2026-06-07 14:16:27,724 [INFO]   ✅ info@reach.supportcallsonline.com complete
+2026-06-07 14:16:27,724 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 14:16:27,724 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 14:16:55,726 [INFO]   → FROM: support@reach.supportcallsonline.com | 35 emails | Rate: 3.5s | Template: template_4.html
+2026-06-07 14:16:55,726 [INFO]   → FROM: support@reach.supportcallsonline.com | 35 emails | Rate: 3.5s | Template: template_4.html
+2026-06-07 14:18:01,274 [INFO]   ✅ support@reach.supportcallsonline.com complete
+2026-06-07 14:18:01,274 [INFO]   ✅ support@reach.supportcallsonline.com complete
+2026-06-07 14:18:01,274 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 14:18:01,274 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 14:18:29,278 [INFO]   → FROM: hello@reach.supportcallsonline.com | 35 emails | Rate: 3.4s | Template: template_2.html
+2026-06-07 14:18:29,278 [INFO]   → FROM: hello@reach.supportcallsonline.com | 35 emails | Rate: 3.4s | Template: template_2.html
+2026-06-07 14:19:32,811 [INFO]   ✅ hello@reach.supportcallsonline.com complete
+2026-06-07 14:19:32,811 [INFO]   ✅ hello@reach.supportcallsonline.com complete
+2026-06-07 14:19:32,811 [INFO] [SEKI] Done | Today: 455 | Total: 1365
+2026-06-07 14:19:32,811 [INFO] [SEKI] Done | Today: 455 | Total: 1365
+2026-06-07 14:19:32,811 [INFO] [LDGAUTH] Day 4 | 10 mailboxes | 35 emails each
+2026-06-07 14:19:32,811 [INFO] [LDGAUTH] Day 4 | 10 mailboxes | 35 emails each
+2026-06-07 14:19:32,811 [INFO] [LDGAUTH] Waiting 69s before this profile...
+2026-06-07 14:19:32,811 [INFO] [LDGAUTH] Waiting 69s before this profile...
+2026-06-07 14:20:41,814 [INFO]   → FROM: verify@send.ldgauthenticator.com | 35 emails | Rate: 3.9s | Template: template_3.html
+2026-06-07 14:20:41,814 [INFO]   → FROM: verify@send.ldgauthenticator.com | 35 emails | Rate: 3.9s | Template: template_3.html
+2026-06-07 14:21:54,420 [INFO]   ✅ verify@send.ldgauthenticator.com complete
+2026-06-07 14:21:54,420 [INFO]   ✅ verify@send.ldgauthenticator.com complete
+2026-06-07 14:21:54,420 [INFO]   Waiting 35s before next mailbox...
+2026-06-07 14:21:54,420 [INFO]   Waiting 35s before next mailbox...
+2026-06-07 14:22:29,422 [INFO]   → FROM: auth@send.ldgauthenticator.com | 35 emails | Rate: 3.0s | Template: template_2.html
+2026-06-07 14:22:29,422 [INFO]   → FROM: auth@send.ldgauthenticator.com | 35 emails | Rate: 3.0s | Template: template_2.html
+2026-06-07 14:23:25,757 [INFO]   ✅ auth@send.ldgauthenticator.com complete
+2026-06-07 14:23:25,757 [INFO]   ✅ auth@send.ldgauthenticator.com complete
+2026-06-07 14:23:25,757 [INFO]   Waiting 31s before next mailbox...
+2026-06-07 14:23:25,757 [INFO]   Waiting 31s before next mailbox...
+2026-06-07 14:23:56,760 [INFO]   → FROM: recovery@send.ldgauthenticator.com | 35 emails | Rate: 4.0s | Template: template_2.html
+2026-06-07 14:23:56,760 [INFO]   → FROM: recovery@send.ldgauthenticator.com | 35 emails | Rate: 4.0s | Template: template_2.html
+2026-06-07 14:25:11,211 [INFO]   ✅ recovery@send.ldgauthenticator.com complete
+2026-06-07 14:25:11,211 [INFO]   ✅ recovery@send.ldgauthenticator.com complete
+2026-06-07 14:25:11,211 [INFO]   Waiting 27s before next mailbox...
+2026-06-07 14:25:11,211 [INFO]   Waiting 27s before next mailbox...
+2026-06-07 14:25:38,212 [INFO]   → FROM: alerts@send.ldgauthenticator.com | 35 emails | Rate: 3.1s | Template: template_1.html
+2026-06-07 14:25:38,212 [INFO]   → FROM: alerts@send.ldgauthenticator.com | 35 emails | Rate: 3.1s | Template: template_1.html
+2026-06-07 14:26:36,375 [INFO]   ✅ alerts@send.ldgauthenticator.com complete
+2026-06-07 14:26:36,375 [INFO]   ✅ alerts@send.ldgauthenticator.com complete
+2026-06-07 14:26:36,375 [INFO]   Waiting 22s before next mailbox...
+2026-06-07 14:26:36,375 [INFO]   Waiting 22s before next mailbox...
+2026-06-07 14:26:58,377 [INFO]   → FROM: noreply@send.ldgauthenticator.com | 35 emails | Rate: 3.6s | Template: template_3.html
+2026-06-07 14:26:58,377 [INFO]   → FROM: noreply@send.ldgauthenticator.com | 35 emails | Rate: 3.6s | Template: template_3.html
+2026-06-07 14:28:16,010 [INFO]   ✅ noreply@send.ldgauthenticator.com complete
+2026-06-07 14:28:16,010 [INFO]   ✅ noreply@send.ldgauthenticator.com complete
+2026-06-07 14:28:16,010 [INFO]   Waiting 24s before next mailbox...
+2026-06-07 14:28:16,010 [INFO]   Waiting 24s before next mailbox...
+2026-06-07 14:28:40,012 [INFO]   → FROM: secure@mail.ldgauthenticator.com | 35 emails | Rate: 2.6s | Template: template_1.html
+2026-06-07 14:28:40,012 [INFO]   → FROM: secure@mail.ldgauthenticator.com | 35 emails | Rate: 2.6s | Template: template_1.html
+2026-06-07 14:29:29,488 [INFO]   ✅ secure@mail.ldgauthenticator.com complete
+2026-06-07 14:29:29,488 [INFO]   ✅ secure@mail.ldgauthenticator.com complete
+2026-06-07 14:29:29,488 [INFO]   Waiting 31s before next mailbox...
+2026-06-07 14:29:29,488 [INFO]   Waiting 31s before next mailbox...
+2026-06-07 14:30:00,490 [INFO]   → FROM: access@mail.ldgauthenticator.com | 35 emails | Rate: 3.4s | Template: template_5.html
+2026-06-07 14:30:00,490 [INFO]   → FROM: access@mail.ldgauthenticator.com | 35 emails | Rate: 3.4s | Template: template_5.html
+2026-06-07 14:31:14,238 [INFO]   ✅ access@mail.ldgauthenticator.com complete
+2026-06-07 14:31:14,238 [INFO]   ✅ access@mail.ldgauthenticator.com complete
+2026-06-07 14:31:14,238 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 14:31:14,238 [INFO]   Waiting 28s before next mailbox...
+2026-06-07 14:31:42,240 [INFO]   → FROM: ledger@mail.ldgauthenticator.com | 35 emails | Rate: 3.4s | Template: template_5.html
+2026-06-07 14:31:42,240 [INFO]   → FROM: ledger@mail.ldgauthenticator.com | 35 emails | Rate: 3.4s | Template: template_5.html
+2026-06-07 14:32:45,873 [INFO]   ✅ ledger@mail.ldgauthenticator.com complete
+2026-06-07 14:32:45,873 [INFO]   ✅ ledger@mail.ldgauthenticator.com complete
+2026-06-07 14:32:45,874 [INFO]   Waiting 45s before next mailbox...
+2026-06-07 14:32:45,874 [INFO]   Waiting 45s before next mailbox...
+2026-06-07 14:33:30,877 [INFO]   → FROM: token@mail.ldgauthenticator.com | 35 emails | Rate: 2.1s | Template: template_6.html
+2026-06-07 14:33:30,877 [INFO]   → FROM: token@mail.ldgauthenticator.com | 35 emails | Rate: 2.1s | Template: template_6.html
+2026-06-07 14:34:11,218 [INFO]   ✅ token@mail.ldgauthenticator.com complete
+2026-06-07 14:34:11,218 [INFO]   ✅ token@mail.ldgauthenticator.com complete
+2026-06-07 14:34:11,218 [INFO]   Waiting 42s before next mailbox...
+2026-06-07 14:34:11,218 [INFO]   Waiting 42s before next mailbox...
+2026-06-07 14:34:53,220 [INFO]   → FROM: sync@mail.ldgauthenticator.com | 35 emails | Rate: 2.2s | Template: template_1.html
+2026-06-07 14:34:53,220 [INFO]   → FROM: sync@mail.ldgauthenticator.com | 35 emails | Rate: 2.2s | Template: template_1.html
+2026-06-07 14:35:35,276 [INFO]   ✅ sync@mail.ldgauthenticator.com complete
+2026-06-07 14:35:35,276 [INFO]   ✅ sync@mail.ldgauthenticator.com complete
+2026-06-07 14:35:35,276 [INFO] [LDGAUTH] Done | Today: 350 | Total: 1050
+2026-06-07 14:35:35,276 [INFO] [LDGAUTH] Done | Today: 350 | Total: 1050
+2026-06-07 14:35:35,276 [INFO] [BINANCE] Day 2 | 10 mailboxes | 10 emails each
+2026-06-07 14:35:35,276 [INFO] [BINANCE] Day 2 | 10 mailboxes | 10 emails each
+2026-06-07 14:35:35,276 [INFO] [BINANCE] Waiting 210s before this profile...
+2026-06-07 14:35:35,276 [INFO] [BINANCE] Waiting 210s before this profile...
+2026-06-07 14:39:05,279 [INFO]   → FROM: agent@mail.binancehelps.net | 10 emails | Rate: 5.8s | Template: template_1.html
+2026-06-07 14:39:05,279 [INFO]   → FROM: agent@mail.binancehelps.net | 10 emails | Rate: 5.8s | Template: template_1.html
+2026-06-07 14:39:35,553 [INFO]   ✅ agent@mail.binancehelps.net complete
+2026-06-07 14:39:35,553 [INFO]   ✅ agent@mail.binancehelps.net complete
+2026-06-07 14:39:35,553 [INFO]   Waiting 83s before next mailbox...
+2026-06-07 14:39:35,553 [INFO]   Waiting 83s before next mailbox...
+2026-06-07 14:40:58,554 [INFO]   → FROM: assist@mail.binancehelps.net | 10 emails | Rate: 5.9s | Template: template_1.html
+2026-06-07 14:40:58,554 [INFO]   → FROM: assist@mail.binancehelps.net | 10 emails | Rate: 5.9s | Template: template_1.html
+2026-06-07 14:41:29,301 [INFO]   ✅ assist@mail.binancehelps.net complete
+2026-06-07 14:41:29,301 [INFO]   ✅ assist@mail.binancehelps.net complete
+2026-06-07 14:41:29,301 [INFO]   Waiting 51s before next mailbox...
+2026-06-07 14:41:29,301 [INFO]   Waiting 51s before next mailbox...
+2026-06-07 14:42:20,302 [INFO]   → FROM: support@mail.binancehelps.net | 10 emails | Rate: 5.6s | Template: template_2.html
+2026-06-07 14:42:20,302 [INFO]   → FROM: support@mail.binancehelps.net | 10 emails | Rate: 5.6s | Template: template_2.html
+2026-06-07 14:42:49,469 [INFO]   ✅ support@mail.binancehelps.net complete
+2026-06-07 14:42:49,469 [INFO]   ✅ support@mail.binancehelps.net complete
+2026-06-07 14:42:49,469 [INFO]   Waiting 49s before next mailbox...
+2026-06-07 14:42:49,469 [INFO]   Waiting 49s before next mailbox...
+2026-06-07 14:43:38,470 [INFO]   → FROM: desk@mail.binancehelps.net | 10 emails | Rate: 7.4s | Template: template_2.html
+2026-06-07 14:43:38,470 [INFO]   → FROM: desk@mail.binancehelps.net | 10 emails | Rate: 7.4s | Template: template_2.html
+2026-06-07 14:44:16,660 [INFO]   ✅ desk@mail.binancehelps.net complete
+2026-06-07 14:44:16,660 [INFO]   ✅ desk@mail.binancehelps.net complete
+2026-06-07 14:44:16,660 [INFO]   Waiting 44s before next mailbox...
+2026-06-07 14:44:16,660 [INFO]   Waiting 44s before next mailbox...
+2026-06-07 14:45:00,662 [INFO]   → FROM: help@mail.binancehelps.net | 10 emails | Rate: 5.2s | Template: template_5.html
+2026-06-07 14:45:00,662 [INFO]   → FROM: help@mail.binancehelps.net | 10 emails | Rate: 5.2s | Template: template_5.html
+2026-06-07 14:45:27,984 [INFO]   ✅ help@mail.binancehelps.net complete
+2026-06-07 14:45:27,984 [INFO]   ✅ help@mail.binancehelps.net complete
+2026-06-07 14:45:27,984 [INFO]   Waiting 75s before next mailbox...
+2026-06-07 14:45:27,984 [INFO]   Waiting 75s before next mailbox...
+2026-06-07 14:46:42,985 [INFO]   → FROM: notify@send.binancehelps.net | 10 emails | Rate: 7.0s | Template: template_2.html
+2026-06-07 14:46:42,985 [INFO]   → FROM: notify@send.binancehelps.net | 10 emails | Rate: 7.0s | Template: template_2.html
+2026-06-07 14:47:19,219 [INFO]   ✅ notify@send.binancehelps.net complete
+2026-06-07 14:47:19,219 [INFO]   ✅ notify@send.binancehelps.net complete
+2026-06-07 14:47:19,219 [INFO]   Waiting 65s before next mailbox...
+2026-06-07 14:47:19,219 [INFO]   Waiting 65s before next mailbox...
+2026-06-07 14:48:24,223 [INFO]   → FROM: update@send.binancehelps.net | 10 emails | Rate: 5.6s | Template: template_6.html
+2026-06-07 14:48:24,223 [INFO]   → FROM: update@send.binancehelps.net | 10 emails | Rate: 5.6s | Template: template_6.html
+2026-06-07 14:48:53,488 [INFO]   ✅ update@send.binancehelps.net complete
+2026-06-07 14:48:53,488 [INFO]   ✅ update@send.binancehelps.net complete
+2026-06-07 14:48:53,488 [INFO]   Waiting 58s before next mailbox...
+2026-06-07 14:48:53,488 [INFO]   Waiting 58s before next mailbox...
+2026-06-07 14:49:51,489 [INFO]   → FROM: confirm@send.binancehelps.net | 10 emails | Rate: 5.6s | Template: template_1.html
+2026-06-07 14:49:51,489 [INFO]   → FROM: confirm@send.binancehelps.net | 10 emails | Rate: 5.6s | Template: template_1.html
+2026-06-07 14:50:20,776 [INFO]   ✅ confirm@send.binancehelps.net complete
+2026-06-07 14:50:20,776 [INFO]   ✅ confirm@send.binancehelps.net complete
+2026-06-07 14:50:20,776 [INFO]   Waiting 33s before next mailbox...
+2026-06-07 14:50:20,776 [INFO]   Waiting 33s before next mailbox...
+2026-06-07 14:50:53,778 [INFO]   → FROM: status@send.binancehelps.net | 10 emails | Rate: 7.9s | Template: template_1.html
+2026-06-07 14:50:53,778 [INFO]   → FROM: status@send.binancehelps.net | 10 emails | Rate: 7.9s | Template: template_1.html
+2026-06-07 14:51:34,587 [INFO]   ✅ status@send.binancehelps.net complete
+2026-06-07 14:51:34,587 [INFO]   ✅ status@send.binancehelps.net complete
+2026-06-07 14:51:34,587 [INFO]   Waiting 86s before next mailbox...
+2026-06-07 14:51:34,587 [INFO]   Waiting 86s before next mailbox...
+2026-06-07 14:53:00,588 [INFO]   → FROM: info@send.binancehelps.net | 10 emails | Rate: 6.4s | Template: template_6.html
+2026-06-07 14:53:00,588 [INFO]   → FROM: info@send.binancehelps.net | 10 emails | Rate: 6.4s | Template: template_6.html
+2026-06-07 14:53:34,091 [INFO]   ✅ info@send.binancehelps.net complete
+2026-06-07 14:53:34,091 [INFO]   ✅ info@send.binancehelps.net complete
+2026-06-07 14:53:34,092 [INFO] [BINANCE] Done | Today: 100 | Total: 200
+2026-06-07 14:53:34,092 [INFO] [BINANCE] Done | Today: 100 | Total: 200
+2026-06-07 14:53:34,093 [INFO] Warmup Engine complete
+2026-06-07 14:53:34,093 [INFO] Warmup Engine complete
+2026-06-07 14:53:34,093 [INFO] ============================================================
+2026-06-07 14:53:34,093 [INFO] ============================================================

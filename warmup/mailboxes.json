@@ -37,5 +37,45 @@
     "confirm@send.binancehelps.net",
     "status@send.binancehelps.net",
     "info@send.binancehelps.net"
+  ],
+  "CryptoAssist": [
+    "info@mail.assists.online",
+    "support@mail.assists.online",
+    "hello@mail.assists.online",
+    "info@send.assists.online",
+    "support@send.assists.online",
+    "hello@send.assists.online"
+  ],
+  "Gretomat": [
+    "info@mail.gretomat.online",
+    "support@mail.gretomat.online",
+    "hello@mail.gretomat.online",
+    "info@send.gretomat.online",
+    "support@send.gretomat.online",
+    "hello@send.gretomat.online"
+  ],
+  "Ledger Support": [
+    "info@mail.ledqer.support",
+    "support@mail.ledqer.support",
+    "hello@mail.ledqer.support",
+    "info@send.ledqer.support",
+    "support@send.ledqer.support",
+    "hello@send.ledqer.support"
+  ],
+  "LedgerRecover": [
+    "info@mail.recoverledger.site",
+    "support@mail.recoverledger.site",
+    "hello@mail.recoverledger.site",
+    "info@send.recoverledger.site",
+    "support@send.recoverledger.site",
+    "hello@send.recoverledger.site"
+  ],
+  "RobinHood": [
+    "info@mail.robln.online",
+    "support@mail.robln.online",
+    "hello@mail.robln.online",
+    "info@send.robln.online",
+    "support@send.robln.online",
+    "hello@send.robln.online"
   ]
 }

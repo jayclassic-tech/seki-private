@@ -2,16 +2,16 @@
   "SEKI": {
     "start_date": "2026-06-04",
     "day": 3,
-    "total_sent": 455
+    "total_sent": 1365
   },
   "LDGAUTH": {
     "start_date": "2026-06-04",
     "day": 3,
-    "total_sent": 350
+    "total_sent": 1050
   },
   "BINANCE": {
     "start_date": "2026-06-06",
     "day": 1,
-    "total_sent": 0
+    "total_sent": 200
   }
 }
