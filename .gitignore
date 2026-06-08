@@ -1,1 +1,12 @@
+warmup/gmail_seeds.csv
+warmup/seeds.csv
+warmup/seeds.json
+warmup/warmup_state.json
+data/
+logs/
+batches/
+*.log
+*.db
+*.csv
+config.json
 .env
