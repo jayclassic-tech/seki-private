@@ -1,0 +1,346 @@
+[
+  {
+    "name": "SEKI",
+    "subjects": [
+      "Quick note for you",
+      "Checking in",
+      "Following up",
+      "Just wanted to reach out",
+      "Hello from our team",
+      "A message for you",
+      "Touching base",
+      "We wanted to connect"
+    ],
+    "bodies": [
+      {
+        "body_line1": "Hope this message finds you well. We wanted to reach out and share a quick update.",
+        "body_line2": "Feel free to reply if you have any questions \u2014 we are always happy to help.",
+        "closing": "Have a great day ahead!",
+        "sender_name": "Sarah Mitchell",
+        "sender_title": "Customer Support, Support Calls Online"
+      },
+      {
+        "body_line1": "We appreciate your continued trust and wanted to drop you a quick note.",
+        "body_line2": "Our team is here whenever you need assistance. Do not hesitate to reach out.",
+        "closing": "Warm regards,",
+        "sender_name": "David Okonkwo",
+        "sender_title": "Support Team, Support Calls Online"
+      },
+      {
+        "body_line1": "Just a friendly hello from the Support Calls Online team.",
+        "body_line2": "We are always working to improve your experience. Let us know if there is anything we can do.",
+        "closing": "Best wishes,",
+        "sender_name": "Linda Chen",
+        "sender_title": "Account Relations, Support Calls Online"
+      },
+      {
+        "body_line1": "We hope you are having a productive week. A brief note from our support team.",
+        "body_line2": "We are available Monday through Friday should you need anything at all.",
+        "closing": "All the best,",
+        "sender_name": "James Adeyemi",
+        "sender_title": "Client Success, Support Calls Online"
+      }
+    ]
+  },
+  {
+    "name": "LDGAUTH",
+    "subjects": [
+      "Your account update",
+      "A note from our team",
+      "Account activity summary",
+      "Quick update for you",
+      "Checking in with you",
+      "An update from LDG",
+      "We wanted to reach out",
+      "Your account is active"
+    ],
+    "bodies": [
+      {
+        "body_line1": "We wanted to send you a brief update regarding your account and our latest improvements.",
+        "body_line2": "Please feel free to contact our support team if you have any questions or concerns.",
+        "closing": "Stay secure,",
+        "sender_name": "James Thornton",
+        "sender_title": "Account Security, LDG Authenticator"
+      },
+      {
+        "body_line1": "This is a routine message from the LDG Authenticator team regarding your account.",
+        "body_line2": "Our team is available to assist you with any account-related queries at any time.",
+        "closing": "Best regards,",
+        "sender_name": "Priya Nair",
+        "sender_title": "Support Team, LDG Authenticator"
+      },
+      {
+        "body_line1": "We are committed to keeping your account experience smooth and wanted to share a quick note.",
+        "body_line2": "If you have any feedback or questions, our team is ready to help.",
+        "closing": "Thank you for your trust,",
+        "sender_name": "Marcus Evans",
+        "sender_title": "Client Services, LDG Authenticator"
+      },
+      {
+        "body_line1": "A brief hello from the LDG Authenticator team. We appreciate you being with us.",
+        "body_line2": "Do not hesitate to get in touch if there is anything we can assist you with.",
+        "closing": "Kind regards,",
+        "sender_name": "Amara Osei",
+        "sender_title": "Account Relations, LDG Authenticator"
+      }
+    ]
+  },
+  {
+    "name": "BINANCE",
+    "subjects": [
+      "Your wallet update",
+      "A note from our team",
+      "Account activity summary",
+      "Quick update for you",
+      "Checking in with you",
+      "An update from Binance Help",
+      "We wanted to reach out",
+      "Your account is active"
+    ],
+    "bodies": [
+      {
+        "body_line1": "We wanted to send you a brief update regarding your wallet and our latest security improvements.",
+        "body_line2": "Please feel free to contact our support team if you have any questions or concerns.",
+        "closing": "Stay secure,",
+        "sender_name": "James Thornton",
+        "sender_title": "Wallet Security, Binance Help"
+      },
+      {
+        "body_line1": "This is a routine message from the Binance Help team regarding your account.",
+        "body_line2": "Our team is available to assist you with any wallet or account-related queries at any time.",
+        "closing": "Best regards,",
+        "sender_name": "Priya Nair",
+        "sender_title": "Support Team, Binance Help"
+      },
+      {
+        "body_line1": "We are committed to keeping your wallet experience smooth and wanted to share a quick note.",
+        "body_line2": "If you have any feedback or questions, our crypto support team is ready to help.",
+        "closing": "Thank you for your trust,",
+        "sender_name": "Marcus Evans",
+        "sender_title": "Client Services, Binance Help"
+      },
+      {
+        "body_line1": "A brief hello from the Binance Help team. We appreciate you being with us.",
+        "body_line2": "Do not hesitate to get in touch if there is anything we can assist you with regarding your account.",
+        "closing": "Kind regards,",
+        "sender_name": "Amara Osei",
+        "sender_title": "Account Relations, Binance Help"
+      }
+    ]
+  },
+  {
+    "name": "CryptoAssist",
+    "subjects": [
+      "Quick note for you",
+      "Checking in",
+      "Following up",
+      "Just wanted to reach out",
+      "Hello from our team",
+      "A message for you",
+      "Touching base",
+      "We wanted to connect"
+    ],
+    "bodies": [
+      {
+        "body_line1": "We wanted to send you a brief update and check in with you.",
+        "body_line2": "Feel free to reply if you have any questions \u2014 our team is always happy to help.",
+        "closing": "Have a great day ahead!",
+        "sender_name": "Sarah Mitchell",
+        "sender_title": "Customer Support, CryptoAssist"
+      },
+      {
+        "body_line1": "We appreciate your continued trust and wanted to drop you a quick note.",
+        "body_line2": "Our team is here whenever you need assistance. Do not hesitate to reach out.",
+        "closing": "Warm regards,",
+        "sender_name": "David Okonkwo",
+        "sender_title": "Support Team, CryptoAssist"
+      },
+      {
+        "body_line1": "Just a friendly hello from the CryptoAssist team.",
+        "body_line2": "We are always working to improve your experience. Let us know if there is anything we can do.",
+        "closing": "Best wishes,",
+        "sender_name": "Linda Chen",
+        "sender_title": "Account Relations, CryptoAssist"
+      },
+      {
+        "body_line1": "We hope you are having a productive week. A brief note from our support team.",
+        "body_line2": "We are available Monday through Friday should you need anything at all.",
+        "closing": "All the best,",
+        "sender_name": "James Adeyemi",
+        "sender_title": "Client Success, CryptoAssist"
+      }
+    ]
+  },
+  {
+    "name": "Gretomat",
+    "subjects": [
+      "Quick note for you",
+      "Checking in",
+      "Following up",
+      "Just wanted to reach out",
+      "Hello from our team",
+      "A message for you",
+      "Touching base",
+      "We wanted to connect"
+    ],
+    "bodies": [
+      {
+        "body_line1": "We wanted to send you a brief update and check in with you.",
+        "body_line2": "Feel free to reply if you have any questions \u2014 our team is always happy to help.",
+        "closing": "Have a great day ahead!",
+        "sender_name": "Sarah Mitchell",
+        "sender_title": "Customer Support, Gretomat"
+      },
+      {
+        "body_line1": "We appreciate your continued trust and wanted to drop you a quick note.",
+        "body_line2": "Our team is here whenever you need assistance. Do not hesitate to reach out.",
+        "closing": "Warm regards,",
+        "sender_name": "David Okonkwo",
+        "sender_title": "Support Team, Gretomat"
+      },
+      {
+        "body_line1": "Just a friendly hello from the Gretomat team.",
+        "body_line2": "We are always working to improve your experience. Let us know if there is anything we can do.",
+        "closing": "Best wishes,",
+        "sender_name": "Linda Chen",
+        "sender_title": "Account Relations, Gretomat"
+      },
+      {
+        "body_line1": "We hope you are having a productive week. A brief note from our support team.",
+        "body_line2": "We are available Monday through Friday should you need anything at all.",
+        "closing": "All the best,",
+        "sender_name": "James Adeyemi",
+        "sender_title": "Client Success, Gretomat"
+      }
+    ]
+  },
+  {
+    "name": "Ledger Support",
+    "subjects": [
+      "Your account update",
+      "A note from our team",
+      "Account activity summary",
+      "Quick update for you",
+      "Checking in with you",
+      "An update from Ledger Support",
+      "We wanted to reach out",
+      "Your account is active"
+    ],
+    "bodies": [
+      {
+        "body_line1": "We wanted to send you a brief update regarding your account and our latest improvements.",
+        "body_line2": "Please feel free to contact our support team if you have any questions or concerns.",
+        "closing": "Stay secure,",
+        "sender_name": "James Thornton",
+        "sender_title": "Account Security, Ledger Support"
+      },
+      {
+        "body_line1": "This is a routine message from the Ledger Support team regarding your account.",
+        "body_line2": "Our team is available to assist you with any account-related queries at any time.",
+        "closing": "Best regards,",
+        "sender_name": "Priya Nair",
+        "sender_title": "Support Team, Ledger Support"
+      },
+      {
+        "body_line1": "We are committed to keeping your account experience smooth and wanted to share a quick note.",
+        "body_line2": "If you have any feedback or questions, our team is ready to help.",
+        "closing": "Thank you for your trust,",
+        "sender_name": "Marcus Evans",
+        "sender_title": "Client Services, Ledger Support"
+      },
+      {
+        "body_line1": "A brief hello from the Ledger Support team. We appreciate you being with us.",
+        "body_line2": "Do not hesitate to get in touch if there is anything we can assist you with.",
+        "closing": "Kind regards,",
+        "sender_name": "Amara Osei",
+        "sender_title": "Account Relations, Ledger Support"
+      }
+    ]
+  },
+  {
+    "name": "LedgerRecover",
+    "subjects": [
+      "Your account update",
+      "A note from our team",
+      "Account activity summary",
+      "Quick update for you",
+      "Checking in with you",
+      "An update from LedgerRecover",
+      "We wanted to reach out",
+      "Your account is active"
+    ],
+    "bodies": [
+      {
+        "body_line1": "We wanted to send you a brief update regarding your account and our recovery process improvements.",
+        "body_line2": "Please feel free to contact our support team if you have any questions or concerns.",
+        "closing": "Stay secure,",
+        "sender_name": "James Thornton",
+        "sender_title": "Account Security, LedgerRecover"
+      },
+      {
+        "body_line1": "This is a routine message from the LedgerRecover team regarding your account.",
+        "body_line2": "Our team is available to assist you with any account-related queries at any time.",
+        "closing": "Best regards,",
+        "sender_name": "Priya Nair",
+        "sender_title": "Support Team, LedgerRecover"
+      },
+      {
+        "body_line1": "We are committed to keeping your account experience smooth and wanted to share a quick note.",
+        "body_line2": "If you have any feedback or questions, our recovery support team is ready to help.",
+        "closing": "Thank you for your trust,",
+        "sender_name": "Marcus Evans",
+        "sender_title": "Client Services, LedgerRecover"
+      },
+      {
+        "body_line1": "A brief hello from the LedgerRecover team. We appreciate you being with us.",
+        "body_line2": "Do not hesitate to get in touch if there is anything we can assist you with.",
+        "closing": "Kind regards,",
+        "sender_name": "Amara Osei",
+        "sender_title": "Account Relations, LedgerRecover"
+      }
+    ]
+  },
+  {
+    "name": "RobinHood",
+    "subjects": [
+      "Quick note for you",
+      "Checking in",
+      "Following up",
+      "Just wanted to reach out",
+      "Hello from our team",
+      "A message for you",
+      "Touching base",
+      "We wanted to connect"
+    ],
+    "bodies": [
+      {
+        "body_line1": "We wanted to send you a brief update and check in with you.",
+        "body_line2": "Feel free to reply if you have any questions \u2014 our team is always happy to help.",
+        "closing": "Have a great day ahead!",
+        "sender_name": "Sarah Mitchell",
+        "sender_title": "Customer Support, RobinHood"
+      },
+      {
+        "body_line1": "We appreciate your continued trust and wanted to drop you a quick note.",
+        "body_line2": "Our team is here whenever you need assistance. Do not hesitate to reach out.",
+        "closing": "Warm regards,",
+        "sender_name": "David Okonkwo",
+        "sender_title": "Support Team, RobinHood"
+      },
+      {
+        "body_line1": "Just a friendly hello from the RobinHood team.",
+        "body_line2": "We are always working to improve your experience. Let us know if there is anything we can do.",
+        "closing": "Best wishes,",
+        "sender_name": "Linda Chen",
+        "sender_title": "Account Relations, RobinHood"
+      },
+      {
+        "body_line1": "We hope you are having a productive week. A brief note from our support team.",
+        "body_line2": "We are available Monday through Friday should you need anything at all.",
+        "closing": "All the best,",
+        "sender_name": "James Adeyemi",
+        "sender_title": "Client Success, RobinHood"
+      }
+    ]
+  }
+]

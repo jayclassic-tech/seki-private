@@ -1,52 +1,64 @@
 #!/usr/bin/env python3
 """
-Reply Engine — Warmup Auto-Responder v2
-Fixes: duplicate logging, NoneType on rescued emails, reply-after-rescue
+Reply Engine v3 — Warmup Auto-Responder
+Changes from v2:
+  - Writes rescue_count and reply_count to warmup_state.json per domain
+  - 35% reply rate with 10-22s delays (natural behaviour)
+  - Max 15 replies per account per run
+  - Standalone spam rescue is separate (spam_rescue.py at 6pm)
+  - This engine focuses on inbox monitoring + replies at 10am/4pm
 """
 
-import csv, imaplib, smtplib, email, logging, random, time, json
+import csv, imaplib, smtplib, email, logging, random, time, json, argparse
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import decode_header
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, date
 
-BASE_DIR  = Path("/opt/seki/warmup")
-CREDS_CSV = BASE_DIR / "gmail_seeds.csv"
-LOG_FILE  = BASE_DIR / "reply_engine.log"
+# Session delay profiles — morning is slightly faster, afternoon slower
+DELAY_PROFILES = {
+    "morning":   {"min": 8,  "max": 18},   # 10am run
+    "afternoon": {"min": 12, "max": 25},   # 4pm run
+    "default":   {"min": 8,  "max": 18},
+}
 
-# --- Fix duplicate logging: clear handlers before adding ---
+BASE_DIR    = Path("/opt/seki/warmup")
+CREDS_CSV   = BASE_DIR / "gmail_seeds.csv"
+LOG_FILE    = BASE_DIR / "reply_engine.log"
+STATE_FILE  = BASE_DIR / "warmup_state.json"
+DOMAINS_F   = BASE_DIR / "warmup_domains.json"
+
+IMAP_HOST   = "imap.gmail.com"
+IMAP_PORT   = 993
+SMTP_HOST   = "smtp.gmail.com"
+SMTP_PORT   = 587
+
+MAX_REPLIES_PER_ACCOUNT = 15
+REPLY_RATE              = 0.45
+REPLY_DELAY_MIN         = 8
+REPLY_DELAY_MAX         = 18
+
+# ── Logger ────────────────────────────────────────────────────
 logger = logging.getLogger("reply_engine")
-if not logger.handlers:
-    logger.setLevel(logging.INFO)
-    fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
-    fh = logging.FileHandler(LOG_FILE)
-    fh.setFormatter(fmt)
-    sh = logging.StreamHandler()
-    sh.setFormatter(fmt)
-    logger.addHandler(fh)
-    logger.addHandler(sh)
+logger.handlers.clear()
+logger.propagate = False
+logger.setLevel(logging.INFO)
+fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+fh  = logging.FileHandler(LOG_FILE)
+fh.setFormatter(fmt)
+sh  = logging.StreamHandler()
+sh.setFormatter(fmt)
+logger.addHandler(fh)
+logger.addHandler(sh)
 log = logger
-
-IMAP_HOST = "imap.gmail.com"
-IMAP_PORT = 993
-SMTP_HOST = "smtp.gmail.com"
-SMTP_PORT = 587
-
-WARMUP_DOMAINS_FILE = BASE_DIR / "warmup_domains.json"
-
-def load_warmup_domains():
-    if WARMUP_DOMAINS_FILE.exists():
-        with open(WARMUP_DOMAINS_FILE) as f:
-            return json.load(f)
-    return []
 
 REPLY_VARIANTS = [
     "Thanks for reaching out! Got your message — appreciate the update.",
     "Thanks, noted. Appreciate you sending this over.",
     "Got it, thank you for the message!",
     "Thanks for the note. All good on my end.",
-    "Received, thanks! Hope you have a great day too.",
+    "Received, thanks! Hope you have a great day.",
     "Thanks for this! Really appreciate the update.",
     "Got your message. Thanks for keeping me in the loop.",
     "Appreciate it, thanks for reaching out!",
@@ -54,20 +66,24 @@ REPLY_VARIANTS = [
     "Thank you! Good to hear from you.",
     "Received! Thanks for the heads up.",
     "Appreciated — thanks for the message.",
+    "Got it! Thanks for the update.",
+    "Thanks, will keep this in mind.",
+    "Received and noted, thanks!",
 ]
 
+# ── Helpers ───────────────────────────────────────────────────
 def decode_str(s):
-    if s is None:
-        return ""
+    if not s: return ""
     decoded, enc = decode_header(s)[0]
     if isinstance(decoded, bytes):
         return decoded.decode(enc or "utf-8", errors="replace")
     return decoded
 
-def is_warmup_email(from_addr, warmup_domains):
-    if any(x in from_addr.lower() for x in ["mailer-daemon", "postmaster", "noreply@accounts.google"]):
-        return False
-    return any(domain in from_addr.lower() for domain in warmup_domains)
+def load_warmup_domains():
+    if DOMAINS_F.exists():
+        with open(DOMAINS_F) as f:
+            return json.load(f)
+    return []
 
 def load_credentials():
     creds = []
@@ -79,26 +95,67 @@ def load_credentials():
             })
     return creds
 
-def fetch_warmup_emails(imap, addr, folder, is_spam, warmup_domains):
-    """
-    Search a folder for unseen warmup emails.
-    If spam, rescue to INBOX first, then return metadata for reply.
-    Returns list of dicts: {to, subject, msg_id}
-    """
+def load_state():
+    if STATE_FILE.exists():
+        with open(STATE_FILE) as f:
+            return json.load(f)
+    return {}
+
+def save_state(state):
+    with open(STATE_FILE, "w") as f:
+        json.dump(state, f, indent=2)
+
+def is_warmup_email(from_addr, warmup_domains):
+    if any(x in from_addr.lower() for x in [
+        "mailer-daemon", "postmaster", "noreply@accounts.google",
+        "no-reply@", "notifications@"
+    ]):
+        return False
+    return any(domain in from_addr.lower() for domain in warmup_domains)
+
+def domain_from_address(addr):
+    """Extract base domain from email address for state matching."""
+    try:
+        email_part = addr.split("<")[-1].strip(">").strip()
+        domain = email_part.split("@")[-1].lower()
+        # Return base domain (e.g. supportcallsonline.com from send.supportcallsonline.com)
+        parts = domain.split(".")
+        if len(parts) > 2:
+            return ".".join(parts[-2:])
+        return domain
+    except Exception:
+        return ""
+
+def find_profile_for_domain(state, domain):
+    """Find which profile name matches a given domain."""
+    domain_map = {
+        "supportcallsonline.com": "SEKI",
+        "ldgauthenticator.com":   "LDGAUTH",
+        "binancehelps.net":       "BINANCE",
+        "assists.online":         "CryptoAssist",
+        "gretomat.online":        "Gretomat",
+        "ledqer.support":         "Ledger Support",
+        "recoverledger.site":     "LedgerRecover",
+        "robln.online":           "RobinHood",
+    }
+    return domain_map.get(domain)
+
+# ── Fetch warmup emails from inbox ────────────────────────────
+def fetch_inbox_emails(imap, addr, warmup_domains):
     results = []
     try:
-        status, _ = imap.select(folder)
+        status, _ = imap.select("INBOX")
         if status != "OK":
             return results
     except Exception:
         return results
 
-    _, data = imap.uid("SEARCH", None, "ALL")
+    _, data = imap.uid("SEARCH", None, "UNSEEN")
     uids = data[0].split() if data[0] else []
     if not uids:
         return results
 
-    log.info(f"[{addr}] {folder}: {len(uids)} unread")
+    log.info(f"[{addr}] INBOX: {len(uids)} unseen")
 
     for uid in uids:
         try:
@@ -119,29 +176,15 @@ def fetch_warmup_emails(imap, addr, folder, is_spam, warmup_domains):
         if not is_warmup_email(from_addr, warmup_domains):
             continue
         if not msg_id:
-            log.warning(f"[{addr}] Skipping email with no Message-ID from {from_addr}")
             continue
 
-        log.info(f"[{addr}] Found: '{subject}' from {from_addr}")
+        # Mark seen + starred
+        try:
+            imap.uid("STORE", uid, "+FLAGS", "\\Seen \\Flagged")
+        except Exception:
+            pass
 
-        if is_spam:
-            # Rescue: copy to INBOX, delete from spam
-            try:
-                imap.uid("STORE", uid, "-X-GM-LABELS", "\\Spam")
-                imap.uid("COPY", uid, "INBOX")
-                imap.uid("STORE", uid, "+FLAGS", "\\Deleted")
-                imap.expunge()
-                log.info(f"[{addr}] Rescued from spam → inbox")
-            except Exception as e:
-                log.warning(f"[{addr}] Rescue failed: {e}")
-                continue
-        else:
-            # Mark as seen + starred in INBOX
-            try:
-                imap.uid("STORE", uid, "+FLAGS", "\\Seen \\Flagged")
-            except Exception:
-                pass
-
+        log.info(f"[{addr}] Found in inbox: '{subject[:45]}' from {from_addr}")
         results.append({
             "to":      from_addr,
             "subject": subject,
@@ -150,41 +193,129 @@ def fetch_warmup_emails(imap, addr, folder, is_spam, warmup_domains):
 
     return results
 
+# ── Rescue from spam ──────────────────────────────────────────
+def fetch_spam_emails(imap, addr, warmup_domains):
+    results = []
+    try:
+        status, _ = imap.select("[Gmail]/Spam")
+        if status != "OK":
+            return results
+    except Exception:
+        return results
+
+    _, data = imap.uid("SEARCH", None, "ALL")
+    uids = data[0].split() if data[0] else []
+    if not uids:
+        return results
+
+    log.info(f"[{addr}] SPAM: {len(uids)} emails — scanning...")
+
+    for uid in uids:
+        try:
+            _, msg_data = imap.uid("FETCH", uid, "(RFC822)")
+            if not msg_data or not isinstance(msg_data[0], tuple):
+                continue
+            raw = msg_data[0][1]
+            if not raw:
+                continue
+            msg       = email.message_from_bytes(raw)
+            from_addr = decode_str(msg.get("From", ""))
+            subject   = decode_str(msg.get("Subject", ""))
+            msg_id    = msg.get("Message-ID", "").strip()
+        except Exception as e:
+            log.warning(f"[{addr}] Skipping: {e}")
+            continue
+
+        if not is_warmup_email(from_addr, warmup_domains):
+            continue
+        if not msg_id:
+            continue
+
+        log.info(f"[{addr}] Rescuing from spam: '{subject[:45]}' from {from_addr}")
+
+        try:
+            imap.uid("STORE", uid, "-X-GM-LABELS", "\\Spam")
+            imap.uid("COPY",  uid, "INBOX")
+            imap.uid("STORE", uid, "+FLAGS", "\\Deleted")
+            imap.expunge()
+
+            imap.select("INBOX")
+            _, d = imap.uid("SEARCH", None, f'HEADER Message-ID "{msg_id}"')
+            inbox_uids = d[0].split() if d[0] else []
+            for iuid in inbox_uids:
+                imap.uid("STORE", iuid, "+FLAGS", "\\Seen \\Flagged")
+            imap.select("[Gmail]/Spam")
+
+            log.info(f"[{addr}] ✅ Rescued → inbox, seen + starred")
+            results.append({
+                "to":      from_addr,
+                "subject": subject,
+                "msg_id":  msg_id,
+                "rescued": True,
+            })
+        except Exception as e:
+            log.warning(f"[{addr}] Rescue failed: {e}")
+
+    return results
+
+# ── Process one account ───────────────────────────────────────
 def process_account(cred, warmup_domains):
     addr     = cred["email"]
     password = cred["password"]
-    stats    = {"replied": 0, "rescued_from_spam": 0, "errors": 0}
+    stats    = {"replied": 0, "rescued": 0, "errors": 0, "domain_counts": {}}
 
     try:
         imap = imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT)
         imap.login(addr, password)
-        log.info(f"[{addr}] IMAP connected")
+        log.info(f"[{addr}] Connected")
+    except Exception as e:
+        log.error(f"[{addr}] Login failed: {e}")
+        stats["errors"] += 1
+        return stats
 
-        messages_to_reply = []
+    messages_to_reply = []
 
-        # Check INBOX first
-        inbox_msgs = fetch_warmup_emails(imap, addr, "INBOX", is_spam=False, warmup_domains=warmup_domains)
+    try:
+        # Check inbox for unseen warmup emails
+        inbox_msgs = fetch_inbox_emails(imap, addr, warmup_domains)
         messages_to_reply.extend(inbox_msgs)
 
-        # Check Spam — rescue + collect for reply
-        spam_msgs = fetch_warmup_emails(imap, addr, "[Gmail]/Spam", is_spam=True, warmup_domains=warmup_domains)
-        stats["rescued_from_spam"] += len(spam_msgs)
+        # Check spam — rescue warmup emails
+        spam_msgs = fetch_spam_emails(imap, addr, warmup_domains)
+        stats["rescued"] += len(spam_msgs)
         messages_to_reply.extend(spam_msgs)
 
         imap.logout()
+    except Exception as e:
+        log.error(f"[{addr}] IMAP error: {e}")
+        stats["errors"] += 1
+        try: imap.logout()
+        except: pass
+        return stats
 
-        if not messages_to_reply:
-            log.info(f"[{addr}] No warmup emails found")
-            return stats
+    if not messages_to_reply:
+        log.info(f"[{addr}] No warmup emails found")
+        return stats
 
-        # Send replies via SMTP
+    # Track domain counts for state update
+    for item in messages_to_reply:
+        domain = domain_from_address(item["to"])
+        stats["domain_counts"][domain] = stats["domain_counts"].get(domain, 0) + 1
+
+    # Select 35% to reply to, max MAX_REPLIES_PER_ACCOUNT
+    n_reply  = min(MAX_REPLIES_PER_ACCOUNT, max(1, int(len(messages_to_reply) * REPLY_RATE)))
+    to_reply = random.sample(messages_to_reply, min(n_reply, len(messages_to_reply)))
+
+    log.info(f"[{addr}] Replying to {len(to_reply)}/{len(messages_to_reply)} emails")
+
+    try:
         smtp = smtplib.SMTP(SMTP_HOST, SMTP_PORT)
         smtp.ehlo()
         smtp.starttls()
         smtp.login(addr, password)
 
-        for item in messages_to_reply:
-            time.sleep(random.uniform(3, 8))
+        for item in to_reply:
+            time.sleep(random.uniform(REPLY_DELAY_MIN, REPLY_DELAY_MAX))
             reply = MIMEMultipart("alternative")
             reply["From"]        = addr
             reply["To"]          = item["to"]
@@ -197,40 +328,103 @@ def process_account(cred, warmup_domains):
                 stats["replied"] += 1
                 log.info(f"[{addr}] ✅ Replied to {item['to']}")
             except Exception as e:
-                log.warning(f"[{addr}] Reply failed to {item['to']}: {e}")
+                log.warning(f"[{addr}] Reply failed: {e}")
                 stats["errors"] += 1
 
         smtp.quit()
 
-    except imaplib.IMAP4.error as e:
-        log.error(f"[{addr}] IMAP error: {e}")
-        stats["errors"] += 1
     except smtplib.SMTPAuthenticationError as e:
         log.error(f"[{addr}] SMTP auth error: {e}")
         stats["errors"] += 1
     except Exception as e:
-        log.error(f"[{addr}] Error: {e}")
+        log.error(f"[{addr}] SMTP error: {e}")
         stats["errors"] += 1
 
     return stats
 
+# ── Update state with reply/rescue counts ─────────────────────
+def update_state_counts(state, all_stats):
+    """
+    Write rescue and reply counts back to warmup_state.json
+    keyed by domain → profile.
+    """
+    total_rescued = sum(s["rescued"] for s in all_stats)
+    total_replied = sum(s["replied"] for s in all_stats)
+
+    # Aggregate domain counts across all accounts
+    domain_rescued = {}
+    domain_replied = {}
+    for s in all_stats:
+        for domain, count in s.get("domain_counts", {}).items():
+            domain_rescued[domain] = domain_rescued.get(domain, 0) + s["rescued"]
+            domain_replied[domain] = domain_replied.get(domain, 0) + s["replied"]
+
+    # Write to state per profile
+    for profile_name, profile_data in state.items():
+        if profile_name.startswith("_"):
+            continue
+        # Find domains for this profile
+        for domain, count in domain_rescued.items():
+            mapped = find_profile_for_domain(state, domain)
+            if mapped == profile_name:
+                profile_data["rescue_count"] = profile_data.get("rescue_count", 0) + count
+
+        for domain, count in domain_replied.items():
+            mapped = find_profile_for_domain(state, domain)
+            if mapped == profile_name:
+                profile_data["reply_count"] = profile_data.get("reply_count", 0) + count
+
+        # Recalculate health score with updated counts
+        try:
+            from warmup_engine import calc_health_score
+            profile_data["health_score"] = calc_health_score(profile_data)
+        except ImportError:
+            pass
+
+    return total_rescued, total_replied
+
+# ── Main ──────────────────────────────────────────────────────
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--session", choices=["morning","afternoon"], default="default",
+                        help="morning=10am (faster), afternoon=4pm (slower delays)")
+    args = parser.parse_args()
+
+    delays = DELAY_PROFILES[args.session]
+    global REPLY_DELAY_MIN, REPLY_DELAY_MAX
+    REPLY_DELAY_MIN = delays["min"]
+    REPLY_DELAY_MAX = delays["max"]
+
     log.info("=" * 60)
-    log.info(f"Reply Engine v2 — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    log.info(f"Reply Engine v3 — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} [{args.session}]")
+
     creds          = load_credentials()
     warmup_domains = load_warmup_domains()
-    log.info(f"Loaded {len(creds)} accounts")
-    log.info(f"Watching {len(warmup_domains)} domains: {', '.join(warmup_domains)}")
+    state          = load_state()
 
-    total_replied = total_rescued = total_errors = 0
+    log.info(f"Accounts: {len(creds)} | Domains: {', '.join(warmup_domains)}")
+
+    all_stats     = []
+    total_replied = 0
+    total_rescued = 0
+    total_errors  = 0
 
     for i, cred in enumerate(creds):
         if i > 0:
             time.sleep(random.uniform(5, 15))
         stats = process_account(cred, warmup_domains)
+        all_stats.append(stats)
         total_replied += stats["replied"]
-        total_rescued += stats["rescued_from_spam"]
+        total_rescued += stats["rescued"]
         total_errors  += stats["errors"]
+
+    # Write counts back to state
+    try:
+        update_state_counts(state, all_stats)
+        save_state(state)
+        log.info("State updated with reply/rescue counts")
+    except Exception as e:
+        log.warning(f"State update failed: {e}")
 
     log.info("─" * 60)
     log.info(f"Replied: {total_replied} | Rescued: {total_rescued} | Errors: {total_errors}")

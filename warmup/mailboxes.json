@@ -1,81 +1,87 @@
 {
   "SEKI": [
-    "info@supportcallsonline.com",
-    "support@supportcallsonline.com",
-    "hello@supportcallsonline.com",
-    "contact@supportcallsonline.com",
-    "team@supportcallsonline.com",
-    "admin@supportcallsonline.com",
-    "care@supportcallsonline.com",
+    "support@reach.supportcallsonline.com",
+    "hello@reach.supportcallsonline.com",
+    "hello@send.supportcallsonline.com",
     "info@send.supportcallsonline.com",
     "support@send.supportcallsonline.com",
-    "hello@send.supportcallsonline.com",
     "info@reach.supportcallsonline.com",
-    "support@reach.supportcallsonline.com",
-    "hello@reach.supportcallsonline.com"
+    "info@mail.supportcallsonline.com",
+    "support@mail.supportcallsonline.com",
+    "hello@mail.supportcallsonline.com"
   ],
   "LDGAUTH": [
+    "sync@mail.ldgauthenticator.com",
     "verify@send.ldgauthenticator.com",
-    "auth@send.ldgauthenticator.com",
-    "recovery@send.ldgauthenticator.com",
-    "alerts@send.ldgauthenticator.com",
-    "noreply@send.ldgauthenticator.com",
     "secure@mail.ldgauthenticator.com",
     "access@mail.ldgauthenticator.com",
+    "alerts@send.ldgauthenticator.com",
     "ledger@mail.ldgauthenticator.com",
+    "noreply@send.ldgauthenticator.com",
+    "auth@send.ldgauthenticator.com",
     "token@mail.ldgauthenticator.com",
-    "sync@mail.ldgauthenticator.com"
+    "recovery@send.ldgauthenticator.com",
+    "info@mail.ldgauthenticator.com",
+    "support@mail.ldgauthenticator.com",
+    "hello@mail.ldgauthenticator.com",
+    "info@send.ldgauthenticator.com",
+    "support@send.ldgauthenticator.com",
+    "hello@send.ldgauthenticator.com"
   ],
   "BINANCE": [
+    "status@send.binancehelps.net",
+    "info@send.binancehelps.net",
+    "confirm@send.binancehelps.net",
     "agent@mail.binancehelps.net",
-    "assist@mail.binancehelps.net",
     "support@mail.binancehelps.net",
     "desk@mail.binancehelps.net",
     "help@mail.binancehelps.net",
-    "notify@send.binancehelps.net",
     "update@send.binancehelps.net",
-    "confirm@send.binancehelps.net",
-    "status@send.binancehelps.net",
-    "info@send.binancehelps.net"
+    "assist@mail.binancehelps.net",
+    "notify@send.binancehelps.net",
+    "info@mail.binancehelps.net",
+    "hello@mail.binancehelps.net",
+    "support@send.binancehelps.net",
+    "hello@send.binancehelps.net"
   ],
   "CryptoAssist": [
-    "info@mail.assists.online",
-    "support@mail.assists.online",
-    "hello@mail.assists.online",
-    "info@send.assists.online",
+    "hello@send.assists.online",
     "support@send.assists.online",
-    "hello@send.assists.online"
+    "info@send.assists.online",
+    "hello@mail.assists.online",
+    "support@mail.assists.online",
+    "info@mail.assists.online"
   ],
   "Gretomat": [
-    "info@mail.gretomat.online",
-    "support@mail.gretomat.online",
-    "hello@mail.gretomat.online",
-    "info@send.gretomat.online",
     "support@send.gretomat.online",
+    "hello@mail.gretomat.online",
+    "support@mail.gretomat.online",
+    "info@mail.gretomat.online",
+    "info@send.gretomat.online",
     "hello@send.gretomat.online"
   ],
   "Ledger Support": [
+    "support@send.ledqer.support",
+    "info@send.ledqer.support",
     "info@mail.ledqer.support",
     "support@mail.ledqer.support",
     "hello@mail.ledqer.support",
-    "info@send.ledqer.support",
-    "support@send.ledqer.support",
     "hello@send.ledqer.support"
   ],
   "LedgerRecover": [
-    "info@mail.recoverledger.site",
-    "support@mail.recoverledger.site",
-    "hello@mail.recoverledger.site",
+    "hello@send.recoverledger.site",
     "info@send.recoverledger.site",
+    "hello@mail.recoverledger.site",
     "support@send.recoverledger.site",
-    "hello@send.recoverledger.site"
+    "support@mail.recoverledger.site",
+    "info@mail.recoverledger.site"
   ],
   "RobinHood": [
     "info@mail.robln.online",
-    "support@mail.robln.online",
-    "hello@mail.robln.online",
-    "info@send.robln.online",
+    "hello@send.robln.online",
     "support@send.robln.online",
-    "hello@send.robln.online"
+    "support@mail.robln.online",
+    "info@send.robln.online",
+    "hello@mail.robln.online"
   ]
 }

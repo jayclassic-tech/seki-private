@@ -1,17 +1,169 @@
 {
   "SEKI": {
     "start_date": "2026-06-04",
-    "day": 3,
-    "total_sent": 1365
+    "day": 5,
+    "total_sent": 2030,
+    "rescue_log": {
+      "2026-06-08": 0
+    },
+    "status": "warming",
+    "health_score": 42,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 0,
+    "reply_count": 0,
+    "spam_rate_history": [
+      {
+        "date": "2026-06-08",
+        "spam_rate": 0.0,
+        "sent": 210,
+        "spam": 0
+      }
+    ],
+    "paused": false,
+    "pause_reason": "",
+    "graduated": false,
+    "graduated_date": ""
   },
   "LDGAUTH": {
     "start_date": "2026-06-04",
     "day": 3,
-    "total_sent": 1050
+    "total_sent": 1400,
+    "rescue_log": {
+      "2026-06-08": 0
+    },
+    "status": "warming",
+    "health_score": 41,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 0,
+    "reply_count": 0,
+    "spam_rate_history": [],
+    "paused": false,
+    "pause_reason": "",
+    "graduated": false,
+    "graduated_date": ""
   },
   "BINANCE": {
     "start_date": "2026-06-06",
     "day": 1,
-    "total_sent": 200
+    "total_sent": 400,
+    "rescue_log": {
+      "2026-06-08": 0
+    },
+    "status": "warming",
+    "health_score": 40,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 0,
+    "reply_count": 0,
+    "spam_rate_history": [],
+    "paused": false,
+    "pause_reason": "",
+    "graduated": false,
+    "graduated_date": ""
+  },
+  "CryptoAssist": {
+    "start_date": "2026-06-08",
+    "day": 1,
+    "total_sent": 0,
+    "rescue_log": {
+      "2026-06-08": 0
+    },
+    "status": "warming",
+    "health_score": 20,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 0,
+    "reply_count": 0,
+    "spam_rate_history": [],
+    "paused": false,
+    "pause_reason": "",
+    "graduated": false,
+    "graduated_date": ""
+  },
+  "Gretomat": {
+    "start_date": "2026-06-08",
+    "day": 1,
+    "total_sent": 0,
+    "rescue_log": {
+      "2026-06-08": 0
+    },
+    "status": "warming",
+    "health_score": 20,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 0,
+    "reply_count": 0,
+    "spam_rate_history": [],
+    "paused": false,
+    "pause_reason": "",
+    "graduated": false,
+    "graduated_date": ""
+  },
+  "Ledger Support": {
+    "start_date": "2026-06-08",
+    "day": 1,
+    "total_sent": 0,
+    "rescue_log": {
+      "2026-06-08": 0
+    },
+    "status": "warming",
+    "health_score": 20,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 0,
+    "reply_count": 0,
+    "spam_rate_history": [],
+    "paused": false,
+    "pause_reason": "",
+    "graduated": false,
+    "graduated_date": ""
+  },
+  "LedgerRecover": {
+    "start_date": "2026-06-08",
+    "day": 1,
+    "total_sent": 0,
+    "rescue_log": {
+      "2026-06-08": 0
+    },
+    "status": "warming",
+    "health_score": 20,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 0,
+    "reply_count": 0,
+    "spam_rate_history": [],
+    "paused": false,
+    "pause_reason": "",
+    "graduated": false,
+    "graduated_date": ""
+  },
+  "RobinHood": {
+    "start_date": "2026-06-08",
+    "day": 1,
+    "total_sent": 0,
+    "rescue_log": {
+      "2026-06-08": 0
+    },
+    "status": "warming",
+    "health_score": 20,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 0,
+    "reply_count": 0,
+    "spam_rate_history": [],
+    "paused": false,
+    "pause_reason": "",
+    "graduated": false,
+    "graduated_date": ""
+  },
+  "_rescue_stats": {
+    "2026-06-08": {
+      "rescued": 15,
+      "replied": 8,
+      "errors": 0,
+      "run_at": "2026-06-08T19:17:59.255471"
+    }
   }
 }

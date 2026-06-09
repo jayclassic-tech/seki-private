@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """
-Warmup Engine — Seki Mailer
-Rotates through ALL mailboxes per domain on every run.
-Each mailbox sends its own batch — warming mailbox, subdomain, and VPS IP.
+Warmup Engine v2 — Seki Mailer
+Features:
+  - Per-profile log files (warmup_SEKI.log, warmup_LDGAUTH.log etc)
+  - Health score calculation (0-100) written to warmup_state.json
+  - Auto-pause if spam rate >20% for 2 consecutive days + Telegram alert
+  - Graduation detection: day 21+ and health score >80 + Telegram alert
+  - Skips paused or graduated profiles
+  - Full state written after every run
 """
 
 import os, csv, json, random, logging, subprocess, time
@@ -14,28 +19,54 @@ SEEDS_CSV      = BASE_DIR / "seeds.csv"
 STATE_FILE     = BASE_DIR / "warmup_state.json"
 TEMPLATES_DIR  = BASE_DIR / "templates"
 BATCH_DIR      = BASE_DIR / "batches"
-LOG_FILE       = BASE_DIR / "warmup.log"
+LOG_FILE       = BASE_DIR / "warmup.log"          # master log
 MAILBOXES_FILE = BASE_DIR / "mailboxes.json"
+PROFILES_FILE  = BASE_DIR / "warmup_profiles.json"
 SEKI_BIN       = "/opt/seki/postfix_mailer.py"
 
 BATCH_DIR.mkdir(exist_ok=True)
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-    handlers=[logging.FileHandler(LOG_FILE), logging.StreamHandler()]
-)
-log = logging.getLogger("warmup")
+GRADUATION_DAY          = 21
+GRADUATION_HEALTH       = 80
+AUTO_PAUSE_SPAM_RATE    = 0.20   # 20%
+AUTO_PAUSE_CONSECUTIVE  = 2      # days
 
+# ── Master logger ─────────────────────────────────────────────
+def make_logger(name, log_path):
+    lg = logging.getLogger(name)
+    lg.handlers.clear()
+    lg.propagate = False
+    lg.setLevel(logging.INFO)
+    fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+    fh = logging.FileHandler(log_path)
+    fh.setFormatter(fmt)
+    sh = logging.StreamHandler()
+    sh.setFormatter(fmt)
+    lg.addHandler(fh)
+    lg.addHandler(sh)
+    return lg
+
+log = make_logger("warmup", LOG_FILE)
+
+# ── Ramp schedule ─────────────────────────────────────────────
 # (max_day, emails_per_mailbox, rate_min, rate_max)
 RAMP = [
-    (1,   5,  8.0, 12.0),
-    (2,  10,  5.0,  8.0),
-    (3,  20,  3.0,  6.0),
-    (5,  35,  2.0,  4.0),
-    (7,  50,  1.5,  3.0),
-    (10, 70,  1.0,  2.0),
-    (999,100, 0.5,  1.5),
+    (1,    5,  8.0, 12.0),
+    (2,   10,  5.0,  8.0),
+    (3,   20,  3.0,  6.0),
+    (5,   35,  2.0,  4.0),
+    (7,   50,  1.5,  3.0),
+    (10,  70,  1.0,  2.0),
+    (999,100,  0.5,  1.5),
+]
+
+# Daily send limit ramp — maps day to recommended daily limit
+DAILY_LIMIT_RAMP = [
+    (3,   200),
+    (5,   400),
+    (7,   500),
+    (10,  700),
+    (999, 1000),
 ]
 
 def get_ramp(day):
@@ -44,64 +75,164 @@ def get_ramp(day):
             return volume, rmin, rmax
     return RAMP[-1][1], RAMP[-1][2], RAMP[-1][3]
 
-PROFILES = [
-    {
-        "name": "SEKI",
-        "subjects": [
-            "Quick note for you","Checking in","Following up",
-            "Just wanted to reach out","Hello from our team",
-            "A message for you","Touching base","We wanted to connect",
-        ],
-        "bodies": [
-            {"body_line1":"Hope this message finds you well. We wanted to reach out and share a quick update.","body_line2":"Feel free to reply if you have any questions — we are always happy to help.","closing":"Have a great day ahead!","sender_name":"Sarah Mitchell","sender_title":"Customer Support, Support Calls Online"},
-            {"body_line1":"We appreciate your continued trust and wanted to drop you a quick note.","body_line2":"Our team is here whenever you need assistance. Do not hesitate to reach out.","closing":"Warm regards,","sender_name":"David Okonkwo","sender_title":"Support Team, Support Calls Online"},
-            {"body_line1":"Just a friendly hello from the Support Calls Online team.","body_line2":"We are always working to improve your experience. Let us know if there is anything we can do.","closing":"Best wishes,","sender_name":"Linda Chen","sender_title":"Account Relations, Support Calls Online"},
-            {"body_line1":"We hope you are having a productive week. A brief note from our support team.","body_line2":"We are available Monday through Friday should you need anything at all.","closing":"All the best,","sender_name":"James Adeyemi","sender_title":"Client Success, Support Calls Online"},
-        ]
-    },
-    {
-        "name": "LDGAUTH",
-        "subjects": [
-            "Your account update","A note from our team","Account activity summary",
-            "Quick update for you","Checking in with you","An update from LDG",
-            "We wanted to reach out","Your account is active",
-        ],
-        "bodies": [
-            {"body_line1":"We wanted to send you a brief update regarding your account and our latest improvements.","body_line2":"Please feel free to contact our support team if you have any questions or concerns.","closing":"Stay secure,","sender_name":"James Thornton","sender_title":"Account Security, LDG Authenticator"},
-            {"body_line1":"This is a routine message from the LDG Authenticator team regarding your account.","body_line2":"Our team is available to assist you with any account-related queries at any time.","closing":"Best regards,","sender_name":"Priya Nair","sender_title":"Support Team, LDG Authenticator"},
-            {"body_line1":"We are committed to keeping your account experience smooth and wanted to share a quick note.","body_line2":"If you have any feedback or questions, our team is ready to help.","closing":"Thank you for your trust,","sender_name":"Marcus Evans","sender_title":"Client Services, LDG Authenticator"},
-            {"body_line1":"A brief hello from the LDG Authenticator team. We appreciate you being with us.","body_line2":"Do not hesitate to get in touch if there is anything we can assist you with.","closing":"Kind regards,","sender_name":"Amara Osei","sender_title":"Account Relations, LDG Authenticator"},
-        ]
-    }
-    ,{
-        "name": "BINANCE",
-        "subjects": [
-            "Your wallet update","A note from our team","Account activity summary",
-            "Quick update for you","Checking in with you","An update from Binance Help",
-            "We wanted to reach out","Your account is active",
-        ],
-        "bodies": [
-            {"body_line1":"We wanted to send you a brief update regarding your wallet and our latest security improvements.","body_line2":"Please feel free to contact our support team if you have any questions or concerns.","closing":"Stay secure,","sender_name":"James Thornton","sender_title":"Wallet Security, Binance Help"},
-            {"body_line1":"This is a routine message from the Binance Help team regarding your account.","body_line2":"Our team is available to assist you with any wallet or account-related queries at any time.","closing":"Best regards,","sender_name":"Priya Nair","sender_title":"Support Team, Binance Help"},
-            {"body_line1":"We are committed to keeping your wallet experience smooth and wanted to share a quick note.","body_line2":"If you have any feedback or questions, our crypto support team is ready to help.","closing":"Thank you for your trust,","sender_name":"Marcus Evans","sender_title":"Client Services, Binance Help"},
-            {"body_line1":"A brief hello from the Binance Help team. We appreciate you being with us.","body_line2":"Do not hesitate to get in touch if there is anything we can assist you with regarding your account.","closing":"Kind regards,","sender_name":"Amara Osei","sender_title":"Account Relations, Binance Help"},
-        ]
-    }
-]
+def get_recommended_limit(day):
+    for max_day, limit in DAILY_LIMIT_RAMP:
+        if day <= max_day:
+            return limit
+    return DAILY_LIMIT_RAMP[-1][1]
+
+# ── Telegram ──────────────────────────────────────────────────
+def send_telegram(message: str):
+    try:
+        import requests
+        token   = os.environ.get("TELEGRAM_BOT_TOKEN", "")
+        chat_id = os.environ.get("TELEGRAM_CHAT_ID", "")
+        if not token or not chat_id:
+            return
+        requests.post(
+            f"https://api.telegram.org/bot{token}/sendMessage",
+            json={"chat_id": chat_id, "text": message, "parse_mode": "HTML"},
+            timeout=10
+        )
+    except Exception as e:
+        log.warning(f"Telegram alert failed: {e}")
+
+# ── State helpers ─────────────────────────────────────────────
+def load_profiles():
+    with open(PROFILES_FILE) as f:
+        return json.load(f)
 
 def load_state():
     if STATE_FILE.exists():
         with open(STATE_FILE) as f:
             return json.load(f)
-    return {p["name"]: {"start_date": str(date.today()), "day": 1, "total_sent": 0} for p in PROFILES}
+    return {}
 
 def save_state(state):
     with open(STATE_FILE, "w") as f:
         json.dump(state, f, indent=2)
 
+def ensure_profile_state(state, name):
+    """Ensure all required keys exist for a profile."""
+    defaults = {
+        "start_date":        str(date.today()),
+        "day":               1,
+        "total_sent":        0,
+        "status":            "warming",
+        "health_score":      50,
+        "inbox_count":       0,
+        "spam_count":        0,
+        "rescue_count":      0,
+        "reply_count":       0,
+        "spam_rate_history": [],
+        "paused":            False,
+        "pause_reason":      "",
+        "graduated":         False,
+        "graduated_date":    "",
+    }
+    if name not in state:
+        state[name] = {}
+    for key, val in defaults.items():
+        if key not in state[name]:
+            state[name][key] = val
+
 def calc_day(start_date_str):
     return (date.today() - date.fromisoformat(start_date_str)).days + 1
 
+# ── Health score ──────────────────────────────────────────────
+def calc_health_score(profile_state):
+    """
+    Score 0-100 based on:
+      - Spam rate (0% = 40pts, 5% = 20pts, >20% = 0pts)
+      - Reply rate (>10% = 30pts, >5% = 15pts, 0% = 0pts)
+      - Rescue count (any rescues = 15pts, many = 30pts)
+      - Ramp progress (day/21 * 10pts, max 10pts)
+    """
+    total_sent   = profile_state.get("total_sent", 0)
+    spam_count   = profile_state.get("spam_count", 0)
+    reply_count  = profile_state.get("reply_count", 0)
+    rescue_count = profile_state.get("rescue_count", 0)
+    day          = profile_state.get("day", 1)
+
+    score = 0
+
+    # Spam rate component (max 40pts)
+    if total_sent > 0:
+        spam_rate = spam_count / total_sent
+        if spam_rate == 0:
+            score += 40
+        elif spam_rate < 0.05:
+            score += 30
+        elif spam_rate < 0.10:
+            score += 20
+        elif spam_rate < 0.15:
+            score += 10
+        else:
+            score += 0
+    else:
+        score += 20  # neutral when no data yet
+
+    # Reply rate component (max 30pts)
+    if total_sent > 0:
+        reply_rate = reply_count / total_sent
+        if reply_rate > 0.10:
+            score += 30
+        elif reply_rate > 0.05:
+            score += 20
+        elif reply_rate > 0.02:
+            score += 10
+        else:
+            score += 0
+
+    # Rescue component (max 20pts)
+    if rescue_count > 20:
+        score += 20
+    elif rescue_count > 5:
+        score += 15
+    elif rescue_count > 0:
+        score += 10
+    else:
+        score += 0
+
+    # Ramp progress (max 10pts)
+    ramp_pts = min(10, int((day / GRADUATION_DAY) * 10))
+    score += ramp_pts
+
+    return min(100, score)
+
+# ── Auto-pause check ──────────────────────────────────────────
+def check_auto_pause(name, profile_state, today_sent, today_spam):
+    """
+    Auto-pause if spam rate > 20% for AUTO_PAUSE_CONSECUTIVE days.
+    Returns True if profile should be paused.
+    """
+    if today_sent == 0:
+        return False
+
+    today_rate = today_spam / today_sent
+    history    = profile_state.get("spam_rate_history", [])
+
+    # Add today
+    history.append({
+        "date":      str(date.today()),
+        "spam_rate": round(today_rate, 4),
+        "sent":      today_sent,
+        "spam":      today_spam,
+    })
+    # Keep last 7 days only
+    history = history[-7:]
+    profile_state["spam_rate_history"] = history
+
+    # Check consecutive bad days
+    if len(history) >= AUTO_PAUSE_CONSECUTIVE:
+        last_n = history[-AUTO_PAUSE_CONSECUTIVE:]
+        all_bad = all(d["spam_rate"] > AUTO_PAUSE_SPAM_RATE for d in last_n)
+        if all_bad:
+            return True
+
+    return False
+
+# ── Seed helpers ──────────────────────────────────────────────
 def load_mailboxes():
     with open(MAILBOXES_FILE) as f:
         return json.load(f)
@@ -110,7 +241,10 @@ def load_seeds():
     seeds = []
     with open(SEEDS_CSV) as f:
         for row in csv.DictReader(f):
-            seeds.append({"email": row["email"].strip(), "first_name": row["first_name"].strip()})
+            seeds.append({
+                "email":      row["email"].strip(),
+                "first_name": row["first_name"].strip() if "first_name" in row else "there"
+            })
     return seeds
 
 def pick_seeds(seeds, n):
@@ -134,7 +268,8 @@ def pick_template():
     templates = list(TEMPLATES_DIR.glob("*.html"))
     return random.choice(templates)
 
-def send_from_mailbox(profile, mailbox, seeds, subject, body, day, rate):
+# ── Send from mailbox ─────────────────────────────────────────
+def send_from_mailbox(profile, mailbox, seeds, subject, body, day, rate, plog):
     ts        = datetime.now().strftime("%Y%m%d_%H%M%S")
     safe_mb   = mailbox.replace("@","_at_").replace(".","_")
     batch_csv = BATCH_DIR / f"{safe_mb}_day{day}_{ts}.csv"
@@ -155,32 +290,51 @@ def send_from_mailbox(profile, mailbox, seeds, subject, body, day, rate):
         "--campaign", f"warmup_{mailbox.split('@')[0]}_day{day}_{ts}",
     ]
 
-    log.info(f"  → FROM: {mailbox} | {len(seeds)} emails | Rate: {rate}s | Template: {template.name}")
+    plog.info(f"  → FROM: {mailbox} | {len(seeds)} emails | Rate: {rate}s | Template: {template.name}")
     result = subprocess.run(cmd, capture_output=True, text=True, env=env)
 
     if result.returncode == 0:
-        log.info(f"  ✅ {mailbox} complete")
+        plog.info(f"  ✅ {mailbox} complete")
+        return True
     else:
-        log.error(f"  ❌ {mailbox} error: {result.stderr[:300]}")
-    return result.returncode == 0
+        plog.error(f"  ❌ {mailbox} error: {result.stderr[:300]}")
+        return False
 
+# ── Main ──────────────────────────────────────────────────────
 def main():
     log.info("=" * 60)
-    log.info(f"Warmup Engine — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    log.info(f"Warmup Engine v2 — {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
+    PROFILES  = load_profiles()
     state     = load_state()
     seeds     = load_seeds()
     mailboxes = load_mailboxes()
 
-    log.info(f"Loaded {len(seeds)} seed addresses")
+    log.info(f"Profiles: {len(PROFILES)} | Seeds: {len(seeds)}")
 
     for p_idx, profile in enumerate(PROFILES):
         name = profile["name"]
+        ensure_profile_state(state, name)
+        ps = state[name]
 
-        if name not in state:
-            state[name] = {"start_date": str(date.today()), "day": 1, "total_sent": 0}
+        # ── Per-profile logger ────────────────────────────────
+        profile_log_file = BASE_DIR / f"warmup_{name.replace(' ','_')}.log"
+        plog = make_logger(f"warmup.{name}", profile_log_file)
 
-        day              = calc_day(state[name]["start_date"])
+        # ── Skip paused ───────────────────────────────────────
+        if ps.get("paused"):
+            log.info(f"[{name}] PAUSED — {ps.get('pause_reason','')} — skipping")
+            plog.info(f"[{name}] PAUSED — skipping this run")
+            continue
+
+        # ── Skip graduated ────────────────────────────────────
+        if ps.get("graduated"):
+            log.info(f"[{name}] GRADUATED on {ps.get('graduated_date','')} — skipping warmup")
+            plog.info(f"[{name}] GRADUATED — no longer in warmup")
+            continue
+
+        day              = calc_day(ps["start_date"])
+        ps["day"]        = day
         volume, rmin, rmax = get_ramp(day)
         mb_list          = mailboxes.get(name, [])
 
@@ -188,19 +342,22 @@ def main():
             log.warning(f"[{name}] No mailboxes configured — skipping")
             continue
 
-        log.info(f"[{name}] Day {day} | {len(mb_list)} mailboxes | {volume} emails each")
+        plog.info("=" * 50)
+        plog.info(f"[{name}] Day {day} | {len(mb_list)} mailboxes | {volume} emails each")
 
+        # ── Inter-profile gap ─────────────────────────────────
         if p_idx > 0:
             gap = random.randint(120, 300) if day <= 3 else random.randint(60, 120)
             log.info(f"[{name}] Waiting {gap}s before this profile...")
             time.sleep(gap)
 
-        profile_total = 0
+        profile_total  = 0
+        profile_failed = 0
 
         for mb_idx, mailbox in enumerate(mb_list):
             if mb_idx > 0:
                 gap = random.randint(30, 90) if day <= 3 else random.randint(15, 45)
-                log.info(f"  Waiting {gap}s before next mailbox...")
+                plog.info(f"  Waiting {gap}s before next mailbox...")
                 time.sleep(gap)
 
             subject = random.choice(profile["subjects"])
@@ -208,15 +365,58 @@ def main():
             rate    = round(random.uniform(rmin, rmax), 1)
             batch   = pick_seeds(seeds, volume)
 
-            if send_from_mailbox(profile, mailbox, batch, subject, body, day, rate):
+            if send_from_mailbox(profile, mailbox, batch, subject, body, day, rate, plog):
                 profile_total += volume
+            else:
+                profile_failed += volume
 
-        state[name]["total_sent"] += profile_total
-        log.info(f"[{name}] Done | Today: {profile_total} | Total: {state[name]['total_sent']}")
+        # ── Update state ──────────────────────────────────────
+        ps["total_sent"] += profile_total
 
-    save_state(state)
-    log.info("Warmup Engine complete")
+        # ── Health score ──────────────────────────────────────
+        ps["health_score"] = calc_health_score(ps)
+
+        # ── Auto-pause check ──────────────────────────────────
+        # Estimate spam count from failed sends as proxy
+        # (real spam data comes from reply_engine writing to state)
+        if check_auto_pause(name, ps, profile_total, ps.get("spam_count", 0)):
+            ps["paused"]       = True
+            ps["pause_reason"] = f"Spam rate exceeded {AUTO_PAUSE_SPAM_RATE*100:.0f}% for {AUTO_PAUSE_CONSECUTIVE} consecutive days"
+            ps["status"]       = "paused"
+            plog.warning(f"[{name}] AUTO-PAUSED: {ps['pause_reason']}")
+            log.warning(f"[{name}] AUTO-PAUSED")
+            send_telegram(
+                f"⚠️ <b>Warmup Auto-Paused: {name}</b>\n"
+                f"Reason: {ps['pause_reason']}\n"
+                f"Day: {day} | Health: {ps['health_score']}\n"
+                f"Action: Review spam rates before resuming."
+            )
+        else:
+            ps["status"] = "warming"
+
+        # ── Graduation check ──────────────────────────────────
+        if day >= GRADUATION_DAY and ps["health_score"] >= GRADUATION_HEALTH and not ps["graduated"]:
+            ps["graduated"]      = True
+            ps["graduated_date"] = str(date.today())
+            ps["status"]         = "graduated"
+            plog.info(f"[{name}] 🎓 GRADUATED! Day {day} | Health: {ps['health_score']}")
+            log.info(f"[{name}] 🎓 GRADUATED!")
+            send_telegram(
+                f"🎓 <b>Domain Graduated: {name}</b>\n"
+                f"Day: {day} | Health score: {ps['health_score']}/100\n"
+                f"Total sent: {ps['total_sent']:,}\n"
+                f"This domain is now warmed up and ready for campaigns."
+            )
+
+        plog.info(f"[{name}] Run complete | Today: {profile_total} | Total: {ps['total_sent']} | Health: {ps['health_score']}")
+        log.info(f"[{name}] Done | Day {day} | Today: {profile_total} | Health: {ps['health_score']} | Status: {ps['status']}")
+
+        # Save state after each profile
+        save_state(state)
+
+    log.info("Warmup Engine v2 complete")
     log.info("=" * 60)
 
 if __name__ == "__main__":
     main()
+
