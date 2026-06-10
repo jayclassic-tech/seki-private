@@ -320,6 +320,8 @@ def main():
         # ── Per-profile logger ────────────────────────────────
         profile_log_file = BASE_DIR / f"warmup_{name.replace(' ','_')}.log"
         plog = make_logger(f"warmup.{name}", profile_log_file)
+        # File only — strip StreamHandler to prevent duplicate lines in warmup.log
+        plog.handlers = [h for h in plog.handlers if not isinstance(h, logging.StreamHandler)]
 
         # ── Skip paused ───────────────────────────────────────
         if ps.get("paused"):
