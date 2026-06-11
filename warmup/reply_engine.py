@@ -20,6 +20,7 @@ from datetime import datetime, date
 DELAY_PROFILES = {
     "morning":   {"min": 8,  "max": 18},   # 10am run
     "afternoon": {"min": 12, "max": 25},   # 4pm run
+    "evening":   {"min": 15, "max": 30},   # 9pm run
     "default":   {"min": 8,  "max": 18},
 }
 
@@ -356,8 +357,8 @@ def update_state_counts(state, all_stats):
     domain_replied = {}
     for s in all_stats:
         for domain, count in s.get("domain_counts", {}).items():
-            domain_rescued[domain] = domain_rescued.get(domain, 0) + s["rescued"]
-            domain_replied[domain] = domain_replied.get(domain, 0) + s["replied"]
+            domain_rescued[domain] = domain_rescued.get(domain, 0) + count
+            domain_replied[domain] = domain_replied.get(domain, 0) + count
 
     # Write to state per profile
     for profile_name, profile_data in state.items():
@@ -386,7 +387,7 @@ def update_state_counts(state, all_stats):
 # ── Main ──────────────────────────────────────────────────────
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--session", choices=["morning","afternoon"], default="default",
+    parser.add_argument("--session", choices=["morning","afternoon","evening"], default="default",
                         help="morning=10am (faster), afternoon=4pm (slower delays)")
     args = parser.parse_args()
 

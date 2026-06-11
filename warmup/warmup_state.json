@@ -1,17 +1,18 @@
 {
   "SEKI": {
     "start_date": "2026-06-04",
-    "day": 6,
-    "total_sent": 2930,
+    "day": 7,
+    "total_sent": 4180,
     "rescue_log": {
-      "2026-06-08": 0
+      "2026-06-08": 0,
+      "2026-06-11": 0
     },
     "status": "warming",
-    "health_score": 92,
+    "health_score": 93,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 115,
-    "reply_count": 945,
+    "rescue_count": 529,
+    "reply_count": 1240,
     "spam_rate_history": [
       {
         "date": "2026-06-08",
@@ -30,6 +31,18 @@
         "spam_rate": 0.0,
         "sent": 450,
         "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 1050,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 200,
+        "spam": 0
       }
     ],
     "paused": false,
@@ -39,17 +52,18 @@
   },
   "LDGAUTH": {
     "start_date": "2026-06-04",
-    "day": 6,
-    "total_sent": 3000,
+    "day": 7,
+    "total_sent": 4600,
     "rescue_log": {
-      "2026-06-08": 0
+      "2026-06-08": 0,
+      "2026-06-11": 0
     },
     "status": "warming",
-    "health_score": 92,
+    "health_score": 93,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 115,
-    "reply_count": 945,
+    "rescue_count": 565,
+    "reply_count": 1347,
     "spam_rate_history": [
       {
         "date": "2026-06-09",
@@ -61,6 +75,18 @@
         "date": "2026-06-09",
         "spam_rate": 0.0,
         "sent": 800,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 1400,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 200,
         "spam": 0
       }
     ],
@@ -71,17 +97,18 @@
   },
   "BINANCE": {
     "start_date": "2026-06-06",
-    "day": 4,
-    "total_sent": 1380,
+    "day": 5,
+    "total_sent": 2410,
     "rescue_log": {
-      "2026-06-08": 0
+      "2026-06-08": 0,
+      "2026-06-11": 0
     },
     "status": "warming",
-    "health_score": 91,
+    "health_score": 92,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 115,
-    "reply_count": 945,
+    "rescue_count": 310,
+    "reply_count": 720,
     "spam_rate_history": [
       {
         "date": "2026-06-09",
@@ -93,6 +120,18 @@
         "date": "2026-06-09",
         "spam_rate": 0.0,
         "sent": 490,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 910,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 120,
         "spam": 0
       }
     ],
@@ -103,17 +142,18 @@
   },
   "CryptoAssist": {
     "start_date": "2026-06-08",
-    "day": 2,
-    "total_sent": 120,
+    "day": 3,
+    "total_sent": 160,
     "rescue_log": {
-      "2026-06-08": 0
+      "2026-06-08": 0,
+      "2026-06-11": 0
     },
     "status": "warming",
-    "health_score": 80,
+    "health_score": 91,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 4,
-    "reply_count": 45,
+    "rescue_count": 53,
+    "reply_count": 81,
     "spam_rate_history": [
       {
         "date": "2026-06-09",
@@ -125,6 +165,12 @@
         "date": "2026-06-09",
         "spam_rate": 0.0,
         "sent": 60,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 40,
         "spam": 0
       }
     ],
@@ -135,17 +181,18 @@
   },
   "Gretomat": {
     "start_date": "2026-06-08",
-    "day": 2,
-    "total_sent": 120,
+    "day": 3,
+    "total_sent": 160,
     "rescue_log": {
-      "2026-06-08": 0
+      "2026-06-08": 0,
+      "2026-06-11": 0
     },
     "status": "warming",
-    "health_score": 40,
+    "health_score": 91,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 0,
-    "reply_count": 0,
+    "rescue_count": 59,
+    "reply_count": 87,
     "spam_rate_history": [
       {
         "date": "2026-06-09",
@@ -157,6 +204,12 @@
         "date": "2026-06-09",
         "spam_rate": 0.0,
         "sent": 60,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 40,
         "spam": 0
       }
     ],
@@ -167,48 +220,17 @@
   },
   "Ledger Support": {
     "start_date": "2026-06-08",
-    "day": 2,
+    "day": 3,
     "total_sent": 120,
     "rescue_log": {
-      "2026-06-08": 0
+      "2026-06-08": 0,
+      "2026-06-11": 0
     },
     "status": "warming",
-    "health_score": 40,
+    "health_score": 86,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 0,
-    "reply_count": 0,
-    "spam_rate_history": [
-      {
-        "date": "2026-06-09",
-        "spam_rate": 0.0,
-        "sent": 60,
-        "spam": 0
-      },
-      {
-        "date": "2026-06-09",
-        "spam_rate": 0.0,
-        "sent": 60,
-        "spam": 0
-      }
-    ],
-    "paused": false,
-    "pause_reason": "",
-    "graduated": false,
-    "graduated_date": ""
-  },
-  "LedgerRecover": {
-    "start_date": "2026-06-08",
-    "day": 2,
-    "total_sent": 120,
-    "rescue_log": {
-      "2026-06-08": 0
-    },
-    "status": "warming",
-    "health_score": 80,
-    "inbox_count": 0,
-    "spam_count": 0,
-    "rescue_count": 5,
+    "rescue_count": 9,
     "reply_count": 30,
     "spam_rate_history": [
       {
@@ -224,24 +246,25 @@
         "spam": 0
       }
     ],
-    "paused": false,
-    "pause_reason": "",
+    "paused": true,
+    "pause_reason": "clientHold \u2014 DNS not resolving (Namecheap)",
     "graduated": false,
     "graduated_date": ""
   },
-  "RobinHood": {
+  "LedgerRecover": {
     "start_date": "2026-06-08",
-    "day": 2,
+    "day": 3,
     "total_sent": 120,
     "rescue_log": {
-      "2026-06-08": 0
+      "2026-06-08": 0,
+      "2026-06-11": 0
     },
     "status": "warming",
-    "health_score": 80,
+    "health_score": 86,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 4,
-    "reply_count": 15,
+    "rescue_count": 9,
+    "reply_count": 30,
     "spam_rate_history": [
       {
         "date": "2026-06-09",
@@ -256,6 +279,45 @@
         "spam": 0
       }
     ],
+    "paused": true,
+    "pause_reason": "clientHold \u2014 DNS not resolving (Namecheap)",
+    "graduated": false,
+    "graduated_date": ""
+  },
+  "RobinHood": {
+    "start_date": "2026-06-08",
+    "day": 3,
+    "total_sent": 160,
+    "rescue_log": {
+      "2026-06-08": 0,
+      "2026-06-11": 0
+    },
+    "status": "warming",
+    "health_score": 91,
+    "inbox_count": 0,
+    "spam_count": 0,
+    "rescue_count": 50,
+    "reply_count": 78,
+    "spam_rate_history": [
+      {
+        "date": "2026-06-09",
+        "spam_rate": 0.0,
+        "sent": 60,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-09",
+        "spam_rate": 0.0,
+        "sent": 60,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-10",
+        "spam_rate": 0.0,
+        "sent": 40,
+        "spam": 0
+      }
+    ],
     "paused": false,
     "pause_reason": "",
     "graduated": false,
@@ -267,6 +329,15 @@
       "replied": 8,
       "errors": 0,
       "run_at": "2026-06-08T19:17:59.255471"
+    },
+    "rescue_log": {
+      "2026-06-11": 0
+    },
+    "2026-06-11": {
+      "rescued": 0,
+      "replied": 0,
+      "errors": 0,
+      "run_at": "2026-06-11T00:09:33.477817"
     }
   }
 }

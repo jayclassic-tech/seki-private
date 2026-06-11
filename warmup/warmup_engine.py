@@ -27,9 +27,11 @@ SEKI_BIN       = "/opt/seki/postfix_mailer.py"
 BATCH_DIR.mkdir(exist_ok=True)
 
 GRADUATION_DAY          = 21
-GRADUATION_HEALTH       = 80
+GRADUATION_HEALTH       = 85    # raised from 80 — item 11
 AUTO_PAUSE_SPAM_RATE    = 0.20   # 20%
 AUTO_PAUSE_CONSECUTIVE  = 2      # days
+GRADUATION_CONSECUTIVE  = 7      # days health must stay above threshold — item 11
+RATE_LIMIT_THRESHOLD    = 3      # 421 hits before auto-pause — item 9
 
 # ── Master logger ─────────────────────────────────────────────
 def make_logger(name, log_path):
@@ -51,22 +53,22 @@ log = make_logger("warmup", LOG_FILE)
 # ── Ramp schedule ─────────────────────────────────────────────
 # (max_day, emails_per_mailbox, rate_min, rate_max)
 RAMP = [
-    (1,    5,  8.0, 12.0),
-    (2,   10,  5.0,  8.0),
-    (3,   20,  3.0,  6.0),
-    (5,   35,  2.0,  4.0),
-    (7,   50,  1.5,  3.0),
-    (10,  70,  1.0,  2.0),
-    (999,100,  0.5,  1.5),
+    (1,    4,  8.0, 12.0),
+    (2,    6,  5.0,  8.0),
+    (3,   10,  3.0,  6.0),
+    (5,   15,  2.0,  4.0),
+    (7,   20,  1.5,  3.0),
+    (10,  30,  1.0,  2.0),
+    (999, 50,  0.5,  1.5),
 ]
 
 # Daily send limit ramp — maps day to recommended daily limit
 DAILY_LIMIT_RAMP = [
-    (3,   200),
-    (5,   400),
-    (7,   500),
-    (10,  700),
-    (999, 1000),
+    (3,    40),
+    (5,   120),
+    (7,   200),
+    (10,  360),
+    (999, 600),
 ]
 
 def get_ramp(day):
@@ -82,6 +84,48 @@ def get_recommended_limit(day):
     return DAILY_LIMIT_RAMP[-1][1]
 
 # ── Telegram ──────────────────────────────────────────────────
+def get_base_domain(email_or_host):
+    host  = email_or_host.split("@")[-1] if "@" in email_or_host else email_or_host
+    parts = host.strip().split(".")
+    return ".".join(parts[-2:]) if len(parts) > 2 else host
+
+def check_gmail_rate_limit(profile_name, domains_list):
+    """
+    Check mail.log for 421-4.7.28 rate limit errors for this profile's domains.
+    Returns the subdomain that triggered the limit, or None.
+    """
+    try:
+        import subprocess
+        log_tail = subprocess.run(
+            ["tail", "-n", "500", "/var/log/mail.log"],
+            capture_output=True, text=True
+        ).stdout
+        hits = {}
+        for line in log_tail.splitlines():
+            if "421-4.7.28" not in line: continue
+            import re
+            m = re.search(r'domain \[(\S+?)[\s\]]', line)
+            if not m: continue
+            subdomain = m.group(1).rstrip("]").rstrip()
+            # Check if this subdomain belongs to one of our domains
+            for d in domains_list:
+                if d in subdomain:
+                    hits[d] = hits.get(d, 0) + 1
+        for d, count in hits.items():
+            if count >= RATE_LIMIT_THRESHOLD:
+                return d, count
+    except Exception:
+        pass
+    return None, 0
+
+def check_graduation_consecutive(ps):
+    """Item 11: Check if health has been above threshold for GRADUATION_CONSECUTIVE days."""
+    history = ps.get("spam_rate_history", [])
+    if len(history) < GRADUATION_CONSECUTIVE:
+        return False
+    last_n = history[-GRADUATION_CONSECUTIVE:]
+    return all(d.get("spam_rate", 100) < 0.05 for d in last_n)
+
 def send_telegram(message: str):
     try:
         import requests
@@ -355,8 +399,15 @@ def main():
 
         profile_total  = 0
         profile_failed = 0
+        # Item 10: per-profile cap — check if profile has custom limit in state
+        profile_cap    = ps.get("daily_cap_override", None)
+        daily_limit    = profile_cap if profile_cap else get_recommended_limit(day)
+        plog.info(f"[{name}] Daily cap: {daily_limit} emails{'  (custom)' if profile_cap else ''}")
 
         for mb_idx, mailbox in enumerate(mb_list):
+            if profile_total >= daily_limit:
+                plog.info(f"  Daily cap reached ({daily_limit}) — stopping mailbox loop")
+                break
             if mb_idx > 0:
                 gap = random.randint(30, 90) if day <= 3 else random.randint(15, 45)
                 plog.info(f"  Waiting {gap}s before next mailbox...")
@@ -378,10 +429,33 @@ def main():
         # ── Health score ──────────────────────────────────────
         ps["health_score"] = calc_health_score(ps)
 
-        # ── Auto-pause check ──────────────────────────────────
-        # Estimate spam count from failed sends as proxy
-        # (real spam data comes from reply_engine writing to state)
-        if check_auto_pause(name, ps, profile_total, ps.get("spam_count", 0)):
+        # ── Gmail 421 rate limit check (item 9) ──────────────────
+        rate_domain, rate_hits = check_gmail_rate_limit(name, [get_base_domain(mb) for mb in mb_list[:3]])
+        if rate_domain and not ps.get("paused"):
+            ps["paused"]       = True
+            ps["pause_reason"] = f"Gmail rate limit (421-4.7.28) — {rate_hits} hits on {rate_domain}"
+            ps["status"]       = "paused"
+            plog.warning(f"[{name}] RATE-LIMITED: {ps['pause_reason']}")
+            log.warning(f"[{name}] RATE-LIMITED by Gmail")
+            # Clear mailboxes to stop sends immediately
+            import json as _jj
+            _mf = BASE_DIR / "mailboxes.json"
+            _bf = BASE_DIR / "mailboxes_paused_backup.json"
+            _mb = _jj.loads(_mf.read_text()) if _mf.exists() else {}
+            _bk = _jj.loads(_bf.read_text()) if _bf.exists() else {}
+            if _mb.get(name):
+                _bk[name] = _mb[name]; _mb[name] = []
+                _bf.write_text(_jj.dumps(_bk, indent=2))
+                _mf.write_text(_jj.dumps(_mb, indent=2))
+            send_telegram(
+                f"🚨 <b>Gmail Rate Limit: {name}</b>\n"
+                f"Domain: {rate_domain}\n"
+                f"Hits: {rate_hits} × 421-4.7.28\n"
+                f"Action: Profile auto-paused. Resume from Sentinel after 24h."
+            )
+
+        # ── Spam rate auto-pause check ────────────────────────────
+        elif check_auto_pause(name, ps, profile_total, ps.get("spam_count", 0)):
             ps["paused"]       = True
             ps["pause_reason"] = f"Spam rate exceeded {AUTO_PAUSE_SPAM_RATE*100:.0f}% for {AUTO_PAUSE_CONSECUTIVE} consecutive days"
             ps["status"]       = "paused"
@@ -396,17 +470,21 @@ def main():
         else:
             ps["status"] = "warming"
 
-        # ── Graduation check ──────────────────────────────────
-        if day >= GRADUATION_DAY and ps["health_score"] >= GRADUATION_HEALTH and not ps["graduated"]:
+        # ── Graduation check (item 11 — consecutive health days) ──
+        if (day >= GRADUATION_DAY
+                and ps["health_score"] >= GRADUATION_HEALTH
+                and check_graduation_consecutive(ps)
+                and not ps["graduated"]):
             ps["graduated"]      = True
             ps["graduated_date"] = str(date.today())
             ps["status"]         = "graduated"
-            plog.info(f"[{name}] 🎓 GRADUATED! Day {day} | Health: {ps['health_score']}")
-            log.info(f"[{name}] 🎓 GRADUATED!")
+            plog.info(f"[{name}] GRADUATED! Day {day} | Health: {ps['health_score']}")
+            log.info(f"[{name}] GRADUATED!")
             send_telegram(
                 f"🎓 <b>Domain Graduated: {name}</b>\n"
                 f"Day: {day} | Health score: {ps['health_score']}/100\n"
                 f"Total sent: {ps['total_sent']:,}\n"
+                f"Consecutive clean days: {GRADUATION_CONSECUTIVE}\n"
                 f"This domain is now warmed up and ready for campaigns."
             )
 

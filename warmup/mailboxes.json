@@ -140,26 +140,7 @@
     "noreply@reach.ledqer.support",
     "info@mail.ledqer.support"
   ],
-  "LedgerRecover": [
-    "contact@reach.recoverledger.site",
-    "admin@reach.recoverledger.site",
-    "info@mail.recoverledger.site",
-    "support@send.recoverledger.site",
-    "hello@send.recoverledger.site",
-    "hello@mail.recoverledger.site",
-    "assist@relay.recoverledger.site",
-    "support@mail.recoverledger.site",
-    "noreply@reach.recoverledger.site",
-    "noreply@alert.recoverledger.site",
-    "admin@relay.recoverledger.site",
-    "assist@reach.recoverledger.site",
-    "noreply@relay.recoverledger.site",
-    "info@send.recoverledger.site",
-    "assist@alert.recoverledger.site",
-    "contact@relay.recoverledger.site",
-    "contact@alert.recoverledger.site",
-    "admin@alert.recoverledger.site"
-  ],
+  "LedgerRecover": [],
   "RobinHood": [
     "hello@mail.robln.online",
     "assist@reach.robln.online",
