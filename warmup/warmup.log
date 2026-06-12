@@ -1712,3 +1712,75 @@
 2026-06-10 14:46:54,798 [INFO] Warmup Engine v2 complete
 2026-06-10 14:46:54,798 [INFO] ============================================================
 2026-06-10 14:46:54,798 [INFO] ============================================================
+2026-06-11 08:00:02,512 [INFO] ============================================================
+2026-06-11 08:00:02,512 [INFO] ============================================================
+2026-06-11 08:00:02,516 [INFO] Warmup Engine v2 — 2026-06-11 08:00:02
+2026-06-11 08:00:02,516 [INFO] Warmup Engine v2 — 2026-06-11 08:00:02
+2026-06-11 08:00:02,523 [INFO] Profiles: 8 | Seeds: 38
+2026-06-11 08:00:02,523 [INFO] Profiles: 8 | Seeds: 38
+2026-06-11 08:10:33,463 [INFO] [SEKI] Done | Day 8 | Today: 360 | Health: 93 | Status: warming
+2026-06-11 08:10:33,463 [INFO] [SEKI] Done | Day 8 | Today: 360 | Health: 93 | Status: warming
+2026-06-11 08:10:33,465 [INFO] [LDGAUTH] Waiting 71s before this profile...
+2026-06-11 08:10:33,465 [INFO] [LDGAUTH] Waiting 71s before this profile...
+2026-06-11 08:22:20,397 [INFO] [LDGAUTH] Done | Day 8 | Today: 360 | Health: 93 | Status: warming
+2026-06-11 08:22:20,397 [INFO] [LDGAUTH] Done | Day 8 | Today: 360 | Health: 93 | Status: warming
+2026-06-11 08:22:20,398 [INFO] [BINANCE] Waiting 114s before this profile...
+2026-06-11 08:22:20,398 [INFO] [BINANCE] Waiting 114s before this profile...
+2026-06-11 08:33:54,861 [INFO] [BINANCE] Done | Day 6 | Today: 200 | Health: 92 | Status: warming
+2026-06-11 08:33:54,861 [INFO] [BINANCE] Done | Day 6 | Today: 200 | Health: 92 | Status: warming
+2026-06-11 08:33:54,863 [INFO] [CryptoAssist] Waiting 106s before this profile...
+2026-06-11 08:33:54,863 [INFO] [CryptoAssist] Waiting 106s before this profile...
+2026-06-11 08:42:35,383 [INFO] [CryptoAssist] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 08:42:35,383 [INFO] [CryptoAssist] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 08:42:35,385 [INFO] [Gretomat] Waiting 89s before this profile...
+2026-06-11 08:42:35,385 [INFO] [Gretomat] Waiting 89s before this profile...
+2026-06-11 08:51:45,863 [INFO] [Gretomat] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 08:51:45,863 [INFO] [Gretomat] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 08:51:45,865 [INFO] [Ledger Support] PAUSED — clientHold — DNS not resolving (Namecheap) — skipping
+2026-06-11 08:51:45,865 [INFO] [Ledger Support] PAUSED — clientHold — DNS not resolving (Namecheap) — skipping
+2026-06-11 08:51:45,865 [INFO] [LedgerRecover] PAUSED — clientHold — DNS not resolving (Namecheap) — skipping
+2026-06-11 08:51:45,865 [INFO] [LedgerRecover] PAUSED — clientHold — DNS not resolving (Namecheap) — skipping
+2026-06-11 08:51:45,866 [INFO] [RobinHood] Waiting 96s before this profile...
+2026-06-11 08:51:45,866 [INFO] [RobinHood] Waiting 96s before this profile...
+2026-06-11 09:00:31,634 [INFO] [RobinHood] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 09:00:31,634 [INFO] [RobinHood] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 09:00:31,637 [INFO] Warmup Engine v2 complete
+2026-06-11 09:00:31,637 [INFO] Warmup Engine v2 complete
+2026-06-11 09:00:31,637 [INFO] ============================================================
+2026-06-11 09:00:31,637 [INFO] ============================================================
+2026-06-11 14:00:01,793 [INFO] ============================================================
+2026-06-11 14:00:01,793 [INFO] ============================================================
+2026-06-11 14:00:01,798 [INFO] Warmup Engine v2 — 2026-06-11 14:00:01
+2026-06-11 14:00:01,798 [INFO] Warmup Engine v2 — 2026-06-11 14:00:01
+2026-06-11 14:00:01,805 [INFO] Profiles: 8 | Seeds: 38
+2026-06-11 14:00:01,805 [INFO] Profiles: 8 | Seeds: 38
+2026-06-11 14:10:38,441 [INFO] [SEKI] Done | Day 8 | Today: 360 | Health: 93 | Status: warming
+2026-06-11 14:10:38,441 [INFO] [SEKI] Done | Day 8 | Today: 360 | Health: 93 | Status: warming
+2026-06-11 14:10:38,443 [INFO] [LDGAUTH] Waiting 118s before this profile...
+2026-06-11 14:10:38,443 [INFO] [LDGAUTH] Waiting 118s before this profile...
+2026-06-11 14:23:52,531 [INFO] [LDGAUTH] Done | Day 8 | Today: 360 | Health: 93 | Status: warming
+2026-06-11 14:23:52,531 [INFO] [LDGAUTH] Done | Day 8 | Today: 360 | Health: 93 | Status: warming
+2026-06-11 14:23:52,532 [INFO] [BINANCE] Waiting 114s before this profile...
+2026-06-11 14:23:52,532 [INFO] [BINANCE] Waiting 114s before this profile...
+2026-06-11 14:34:41,539 [INFO] [BINANCE] Done | Day 6 | Today: 200 | Health: 92 | Status: warming
+2026-06-11 14:34:41,539 [INFO] [BINANCE] Done | Day 6 | Today: 200 | Health: 92 | Status: warming
+2026-06-11 14:34:41,541 [INFO] [CryptoAssist] Waiting 73s before this profile...
+2026-06-11 14:34:41,541 [INFO] [CryptoAssist] Waiting 73s before this profile...
+2026-06-11 14:43:17,123 [INFO] [CryptoAssist] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 14:43:17,123 [INFO] [CryptoAssist] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 14:43:17,124 [INFO] [Gretomat] Waiting 92s before this profile...
+2026-06-11 14:43:17,124 [INFO] [Gretomat] Waiting 92s before this profile...
+2026-06-11 14:51:12,027 [INFO] [Gretomat] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 14:51:12,027 [INFO] [Gretomat] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 14:51:12,029 [INFO] [Ledger Support] PAUSED — clientHold — DNS not resolving (Namecheap) — skipping
+2026-06-11 14:51:12,029 [INFO] [Ledger Support] PAUSED — clientHold — DNS not resolving (Namecheap) — skipping
+2026-06-11 14:51:12,030 [INFO] [LedgerRecover] PAUSED — clientHold — DNS not resolving (Namecheap) — skipping
+2026-06-11 14:51:12,030 [INFO] [LedgerRecover] PAUSED — clientHold — DNS not resolving (Namecheap) — skipping
+2026-06-11 14:51:12,030 [INFO] [RobinHood] Waiting 67s before this profile...
+2026-06-11 14:51:12,030 [INFO] [RobinHood] Waiting 67s before this profile...
+2026-06-11 14:58:58,672 [INFO] [RobinHood] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 14:58:58,672 [INFO] [RobinHood] Done | Day 4 | Today: 120 | Health: 91 | Status: warming
+2026-06-11 14:58:58,673 [INFO] Warmup Engine v2 complete
+2026-06-11 14:58:58,673 [INFO] Warmup Engine v2 complete
+2026-06-11 14:58:58,673 [INFO] ============================================================
+2026-06-11 14:58:58,673 [INFO] ============================================================
