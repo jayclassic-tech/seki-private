@@ -1,0 +1,9 @@
+{
+  "run_at": "2026-06-15T09:01:08.525303",
+  "total": 32,
+  "healthy": 32,
+  "dead": 0,
+  "auth_failed": 0,
+  "dead_list": [],
+  "auth_fail_list": []
+}
