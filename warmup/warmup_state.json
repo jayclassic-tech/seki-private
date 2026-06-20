@@ -1,8 +1,8 @@
 {
   "SEKI": {
     "start_date": "2026-06-04",
-    "day": 15,
-    "total_sent": 12340,
+    "day": 16,
+    "total_sent": 13540,
     "rescue_log": {
       "2026-06-08": 0,
       "2026-06-11": 0,
@@ -13,28 +13,17 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "status": "warming",
     "health_score": 97,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 8626,
-    "reply_count": 9337,
+    "rescue_count": 9794,
+    "reply_count": 10505,
     "spam_rate_history": [
       {
-        "date": "2026-06-15",
-        "spam_rate": 0.0,
-        "sent": 600,
-        "spam": 0
-      },
-      {
-        "date": "2026-06-16",
-        "spam_rate": 0.0,
-        "sent": 600,
-        "spam": 0
-      },
-      {
         "date": "2026-06-16",
         "spam_rate": 0.0,
         "sent": 600,
@@ -60,6 +49,18 @@
       },
       {
         "date": "2026-06-18",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
         "spam_rate": 0.0,
         "sent": 600,
         "spam": 0
@@ -72,8 +73,8 @@
   },
   "LDGAUTH": {
     "start_date": "2026-06-04",
-    "day": 15,
-    "total_sent": 12760,
+    "day": 16,
+    "total_sent": 13960,
     "rescue_log": {
       "2026-06-08": 0,
       "2026-06-11": 0,
@@ -84,28 +85,17 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "status": "warming",
     "health_score": 97,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 8671,
-    "reply_count": 9453,
+    "rescue_count": 9842,
+    "reply_count": 10624,
     "spam_rate_history": [
       {
-        "date": "2026-06-15",
-        "spam_rate": 0.0,
-        "sent": 600,
-        "spam": 0
-      },
-      {
-        "date": "2026-06-16",
-        "spam_rate": 0.0,
-        "sent": 600,
-        "spam": 0
-      },
-      {
         "date": "2026-06-16",
         "spam_rate": 0.0,
         "sent": 600,
@@ -131,6 +121,18 @@
       },
       {
         "date": "2026-06-18",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
         "spam_rate": 0.0,
         "sent": 600,
         "spam": 0
@@ -143,8 +145,8 @@
   },
   "BINANCE": {
     "start_date": "2026-06-06",
-    "day": 13,
-    "total_sent": 8970,
+    "day": 14,
+    "total_sent": 10170,
     "rescue_log": {
       "2026-06-08": 0,
       "2026-06-11": 0,
@@ -155,28 +157,17 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "status": "warming",
     "health_score": 96,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 6845,
-    "reply_count": 7255,
+    "rescue_count": 8013,
+    "reply_count": 8423,
     "spam_rate_history": [
       {
-        "date": "2026-06-15",
-        "spam_rate": 0.0,
-        "sent": 360,
-        "spam": 0
-      },
-      {
-        "date": "2026-06-16",
-        "spam_rate": 0.0,
-        "sent": 600,
-        "spam": 0
-      },
-      {
         "date": "2026-06-16",
         "spam_rate": 0.0,
         "sent": 600,
@@ -202,6 +193,18 @@
       },
       {
         "date": "2026-06-18",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
         "spam_rate": 0.0,
         "sent": 600,
         "spam": 0
@@ -214,8 +217,8 @@
   },
   "CryptoAssist": {
     "start_date": "2026-06-08",
-    "day": 11,
-    "total_sent": 4800,
+    "day": 12,
+    "total_sent": 6000,
     "rescue_log": {
       "2026-06-08": 0,
       "2026-06-11": 0,
@@ -226,27 +229,16 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "status": "warming",
     "health_score": 95,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 4667,
-    "reply_count": 4695,
+    "rescue_count": 5833,
+    "reply_count": 5861,
     "spam_rate_history": [
-      {
-        "date": "2026-06-15",
-        "spam_rate": 0.0,
-        "sent": 360,
-        "spam": 0
-      },
-      {
-        "date": "2026-06-16",
-        "spam_rate": 0.0,
-        "sent": 360,
-        "spam": 0
-      },
       {
         "date": "2026-06-16",
         "spam_rate": 0.0,
@@ -273,6 +265,18 @@
       },
       {
         "date": "2026-06-18",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
         "spam_rate": 0.0,
         "sent": 600,
         "spam": 0
@@ -285,8 +289,8 @@
   },
   "Gretomat": {
     "start_date": "2026-06-08",
-    "day": 11,
-    "total_sent": 4800,
+    "day": 12,
+    "total_sent": 6000,
     "rescue_log": {
       "2026-06-08": 0,
       "2026-06-11": 0,
@@ -297,27 +301,16 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "status": "warming",
     "health_score": 95,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 4667,
-    "reply_count": 4695,
+    "rescue_count": 5833,
+    "reply_count": 5861,
     "spam_rate_history": [
-      {
-        "date": "2026-06-15",
-        "spam_rate": 0.0,
-        "sent": 360,
-        "spam": 0
-      },
-      {
-        "date": "2026-06-16",
-        "spam_rate": 0.0,
-        "sent": 360,
-        "spam": 0
-      },
       {
         "date": "2026-06-16",
         "spam_rate": 0.0,
@@ -344,6 +337,18 @@
       },
       {
         "date": "2026-06-18",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
         "spam_rate": 0.0,
         "sent": 600,
         "spam": 0
@@ -368,7 +373,8 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "status": "warming",
     "health_score": 86,
@@ -409,7 +415,8 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "status": "warming",
     "health_score": 86,
@@ -438,8 +445,8 @@
   },
   "RobinHood": {
     "start_date": "2026-06-08",
-    "day": 11,
-    "total_sent": 4800,
+    "day": 12,
+    "total_sent": 6000,
     "rescue_log": {
       "2026-06-08": 0,
       "2026-06-11": 0,
@@ -450,27 +457,16 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "status": "warming",
     "health_score": 95,
     "inbox_count": 0,
     "spam_count": 0,
-    "rescue_count": 4660,
-    "reply_count": 4688,
+    "rescue_count": 5846,
+    "reply_count": 5874,
     "spam_rate_history": [
-      {
-        "date": "2026-06-15",
-        "spam_rate": 0.0,
-        "sent": 360,
-        "spam": 0
-      },
-      {
-        "date": "2026-06-16",
-        "spam_rate": 0.0,
-        "sent": 360,
-        "spam": 0
-      },
       {
         "date": "2026-06-16",
         "spam_rate": 0.0,
@@ -497,6 +493,18 @@
       },
       {
         "date": "2026-06-18",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
+        "spam_rate": 0.0,
+        "sent": 600,
+        "spam": 0
+      },
+      {
+        "date": "2026-06-19",
         "spam_rate": 0.0,
         "sent": 600,
         "spam": 0
@@ -523,7 +531,8 @@
       "2026-06-16": 0,
       "2026-06-17": 0,
       "2026-06-18": 0,
-      "2026-06-19": 0
+      "2026-06-19": 0,
+      "2026-06-20": 0
     },
     "2026-06-11": {
       "rescued": 0,
@@ -578,6 +587,12 @@
       "replied": 0,
       "errors": 0,
       "run_at": "2026-06-19T00:09:54.476732"
+    },
+    "2026-06-20": {
+      "rescued": 0,
+      "replied": 0,
+      "errors": 0,
+      "run_at": "2026-06-20T00:09:40.289286"
     }
   }
 }

@@ -918,7 +918,7 @@ class SendLog:
     Thread-safe SQLite logger for every send attempt.
 
     Usage:
-        log_db = SendLog(os.path.join(os.path.dirname(os.path.abspath(__file__)), "seki_sends.db"))
+        log_db = SendLog("seki_sends.db")
         log_db.record(campaign_id="camp_001", recipient="a@b.com", ...)
         rows = log_db.query("SELECT * FROM sends WHERE status='failed'")
     """
@@ -942,9 +942,7 @@ class SendLog:
         CREATE INDEX IF NOT EXISTS idx_status    ON sends (status);
     """
 
-    def __init__(self, db_path: str = None):
-        if db_path is None:
-            db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "seki_sends.db")
+    def __init__(self, db_path: str = "seki_sends.db"):
         self._path = db_path
         self._lock = threading.Lock()
         # check_same_thread=False is safe because we use our own lock above
@@ -1529,33 +1527,33 @@ class TelegramNotifier:
         total = stats.sent + stats.failed + stats.skipped + stats.dry_run
 
         lines = [
-            "🚀 *Campaign complete*",
+            "🚀 <b>Campaign complete</b>",
             "──────────────────",
-            f"*Profile* : `{profile}`",
+            f"<b>Profile</b> : <code>{profile}</code>",
         ]
         if subject:
             subj = subject[:60] + "…" if len(subject) > 60 else subject
-            lines.append(f"*Subject* : {subj}")
+            lines.append(f"<b>Subject</b> : {subj}")
         lines += [
             "──────────────────",
-            f"✅ Sent     : *{stats.sent}*",
-            f"❌ Failed   : *{stats.failed}*",
-            f"⏭ Skipped  : *{stats.skipped}*",
-            f"🔁 Retried  : *{stats.retried}*",
-            f"📬 Total    : *{total}*",
+            f"✅ Sent     : <b>{stats.sent}</b>",
+            f"❌ Failed   : <b>{stats.failed}</b>",
+            f"⏭ Skipped  : <b>{stats.skipped}</b>",
+            f"🔁 Retried  : <b>{stats.retried}</b>",
+            f"📬 Total    : <b>{total}</b>",
         ]
         if duration_sec:
-            lines.append(f"⏱ Duration : *{self._fmt_duration(duration_sec)}*")
+            lines.append(f"⏱ Duration : <b>{self._fmt_duration(duration_sec)}</b>")
         if dry_run_mode:
             lines.append("──────────────────")
-            lines.append("🔍 _Dry-run mode — nothing actually sent_")
+            lines.append("🔍 <i>Dry-run mode — nothing actually sent</i>")
 
         text = "\n".join(lines)
 
         payload = json.dumps({
             "chat_id":    self.chat_id,
             "text":       text,
-            "parse_mode": "MarkdownV2",
+            "parse_mode": "HTML",
         }).encode("utf-8")
 
         url = self.API_URL.format(token=self.bot_token)
@@ -1617,7 +1615,7 @@ Examples:
     p.add_argument("--smtp-host", default="127.0.0.1", help="SMTP host (default: 127.0.0.1)")
     p.add_argument("--smtp-port", type=int, default=25, help="SMTP port (default: 25)")
     p.add_argument("--suppress",  default="suppressed.txt", help="Path to suppression list file")
-    p.add_argument("--db",        default=None,  help="Path to SQLite send log database (default: <script_dir>/seki_sends.db)")
+    p.add_argument("--db",        default="seki_sends.db",  help="Path to SQLite send log database (default: seki_sends.db)")
     p.add_argument("--campaign",  default=None,        help="Campaign ID tag for this send batch (auto-generated if omitted)")
     p.add_argument("--sentinel-url",   default=None,   help="Sentinel webhook base URL (e.g. http://localhost:5055)")
     p.add_argument("--sentinel-token", default=None,   help="Shared secret token for Sentinel integration")

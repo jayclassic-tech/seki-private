@@ -1529,33 +1529,33 @@ class TelegramNotifier:
         total = stats.sent + stats.failed + stats.skipped + stats.dry_run
 
         lines = [
-            "🚀 *Campaign complete*",
+            "🚀 <b>Campaign complete</b>",
             "──────────────────",
-            f"*Profile* : `{profile}`",
+            f"<b>Profile</b> : <code>{profile}</code>",
         ]
         if subject:
             subj = subject[:60] + "…" if len(subject) > 60 else subject
-            lines.append(f"*Subject* : {subj}")
+            lines.append(f"<b>Subject</b> : {subj}")
         lines += [
             "──────────────────",
-            f"✅ Sent     : *{stats.sent}*",
-            f"❌ Failed   : *{stats.failed}*",
-            f"⏭ Skipped  : *{stats.skipped}*",
-            f"🔁 Retried  : *{stats.retried}*",
-            f"📬 Total    : *{total}*",
+            f"✅ Sent     : <b>{stats.sent}</b>",
+            f"❌ Failed   : <b>{stats.failed}</b>",
+            f"⏭ Skipped  : <b>{stats.skipped}</b>",
+            f"🔁 Retried  : <b>{stats.retried}</b>",
+            f"📬 Total    : <b>{total}</b>",
         ]
         if duration_sec:
-            lines.append(f"⏱ Duration : *{self._fmt_duration(duration_sec)}*")
+            lines.append(f"⏱ Duration : <b>{self._fmt_duration(duration_sec)}</b>")
         if dry_run_mode:
             lines.append("──────────────────")
-            lines.append("🔍 _Dry-run mode — nothing actually sent_")
+            lines.append("🔍 <i>Dry-run mode — nothing actually sent</i>")
 
         text = "\n".join(lines)
 
         payload = json.dumps({
             "chat_id":    self.chat_id,
             "text":       text,
-            "parse_mode": "MarkdownV2",
+            "parse_mode": "HTML",
         }).encode("utf-8")
 
         url = self.API_URL.format(token=self.bot_token)
