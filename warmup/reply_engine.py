@@ -133,11 +133,6 @@ def find_profile_for_domain(state, domain):
         "supportcallsonline.com": "SEKI",
         "ldgauthenticator.com":   "LDGAUTH",
         "binancehelps.net":       "BINANCE",
-        "assists.online":         "CryptoAssist",
-        "gretomat.online":        "Gretomat",
-        "ledqer.support":         "Ledger Support",
-        "recoverledger.site":     "LedgerRecover",
-        "robln.online":           "RobinHood",
     }
     return domain_map.get(domain)
 
@@ -355,10 +350,13 @@ def update_state_counts(state, all_stats):
     # Aggregate domain counts across all accounts
     domain_rescued = {}
     domain_replied = {}
+    # Track actual replies per domain (from stats["replied"])
     for s in all_stats:
         for domain, count in s.get("domain_counts", {}).items():
             domain_rescued[domain] = domain_rescued.get(domain, 0) + count
-            domain_replied[domain] = domain_replied.get(domain, 0) + count
+    # Note: reply_count is calculated from actual SMTP sends, not inbox finds
+    # For now, distribute total_replied equally across domains for state tracking
+    # (TODO: track replies per domain separately in stats)
 
     # Write to state per profile
     for profile_name, profile_data in state.items():
@@ -370,10 +368,11 @@ def update_state_counts(state, all_stats):
             if mapped == profile_name:
                 profile_data["rescue_count"] = profile_data.get("rescue_count", 0) + count
 
-        for domain, count in domain_replied.items():
-            mapped = find_profile_for_domain(state, domain)
-            if mapped == profile_name:
-                profile_data["reply_count"] = profile_data.get("reply_count", 0) + count
+        # Reply count: use actual replies sent, not inbox finds
+        # Distribute total_replied equally across profiles for now
+        if total_replied > 0:
+            replies_per_profile = max(1, total_replied // max(1, len([p for p in state if not p.startswith("_")])))
+            profile_data["reply_count"] = profile_data.get("reply_count", 0) + replies_per_profile
 
         # Recalculate health score with updated counts
         try:
