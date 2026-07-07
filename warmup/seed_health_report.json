@@ -1,9 +1,13 @@
 {
-  "run_at": "2026-06-29T09:01:20.420136",
+  "run_at": "2026-07-06T09:01:03.936758",
   "total": 32,
-  "healthy": 32,
-  "dead": 0,
+  "healthy": 29,
+  "dead": 3,
   "auth_failed": 0,
-  "dead_list": [],
+  "dead_list": [
+    "harryluth911@gmail.com",
+    "phill33white33@gmail.com",
+    "central33mia33@gmail.com"
+  ],
   "auth_fail_list": []
 }
