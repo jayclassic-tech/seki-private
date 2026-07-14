@@ -1,13 +1,23 @@
 {
-  "run_at": "2026-07-06T09:01:03.936758",
+  "run_at": "2026-07-13T09:01:15.284131",
   "total": 32,
-  "healthy": 29,
-  "dead": 3,
+  "healthy": 19,
+  "dead": 13,
   "auth_failed": 0,
   "dead_list": [
-    "harryluth911@gmail.com",
-    "phill33white33@gmail.com",
-    "central33mia33@gmail.com"
+    "codyjohnson09307@gmail.com",
+    "normanjohnson268@gmail.com",
+    "richardmoorey374@gmail.com",
+    "timothydrogers6@gmail.com",
+    "amalialbiondi@gmail.com",
+    "eugeneafarrior@gmail.com",
+    "edwardcwhitener@gmail.com",
+    "troyktowles@gmail.com",
+    "carminemhadnot@gmail.com",
+    "paul11kenneth11@gmail.com",
+    "mary33mas33@gmail.com",
+    "adamlock686@gmail.com",
+    "cirihector020@gmail.com"
   ],
   "auth_fail_list": []
 }
