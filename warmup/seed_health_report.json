@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-07-27T09:02:33.515626",
+  "run_at": "2026-08-03T09:01:03.842862",
   "total": 32,
-  "healthy": 5,
-  "dead": 27,
+  "healthy": 7,
+  "dead": 25,
   "auth_failed": 0,
   "dead_list": [
     "harryluth911@gmail.com",
@@ -29,8 +29,6 @@
     "mikkyroyce@gmail.com",
     "chris33debra33@gmail.com",
     "adamlock686@gmail.com",
-    "helenegmiller@gmail.com",
-    "jamesjdoloera@gmail.com",
     "cirihector020@gmail.com"
   ],
   "auth_fail_list": []
